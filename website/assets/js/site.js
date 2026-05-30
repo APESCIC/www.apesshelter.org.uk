@@ -246,8 +246,8 @@
       actions: '<a class="surrender-button-gold" href="https://service.sheltermanager.com/asmservice?account=apes&method=online_form_html&formid=112" target="_blank" rel="noopener noreferrer">Open surrender form</a><a class="surrender-button-secondary" href="#surrender-readiness-checker">Check before applying</a>'
     },
     notmine: {
-      message: 'Recommended route: use rescue services. This is more suitable for stray, escaped, abandoned or unwanted exotic animals that are not yours.',
-      actions: '<a class="surrender-button-gold" href="rescues.html">Use rescue services</a><a class="surrender-button-secondary" href="https://contact.apes.org.uk/help/3459567754" data-popup-link="ticket" data-popup-width="960" data-popup-height="760">Open a ticket</a>'
+      message: 'Recommended route: use rescue services for non-owner exotic animal cases. If the animal is a dog or cat, use the Dog and Cat Rehoming page for official shelter links.',
+      actions: '<a class="surrender-button-gold" href="dog-cat-rehoming.html">Dog & Cat Rehoming</a><a class="surrender-button-secondary" href="rescues.html">Use rescue services</a>'
     },
     emergency: {
       message: 'Recommended route: contact the appropriate emergency service, local authority animal warden or veterinary practice first where there is immediate danger, injury or public safety risk. Then contact APES with reference details so the team can assess whether we can assist.',
@@ -517,7 +517,7 @@
   const result = helper.querySelector('#rescue-route-result');
   const actions = helper.querySelector('#rescue-route-actions');
   const routes = {
-    notmine:{message:'Recommended route: use rescue services. Include species (if known), location, photos where safe, and any risks.',actions:'<a class="button-gold" href="https://contact.apes.org.uk/help/3459567754" data-popup-link="ticket" data-popup-width="960" data-popup-height="760">Request rescue support</a><a class="button-secondary" href="rescues.html">Read rescue guidance</a>'},
+    notmine:{message:'Recommended route: use rescue services for exotic or wildlife cases that are not yours. If the animal is a dog or cat, use the Dog and Cat Rehoming page for official shelters and rescues.',actions:'<a class="button-gold" href="dog-cat-rehoming.html">Dog & Cat Rehoming</a><a class="button-secondary" href="https://contact.apes.org.uk/help/3459567754" data-popup-link="ticket" data-popup-width="960" data-popup-height="760">Request rescue support</a>'},
     wildlife:{message:'Recommended route: if injured or at risk, seek appropriate emergency or wildlife support first. Then contact APES with details so we can advise or signpost.',actions:'<a class="button-gold" href="tel:03003020227">Call APES</a><a class="button-secondary" href="https://contact.apes.org.uk/help/3459567754" data-popup-link="ticket" data-popup-width="960" data-popup-height="760">Open a ticket</a>'},
     public:{message:'Recommended route: public-sector and corporate cases should use the ticket route and include reference numbers and risk info.',actions:'<a class="button-gold" href="https://contact.apes.org.uk/help/3459567754" data-popup-link="ticket" data-popup-width="960" data-popup-height="760">Open a ticket</a><a class="button-secondary" href="contact.html">Contact page</a>'},
     mine:{message:'Recommended route: if this is your pet and you cannot safely care for them, use the surrender route instead of rescue services.',actions:'<a class="button-gold" href="surrender.html">Owner surrender</a><a class="button-secondary" href="https://service.sheltermanager.com/asmservice?account=apes&method=online_form_html&formid=112" target="_blank" rel="noopener noreferrer">Start surrender form</a>'}
