@@ -13,6 +13,12 @@
 - Run WCAG 2.2 AA accessibility testing before public launch.
 
 
+## v0.0.8 Beta notes
+- Change type: Bug logged. Confirm previously reported mojibake patterns no longer appear on public pages.
+- Change type: Bug fixed. Check icon glyphs and emojis render correctly on Homepage, Services, Adoptions, Contact, Rescues, Surrender and Changelog pages.
+- Change type: Patch. Check symbols and punctuation render correctly (£, apostrophes, quotation marks and dashes).
+- Change type: Update. Confirm footer version badge and changelog current version both show v0.0.8 Beta.
+
 ## v0.0.7 Beta notes
 - Check Donate impact explorer buttons and slider update the result panel.
 - Check Contact route helper updates and copy buttons work (phone/email/address).

@@ -1,5 +1,5 @@
 # APES Shelter & Rescue Website
-Version: v0.0.7 Beta
+Version: v0.0.8 Beta
 
 ## Simple upload instructions
 
@@ -41,6 +41,12 @@ No database is needed. No command line is needed. No build step is needed.
 Check every button, external form and phone/email link. Review policies, privacy/cookies, refund address, donation provider and newsletter wording before making the site live.
 
 Menu update: the main navigation now uses Home, Services, Education, News and Contact. Services opens the mega menu and includes the service finder, adoptions, surrender, rescues and sponsorships.
+
+v0.0.8 Beta changes:
+- Change type: Bug logged. Site-wide garbled encoding issue identified (for example broken symbols and malformed emoji byte strings).
+- Change type: Bug fixed. Repaired corrupted icons, punctuation and currency symbols across affected pages.
+- Change type: Patch. Applied UTF-8 cleanup pass to restore valid text rendering in public content.
+- Change type: Update. Updated changelog structure with explicit change categories and bumped version labels to v0.0.8 Beta.
 
 v0.0.7 Beta changes:
 - Refreshed all pages to match the colourful, interactive Adoptions style using reusable highlight cards, badges, timelines and accordions.

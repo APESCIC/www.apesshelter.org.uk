@@ -1,6 +1,6 @@
 # Integration Register
 
-Version: v0.0.7 Beta
+Version: v0.0.8 Beta
 
 | Service | URL | Treatment |
 |---|---|---|
@@ -11,6 +11,12 @@ Version: v0.0.7 Beta
 | Contact Centre | https://contact.apesshelter.org.uk/ | External support route |
 | Service User Portal | https://www.apesshelter.org.uk/signin | External authenticated route |
 
+
+## v0.0.8 Beta notes
+- Change type: Bug logged. Site-wide mojibake issue reported affecting icons and symbol rendering.
+- Change type: Bug fixed. Corrupted characters repaired across affected public pages.
+- Change type: Patch. UTF-8 text cleanup applied to restore emoji, apostrophes, quotation marks, dashes and currency symbols.
+- Change type: Update. Current public release version bumped to v0.0.8 Beta in live version labels and release notes.
 
 ## v0.0.7 Beta notes
 - Verify the new explorers (Policies, Education, News, Search) filter and search correctly.

@@ -26,7 +26,7 @@
       <div>
         <p class="eyebrow">Changelog</p>
         <h1>Website version history.</h1>
-        <p>Current package version: v0.0.7 Beta. This page is included so changes can be tracked visibly on the website.</p>
+        <p>Current package version: v0.0.8 Beta. This page tracks live release history with clear change types for each update.</p>
         <div class="actions">
           <a class="button-gold" href="#changelog-entries">View entries</a>
           <a class="button-secondary" href="search.html">Search pages</a>
@@ -34,10 +34,11 @@
       </div>
       <aside class="logo-card" aria-label="Changelog highlights">
         <img src="assets/img/apes-shelter-rescue-logo.png" alt="APES Shelter and Rescue logo">
-        <div class="hero-badges" aria-label="Changelog themes">
-          <span>ðŸŽ¨ Design</span>
-          <span>ðŸ§© Interactivity</span>
-          <span>ðŸ›¡ï¸ Accessibility</span>
+        <div class="hero-badges" aria-label="Changelog change types">
+          <span>🐞 Bug logged</span>
+          <span>✅ Bug fixed</span>
+          <span>🩹 Patch</span>
+          <span>🔄 Update</span>
         </div>
       </aside>
     </div>
@@ -45,30 +46,44 @@
 
   <section class="snapshot-grid section" aria-label="Recent change highlights">
     <article class="card snapshot-card">
-      <span class="snapshot-icon" aria-hidden="true">ðŸŽ¨</span>
-      <h2>More colourful pages</h2>
-      <p>New badges, highlight cards and playful layouts across the site.</p>
+      <span class="snapshot-icon" aria-hidden="true">🐞</span>
+      <h2>Bug logged</h2>
+      <p>Reported: site-wide mojibake affected icons, punctuation and currency symbols.</p>
     </article>
     <article class="card snapshot-card">
-      <span class="snapshot-icon" aria-hidden="true">ðŸ§©</span>
-      <h2>More interactive tools</h2>
-      <p>Explorers, helpers and accordions make information easier to find.</p>
+      <span class="snapshot-icon" aria-hidden="true">✅</span>
+      <h2>Bug fixed</h2>
+      <p>Corrupted characters were repaired across all affected public website pages.</p>
     </article>
     <article class="card snapshot-card">
-      <span class="snapshot-icon" aria-hidden="true">ðŸ›¡ï¸</span>
-      <h2>Better focus styles</h2>
-      <p>Improved focus visibility and consistent component behaviour.</p>
+      <span class="snapshot-icon" aria-hidden="true">🩹</span>
+      <h2>Patches</h2>
+      <p>UTF-8 text patches restored emoji icons and symbols such as £, apostrophes and dashes.</p>
     </article>
     <article class="card snapshot-card">
-      <span class="snapshot-icon" aria-hidden="true">âš¡</span>
-      <h2>Reusable components</h2>
-      <p>Shared UI blocks keep future updates faster and consistent.</p>
+      <span class="snapshot-icon" aria-hidden="true">🔄</span>
+      <h2>Updates</h2>
+      <p>Version references were updated to v0.0.8 Beta in changelog and release badges.</p>
     </article>
   </section>
 
   <section class="accordion section" id="changelog-entries" aria-label="Changelog entries">
     <article class="accordion-item open">
-      <button class="accordion-button" type="button" aria-expanded="true"><span>v0.0.7 Beta â€” Fun, interactive refresh</span><span aria-hidden="true">+</span></button>
+      <button class="accordion-button" type="button" aria-expanded="true"><span>v0.0.8 Beta — Encoding and icon rendering patch</span><span aria-hidden="true">+</span></button>
+      <div class="accordion-content">
+        <p><strong>Release date:</strong> 30 May 2026.</p>
+        <p><strong>Release type:</strong> Patch release.</p>
+        <ul>
+          <li><strong>Bug logged:</strong> Multiple pages displayed broken symbols and malformed emoji byte strings in visible content.</li>
+          <li><strong>Bug fixed:</strong> Corrected corrupted text and emoji/icon rendering across all affected HTML pages.</li>
+          <li><strong>Patch:</strong> Applied UTF-8 cleanup patches to restore currency symbols, apostrophes, quotes and dashes.</li>
+          <li><strong>Update:</strong> Updated current site version labels to v0.0.8 Beta and refreshed release notes.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="accordion-item">
+      <button class="accordion-button" type="button" aria-expanded="false"><span>v0.0.7 Beta — Fun, interactive refresh</span><span aria-hidden="true">+</span></button>
       <div class="accordion-content">
         <p><strong>Release type:</strong> Cross-site fun + interactivity refresh.</p>
         <ul>
@@ -85,7 +100,7 @@
     </article>
 
     <article class="accordion-item">
-      <button class="accordion-button" type="button" aria-expanded="false"><span>v0.0.6 Beta â€” Advanced surrender page rebuild</span><span aria-hidden="true">+</span></button>
+      <button class="accordion-button" type="button" aria-expanded="false"><span>v0.0.6 Beta — Advanced surrender page rebuild</span><span aria-hidden="true">+</span></button>
       <div class="accordion-content">
         <p><strong>Release type:</strong> Advanced surrender page rebuild.</p>
         <ul>
@@ -101,7 +116,7 @@
     </article>
 
     <article class="accordion-item">
-      <button class="accordion-button" type="button" aria-expanded="false"><span>v0.0.5 Beta â€” Readability, mega menu and service-page expansion</span><span aria-hidden="true">+</span></button>
+      <button class="accordion-button" type="button" aria-expanded="false"><span>v0.0.5 Beta — Readability, mega menu and service-page expansion</span><span aria-hidden="true">+</span></button>
       <div class="accordion-content">
         <p><strong>Release type:</strong> Readability, mega menu and service-page expansion.</p>
         <ul>
@@ -116,13 +131,13 @@
     </article>
 
     <article class="accordion-item">
-      <button class="accordion-button" type="button" aria-expanded="false"><span>v0.0.4 Beta â€” Adoption page and fee calculator enhancement</span><span aria-hidden="true">+</span></button>
+      <button class="accordion-button" type="button" aria-expanded="false"><span>v0.0.4 Beta — Adoption page and fee calculator enhancement</span><span aria-hidden="true">+</span></button>
       <div class="accordion-content">
         <p><strong>Release type:</strong> Adoption page and fee calculator enhancement.</p>
         <ul>
           <li>Enhanced the Adoptions page with a more engaging hero, adoption journey timeline, highlight cards and adopter guidance sections.</li>
           <li>Expanded the adoption fee explorer to include all listed animal fee types: snakes, lizards, rats, mice, rabbits, guinea pigs, standard birds, exotic birds, spiders, scorpions and tailless whip scorpions.</li>
-          <li>Rebuilt the adoption fee calculator with all animal fee options, the fixed Â£15 admin fee, optional add-ons and optional Â£30 reservation fee planning.</li>
+          <li>Rebuilt the adoption fee calculator with all animal fee options, the fixed £15 admin fee, optional add-ons and optional £30 reservation fee planning.</li>
           <li>Updated the estimate total box with APES green and gold styling, live summary chips and a clearer cost breakdown.</li>
           <li>Added generic filter behaviour for searchable fee cards and other filterable site sections.</li>
           <li>Updated version references from v0.0.3 Beta to v0.0.4 Beta.</li>
@@ -131,7 +146,7 @@
     </article>
 
     <article class="accordion-item">
-      <button class="accordion-button" type="button" aria-expanded="false"><span>v0.0.3 Beta â€” Mega menu interaction fix</span><span aria-hidden="true">+</span></button>
+      <button class="accordion-button" type="button" aria-expanded="false"><span>v0.0.3 Beta — Mega menu interaction fix</span><span aria-hidden="true">+</span></button>
       <div class="accordion-content">
         <p><strong>Release type:</strong> Mega menu interaction fix.</p>
         <ul>
@@ -145,7 +160,7 @@
     </article>
 
     <article class="accordion-item">
-      <button class="accordion-button" type="button" aria-expanded="false"><span>v0.0.2 Beta â€” Layout, readability and support-widget update</span><span aria-hidden="true">+</span></button>
+      <button class="accordion-button" type="button" aria-expanded="false"><span>v0.0.2 Beta — Layout, readability and support-widget update</span><span aria-hidden="true">+</span></button>
       <div class="accordion-content">
         <p><strong>Release type:</strong> Layout, readability and support-widget update.</p>
         <ul>
@@ -160,7 +175,7 @@
     </article>
 
     <article class="accordion-item">
-      <button class="accordion-button" type="button" aria-expanded="false"><span>v0.0.1 Beta â€” Route-helper and readability update</span><span aria-hidden="true">+</span></button>
+      <button class="accordion-button" type="button" aria-expanded="false"><span>v0.0.1 Beta — Route-helper and readability update</span><span aria-hidden="true">+</span></button>
       <div class="accordion-content">
         <p><strong>Release type:</strong> Route-helper and readability update.</p>
         <ul>
