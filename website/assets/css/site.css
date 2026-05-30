@@ -363,3 +363,26 @@ body .mega-card:hover strong{color:#026f74!important;}
 @media(max-width:1020px){.snapshot-grid,.fun-timeline{grid-template-columns:repeat(2,minmax(0,1fr))}.impact-grid{grid-template-columns:1fr}}
 @media(max-width:760px){.snapshot-grid,.fun-timeline{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card{transition:none}.card:hover,.card:active{transform:none}.accordion-button span:last-child{transition:none}}
+
+/* Hugo and Worm sponsorship sections */
+.hugo-section,.worm-section{scroll-margin-top:110px}
+.hugo-layout,.worm-layout{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(320px,.8fr);gap:1rem;align-items:start}
+.hugo-story-card,.worm-story-card{display:grid;gap:1rem}
+.hugo-gallery,.worm-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem}
+.hugo-photo,.worm-photo{margin:0;overflow:hidden;border-radius:20px;background:linear-gradient(180deg,#fff,#effbf7);border:1px solid rgba(3,152,158,.14);box-shadow:0 10px 24px rgba(4,16,11,.08)}
+.hugo-photo img,.worm-photo img{display:block;width:100%;height:100%;aspect-ratio:4/3;object-fit:cover}
+.hugo-photo--feature,.worm-photo--feature{grid-column:1/-1}
+.hugo-photo--feature img,.worm-photo--feature img{aspect-ratio:16/10}
+.hugo-story,.worm-story{display:grid;gap:.8rem}
+.hugo-story h3,.worm-story h3{margin:0;color:var(--deep)}
+.hugo-story p,.worm-story p{margin:0;color:var(--text)}
+.hugo-support-column,.worm-support-column{display:grid;gap:1rem;align-content:start}
+.hugo-sponsor-card .dbox-widget,.worm-sponsor-card .dbox-widget{display:block;margin-top:1rem}
+.hugo-sponsor-card .actions,.worm-sponsor-card .actions{margin-top:1rem}
+.hugo-wall-card,.worm-wall-card{display:grid;gap:.7rem}
+.hugo-wall-card iframe,.worm-wall-card iframe{display:block;width:100%!important;max-width:500px;min-width:0!important;min-height:345px;border:0}
+@media(max-width:900px){
+  .hugo-layout,.worm-layout{grid-template-columns:1fr}
+  .hugo-gallery,.worm-gallery{grid-template-columns:1fr}
+  .hugo-photo--feature,.worm-photo--feature{grid-column:auto}
+}
