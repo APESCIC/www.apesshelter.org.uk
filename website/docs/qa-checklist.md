@@ -13,6 +13,12 @@
 - Run WCAG 2.2 AA accessibility testing before public launch.
 
 
+## v0.0.10 Beta notes
+- Change type: Navigation. Confirm Animal Services, Support APES and Information mega menus each open as separate menus and close correctly on outside click and Escape.
+- Change type: UX. Check mega-menu intros, pills and link cards are readable on desktop and mobile.
+- Change type: Tracking. Confirm changelog.html contains a dedicated Known issues section with links to active GitHub issues.
+- Change type: Versioning. Confirm footer version badge and changelog current version both show v0.0.10 Beta.
+
 ## v0.0.9 Beta notes
 - Change type: Feature. Check dog-cat-rehoming.html loads and all listed rescue/shelter links open correctly.
 - Change type: Filtering. Check the Dog & Cat Rehoming finder search and category tabs (All, Dogs, Cats) work as expected.
