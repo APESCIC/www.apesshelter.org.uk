@@ -1,10 +1,11 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en-GB">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>APES Adoptions | Fee Calculator and Adopt an Animal</title><meta name="description" content="Adopt an animal with APES, view the live ShelterManager feed, explore all adoption fees and build an adoption cost estimate.">
 <link rel="icon" href="assets/img/favicon.png">
 <link rel="stylesheet" href="assets/css/site.css">
+<script defer src="assets/js/layout.js"></script>
 <script defer src="assets/js/site.js"></script>
 <script type="module" src="https://donorbox.org/widgets.js" async></script>
 <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
@@ -18,77 +19,12 @@
 </script>
 <script src="https://my.hellobar.com/d3bc15faadce398d8d09ec3c74fbd3bdd10be771.js" type="text/javascript" charset="utf-8" async="async"></script>
 </head><body><a class="skip-link" href="#main">Skip to main content</a>
-<div class="top-strip">
-  <div class="wrap top-strip-inner">
-    <div class="top-strip-links" aria-label="APES social media quick links">
-      <a class="social-link" href="https://www.facebook.com/apesorguk" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
-      <a class="social-link" href="https://www.instagram.com/apesorguk" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
-      <a class="social-link" href="https://www.x.com/apesorguk" target="_blank" rel="noopener noreferrer" aria-label="X">X</a>
-      <a class="social-link" href="https://www.threads.net/@apesorguk" target="_blank" rel="noopener noreferrer" aria-label="Threads">TH</a>
-      <a class="social-link" href="https://bsky.app/profile/apesorguk.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="Bluesky">BS</a>
-      <a class="social-link" href="https://social.apes.org.uk/" target="_blank" rel="noopener noreferrer" aria-label="Mastodon">M</a>
-    </div>
-    <div class="top-strip-links top-strip-actions">
-      <a href="https://contact.apes.org.uk/help/3459567754" data-popup-link="ticket" data-popup-width="960" data-popup-height="760">Open a ticket</a>
-      <a href="contact.html">Contact</a>
-      <a href="https://myapes.me.uk" target="_blank" rel="noopener noreferrer">MyAPES Account</a>
-    </div>
-  </div>
-</div>
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a class="brand" href="index.html">
-      <img src="assets/img/apes-shelter-rescue-logo.png" alt="APES Shelter and Rescue logo">
-      <span><strong>APES Shelter &amp; Rescue</strong><span>Exotic animal rescue, rehabilitation and rehoming</span></span>
-    </a>
-    <button class="nav-toggle" type="button" aria-expanded="false">Menu</button>
-    <nav class="main-nav" aria-label="Main navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li class="mega">
-          <button class="mega-trigger" type="button" aria-haspopup="true" aria-expanded="false">Explore <span aria-hidden="true">&#9662;</span></button>
-          <div class="mega-panel">
-            <section class="mega-group">
-              <h3>Animal services</h3>
-              <a class="mega-card" href="services.html"><strong>Service Finder</strong><span>Find the right route for adoption, surrender, rescue, lost and found, support or advice.</span></a>
-              <a class="mega-card" href="adoptions.html"><strong>Adopt an animal</strong><span>Live adoptable animal feed, fees, steps and aftercare guidance.</span></a>
-              <a class="mega-card" href="trial-adoptions.html"><strong>Trial adoptions</strong><span>Compatibility route guidance while the full service content is prepared.</span></a>
-              <a class="mega-card" href="foster-scheme.html"><strong>Foster scheme</strong><span>Temporary care support, preparation advice and route updates.</span></a>
-              <a class="mega-card" href="surrender.html"><strong>Surrender a pet</strong><span>For owners who can no longer safely care for their animal.</span></a>
-              <a class="mega-card" href="rescues.html"><strong>Rescue services</strong><span>For stray, escaped, abandoned or unwanted exotic animals.</span></a>
-              <a class="mega-card" href="contact.html#lost-found"><strong>Lost and found</strong><span>Register a lost pet or report a found pet quickly.</span></a>
-            </section>
-            <section class="mega-group">
-              <h3>Support APES</h3>
-              <a class="mega-card" href="sponsorships.html"><strong>Sponsorship hub</strong><span>Get the latest sponsorship updates while wider systems are redeveloped.</span></a>
-              <a class="mega-card" href="primate-sponsor.html"><strong>Primate Sponsor</strong><span>Sponsor Hugo or Worm and help build their long-term habitat.</span></a>
-              <a class="mega-card" href="donate.html"><strong>Donate</strong><span>Use the new Donorbox form and donor wall to support APES today.</span></a>
-              <a class="mega-card" href="our-sponsors.html"><strong>Who sponsors us</strong><span>Meet the organisations supporting or partnering with APES.</span></a>
-              <a class="mega-card" href="https://myapes.me.uk" target="_blank" rel="noopener noreferrer"><strong>MyAPES Account</strong><span>The one stop shop for tools, resources and service access.</span></a>
-            </section>
-            <section class="mega-group">
-              <h3>Information</h3>
-              <a class="mega-card" href="education.html"><strong>Education</strong><span>Primate welfare, enrichment, legal awareness and educational routes.</span></a>
-              <a class="mega-card" href="https://www.apesnews.org.uk/" target="_blank" rel="noopener noreferrer"><strong>APES News</strong><span>Latest stories, appeals and updates on the dedicated news site.</span></a>
-              <a class="mega-card" href="contact.html"><strong>Contact</strong><span>Open a ticket, find the right contact route and get quick support.</span></a>
-              <a class="mega-card" href="policies.html"><strong>Policies</strong><span>Read the new local policy pages and governance overview.</span></a>
-              <a class="mega-card" href="changelog.html"><strong>Changelog</strong><span>Website version history and release notes.</span></a>
-            </section>
-          </div>
-        </li>
-        <li><a href="https://www.apes.org.uk" target="_blank" rel="noopener noreferrer">APES</a></li>
-        <li><a href="https://www.apespetcare.org.uk" target="_blank" rel="noopener noreferrer">APES Pet Care</a></li>
-        <li><a href="https://www.apesshop.co.uk" target="_blank" rel="noopener noreferrer">APES Shop</a></li>
-        <li><a href="https://myapes.me.uk" target="_blank" rel="noopener noreferrer">MyAPES Account</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+<div data-include="header"></div>
 <main id="main" class="wrap adoption-page">
 <section class="hero adoption-hero">
   <div class="hero-grid adoption-hero-grid">
     <div>
-      <p class="eyebrow">Adoptions · APES Shelter &amp; Rescue</p>
+      <p class="eyebrow">Adoptions Â· APES Shelter &amp; Rescue</p>
       <h1>Start a welfare-led adoption journey.</h1>
       <p>Adoption should feel exciting, clear and responsible. Use this page to view animals, understand the route, compare every adoption fee type and build a realistic estimate before applying.</p>
       <div class="actions">
@@ -100,9 +36,9 @@
     <aside class="logo-card adoption-hero-card" aria-label="APES adoption highlights">
       <img src="assets/img/apes-shelter-rescue-logo.png" alt="APES Shelter and Rescue logo">
       <div class="adoption-hero-badges" aria-label="Adoption support highlights">
-        <span>🐾 Suitability checks</span>
-        <span>🏡 Setup review</span>
-        <span>💚 Aftercare</span>
+        <span>ðŸ¾ Suitability checks</span>
+        <span>ðŸ¡ Setup review</span>
+        <span>ðŸ’š Aftercare</span>
       </div>
     </aside>
   </div>
@@ -110,22 +46,22 @@
 
 <section class="adoption-snapshot section" aria-label="Adoption page highlights">
   <article class="card adoption-snapshot-card">
-    <span class="adoption-icon" aria-hidden="true">🔎</span>
+    <span class="adoption-icon" aria-hidden="true">ðŸ”Ž</span>
     <h2>Choose carefully</h2>
     <p>Read the animal profile, species needs, handling notes and setup expectations before reserving.</p>
   </article>
   <article class="card adoption-snapshot-card">
-    <span class="adoption-icon" aria-hidden="true">📝</span>
+    <span class="adoption-icon" aria-hidden="true">ðŸ“</span>
     <h2>Apply responsibly</h2>
     <p>APES reviews suitability, home environment, financial readiness and welfare knowledge.</p>
   </article>
   <article class="card adoption-snapshot-card">
-    <span class="adoption-icon" aria-hidden="true">🎁</span>
+    <span class="adoption-icon" aria-hidden="true">ðŸŽ</span>
     <h2>Plan the full cost</h2>
     <p>Use the calculator to combine the animal fee, admin fee, reservation planning and optional add-ons.</p>
   </article>
   <article class="card adoption-snapshot-card">
-    <span class="adoption-icon" aria-hidden="true">🌿</span>
+    <span class="adoption-icon" aria-hidden="true">ðŸŒ¿</span>
     <h2>Settle in safely</h2>
     <p>Aftercare helps monitor welfare, routine, behaviour and compatibility after handover.</p>
   </article>
@@ -141,7 +77,7 @@
   </div>
   <div class="adoption-timeline">
     <article class="adoption-step"><span>1</span><h3>Find a match</h3><p>View adoptable animals and check whether the species, setup and long-term care needs fit your home.</p></article>
-    <article class="adoption-step"><span>2</span><h3>Reserve and apply</h3><p>A £30 reservation fee can reserve the animal while the application and suitability checks are completed.</p></article>
+    <article class="adoption-step"><span>2</span><h3>Reserve and apply</h3><p>A Â£30 reservation fee can reserve the animal while the application and suitability checks are completed.</p></article>
     <article class="adoption-step"><span>3</span><h3>Prepare the setup</h3><p>APES may review enclosure, heating, lighting, UVB, humidity, diet and enrichment readiness.</p></article>
     <article class="adoption-step"><span>4</span><h3>Finalise adoption</h3><p>Once approved, the adoption coordinator confirms paperwork, fees and handover arrangements.</p></article>
     <article class="adoption-step"><span>5</span><h3>Aftercare</h3><p>Support after adoption helps confirm the animal is settling safely and the routine is working.</p></article>
@@ -177,33 +113,33 @@
     <button class="fee-tab" type="button" data-filter="addon">Add-ons</button>
   </div>
   <div class="fee-results adoption-fee-results">
-    <article class="card fee-card adoption-fee-card" data-card data-category="snake" data-keywords="hognose garter small snake"><div class="fee-card-head"><h3>Small snake</h3><span class="price">£50</span></div><p>Examples: Hognose and Garter snakes.</p></article>
-    <article class="card fee-card adoption-fee-card" data-card data-category="snake" data-keywords="corn king milk medium snake"><div class="fee-card-head"><h3>Medium snake</h3><span class="price">£75</span></div><p>Examples: Corn, King and Milk snakes.</p></article>
-    <article class="card fee-card adoption-fee-card" data-card data-category="snake" data-keywords="boa burmese python anaconda large snake"><div class="fee-card-head"><h3>Large snake</h3><span class="price">£100</span></div><p>Examples: Boa, Burmese Python and Anaconda.</p></article>
+    <article class="card fee-card adoption-fee-card" data-card data-category="snake" data-keywords="hognose garter small snake"><div class="fee-card-head"><h3>Small snake</h3><span class="price">Â£50</span></div><p>Examples: Hognose and Garter snakes.</p></article>
+    <article class="card fee-card adoption-fee-card" data-card data-category="snake" data-keywords="corn king milk medium snake"><div class="fee-card-head"><h3>Medium snake</h3><span class="price">Â£75</span></div><p>Examples: Corn, King and Milk snakes.</p></article>
+    <article class="card fee-card adoption-fee-card" data-card data-category="snake" data-keywords="boa burmese python anaconda large snake"><div class="fee-card-head"><h3>Large snake</h3><span class="price">Â£100</span></div><p>Examples: Boa, Burmese Python and Anaconda.</p></article>
 
-    <article class="card fee-card adoption-fee-card" data-card data-category="lizard" data-keywords="rankins dragon gecko small lizard"><div class="fee-card-head"><h3>Small lizard</h3><span class="price">£50</span></div><p>Examples: Rankin’s Dragons and Geckos.</p></article>
-    <article class="card fee-card adoption-fee-card" data-card data-category="lizard" data-keywords="bearded dragon water dragon medium lizard"><div class="fee-card-head"><h3>Medium lizard</h3><span class="price">£75</span></div><p>Examples: Bearded Dragons and Water Dragons.</p></article>
-    <article class="card fee-card adoption-fee-card" data-card data-category="lizard" data-keywords="iguana monitor large lizard"><div class="fee-card-head"><h3>Large lizard</h3><span class="price">£100</span></div><p>Examples: Iguanas and Monitor Lizards.</p></article>
+    <article class="card fee-card adoption-fee-card" data-card data-category="lizard" data-keywords="rankins dragon gecko small lizard"><div class="fee-card-head"><h3>Small lizard</h3><span class="price">Â£50</span></div><p>Examples: Rankinâ€™s Dragons and Geckos.</p></article>
+    <article class="card fee-card adoption-fee-card" data-card data-category="lizard" data-keywords="bearded dragon water dragon medium lizard"><div class="fee-card-head"><h3>Medium lizard</h3><span class="price">Â£75</span></div><p>Examples: Bearded Dragons and Water Dragons.</p></article>
+    <article class="card fee-card adoption-fee-card" data-card data-category="lizard" data-keywords="iguana monitor large lizard"><div class="fee-card-head"><h3>Large lizard</h3><span class="price">Â£100</span></div><p>Examples: Iguanas and Monitor Lizards.</p></article>
 
-    <article class="card fee-card adoption-fee-card" data-card data-category="small" data-keywords="rat rats"><div class="fee-card-head"><h3>Rats</h3><span class="price">£10</span></div><p>Adoption fee for rats.</p></article>
-    <article class="card fee-card adoption-fee-card" data-card data-category="small" data-keywords="mouse mice"><div class="fee-card-head"><h3>Mice</h3><span class="price">£10</span></div><p>Adoption fee for mice.</p></article>
-    <article class="card fee-card adoption-fee-card" data-card data-category="small" data-keywords="rabbit rabbits microchip"><div class="fee-card-head"><h3>Rabbits</h3><span class="price">£40</span></div><p>Adoption fee for rabbits.</p></article>
-    <article class="card fee-card adoption-fee-card" data-card data-category="small" data-keywords="guinea pig guinea pigs"><div class="fee-card-head"><h3>Guinea pigs</h3><span class="price">£30</span></div><p>Adoption fee for guinea pigs.</p></article>
-    <article class="card fee-card adoption-fee-card" data-card data-category="small" data-keywords="standard bird birds"><div class="fee-card-head"><h3>Standard birds</h3><span class="price">£25</span></div><p>Adoption fee for standard birds.</p></article>
-    <article class="card fee-card adoption-fee-card" data-card data-category="small" data-keywords="exotic bird birds parrot"><div class="fee-card-head"><h3>Exotic birds</h3><span class="price">£200</span></div><p>Adoption fee for exotic birds.</p></article>
+    <article class="card fee-card adoption-fee-card" data-card data-category="small" data-keywords="rat rats"><div class="fee-card-head"><h3>Rats</h3><span class="price">Â£10</span></div><p>Adoption fee for rats.</p></article>
+    <article class="card fee-card adoption-fee-card" data-card data-category="small" data-keywords="mouse mice"><div class="fee-card-head"><h3>Mice</h3><span class="price">Â£10</span></div><p>Adoption fee for mice.</p></article>
+    <article class="card fee-card adoption-fee-card" data-card data-category="small" data-keywords="rabbit rabbits microchip"><div class="fee-card-head"><h3>Rabbits</h3><span class="price">Â£40</span></div><p>Adoption fee for rabbits.</p></article>
+    <article class="card fee-card adoption-fee-card" data-card data-category="small" data-keywords="guinea pig guinea pigs"><div class="fee-card-head"><h3>Guinea pigs</h3><span class="price">Â£30</span></div><p>Adoption fee for guinea pigs.</p></article>
+    <article class="card fee-card adoption-fee-card" data-card data-category="small" data-keywords="standard bird birds"><div class="fee-card-head"><h3>Standard birds</h3><span class="price">Â£25</span></div><p>Adoption fee for standard birds.</p></article>
+    <article class="card fee-card adoption-fee-card" data-card data-category="small" data-keywords="exotic bird birds parrot"><div class="fee-card-head"><h3>Exotic birds</h3><span class="price">Â£200</span></div><p>Adoption fee for exotic birds.</p></article>
 
-    <article class="card fee-card adoption-fee-card" data-card data-category="invert" data-keywords="spiderling spiderlings spider"><div class="fee-card-head"><h3>Spiderlings</h3><span class="price">£10</span></div><p>Adoption fee for spiderlings.</p></article>
-    <article class="card fee-card adoption-fee-card" data-card data-category="invert" data-keywords="juvenile spider spiders"><div class="fee-card-head"><h3>Juvenile spiders</h3><span class="price">£25</span></div><p>Adoption fee for juvenile spiders.</p></article>
-    <article class="card fee-card adoption-fee-card" data-card data-category="invert" data-keywords="adult spider spiders"><div class="fee-card-head"><h3>Adult spiders</h3><span class="price">£35</span></div><p>Adoption fee for adult spiders.</p></article>
-    <article class="card fee-card adoption-fee-card" data-card data-category="invert" data-keywords="baby scorpion scorpions"><div class="fee-card-head"><h3>Baby scorpions</h3><span class="price">£10</span></div><p>Adoption fee for baby scorpions.</p></article>
-    <article class="card fee-card adoption-fee-card" data-card data-category="invert" data-keywords="juvenile scorpion scorpions"><div class="fee-card-head"><h3>Juvenile scorpions</h3><span class="price">£15</span></div><p>Adoption fee for juvenile scorpions.</p></article>
-    <article class="card fee-card adoption-fee-card" data-card data-category="invert" data-keywords="adult scorpion scorpions"><div class="fee-card-head"><h3>Adult scorpions</h3><span class="price">£25</span></div><p>Adoption fee for adult scorpions.</p></article>
-    <article class="card fee-card adoption-fee-card" data-card data-category="invert" data-keywords="small tailless whip scorpion"><div class="fee-card-head"><h3>Small tailless whip scorpion</h3><span class="price">£15</span></div><p>Adoption fee for small tailless whip scorpions.</p></article>
-    <article class="card fee-card adoption-fee-card" data-card data-category="invert" data-keywords="large tailless whip scorpion"><div class="fee-card-head"><h3>Large tailless whip scorpion</h3><span class="price">£25</span></div><p>Adoption fee for large tailless whip scorpions.</p></article>
+    <article class="card fee-card adoption-fee-card" data-card data-category="invert" data-keywords="spiderling spiderlings spider"><div class="fee-card-head"><h3>Spiderlings</h3><span class="price">Â£10</span></div><p>Adoption fee for spiderlings.</p></article>
+    <article class="card fee-card adoption-fee-card" data-card data-category="invert" data-keywords="juvenile spider spiders"><div class="fee-card-head"><h3>Juvenile spiders</h3><span class="price">Â£25</span></div><p>Adoption fee for juvenile spiders.</p></article>
+    <article class="card fee-card adoption-fee-card" data-card data-category="invert" data-keywords="adult spider spiders"><div class="fee-card-head"><h3>Adult spiders</h3><span class="price">Â£35</span></div><p>Adoption fee for adult spiders.</p></article>
+    <article class="card fee-card adoption-fee-card" data-card data-category="invert" data-keywords="baby scorpion scorpions"><div class="fee-card-head"><h3>Baby scorpions</h3><span class="price">Â£10</span></div><p>Adoption fee for baby scorpions.</p></article>
+    <article class="card fee-card adoption-fee-card" data-card data-category="invert" data-keywords="juvenile scorpion scorpions"><div class="fee-card-head"><h3>Juvenile scorpions</h3><span class="price">Â£15</span></div><p>Adoption fee for juvenile scorpions.</p></article>
+    <article class="card fee-card adoption-fee-card" data-card data-category="invert" data-keywords="adult scorpion scorpions"><div class="fee-card-head"><h3>Adult scorpions</h3><span class="price">Â£25</span></div><p>Adoption fee for adult scorpions.</p></article>
+    <article class="card fee-card adoption-fee-card" data-card data-category="invert" data-keywords="small tailless whip scorpion"><div class="fee-card-head"><h3>Small tailless whip scorpion</h3><span class="price">Â£15</span></div><p>Adoption fee for small tailless whip scorpions.</p></article>
+    <article class="card fee-card adoption-fee-card" data-card data-category="invert" data-keywords="large tailless whip scorpion"><div class="fee-card-head"><h3>Large tailless whip scorpion</h3><span class="price">Â£25</span></div><p>Adoption fee for large tailless whip scorpions.</p></article>
 
-    <article class="card fee-card adoption-fee-card adoption-addon-card" data-card data-category="addon" data-keywords="neuter neutering"><div class="fee-card-head"><h3>Neutering</h3><span class="price">£70</span></div><p>Optional add-on where suitable for the animal.</p></article>
-    <article class="card fee-card adoption-fee-card adoption-addon-card" data-card data-category="addon" data-keywords="treat pack food enrichment"><div class="fee-card-head"><h3>Adoption Treat Pack</h3><span class="price">£15</span></div><p>Starter treat pack to help settling in.</p></article>
-    <article class="card fee-card adoption-fee-card adoption-addon-card" data-card data-category="addon" data-keywords="microchip microchipping rabbit"><div class="fee-card-head"><h3>Microchipping</h3><span class="price">£10</span></div><p>Recommended for rabbits and suitable small animals.</p></article>
+    <article class="card fee-card adoption-fee-card adoption-addon-card" data-card data-category="addon" data-keywords="neuter neutering"><div class="fee-card-head"><h3>Neutering</h3><span class="price">Â£70</span></div><p>Optional add-on where suitable for the animal.</p></article>
+    <article class="card fee-card adoption-fee-card adoption-addon-card" data-card data-category="addon" data-keywords="treat pack food enrichment"><div class="fee-card-head"><h3>Adoption Treat Pack</h3><span class="price">Â£15</span></div><p>Starter treat pack to help settling in.</p></article>
+    <article class="card fee-card adoption-fee-card adoption-addon-card" data-card data-category="addon" data-keywords="microchip microchipping rabbit"><div class="fee-card-head"><h3>Microchipping</h3><span class="price">Â£10</span></div><p>Recommended for rabbits and suitable small animals.</p></article>
   </div>
 </section>
 
@@ -214,7 +150,7 @@
       <h2>Build your adoption estimate</h2>
       <p>Select the animal fee type, include any optional add-ons, and see a clearer estimate instantly.</p>
     </div>
-    <span class="tag">Includes fixed £15 admin fee</span>
+    <span class="tag">Includes fixed Â£15 admin fee</span>
   </div>
   <div class="adoption-calculator-grid">
     <article class="card adoption-calculator-card">
@@ -223,63 +159,63 @@
       <select class="select adoption-select" id="adoptionAnimalFee">
         <option value="0" data-label="No animal selected">Select animal fee</option>
         <optgroup label="Snakes">
-          <option value="50" data-label="Small snake">Small snake — £50</option>
-          <option value="75" data-label="Medium snake">Medium snake — £75</option>
-          <option value="100" data-label="Large snake">Large snake — £100</option>
+          <option value="50" data-label="Small snake">Small snake â€” Â£50</option>
+          <option value="75" data-label="Medium snake">Medium snake â€” Â£75</option>
+          <option value="100" data-label="Large snake">Large snake â€” Â£100</option>
         </optgroup>
         <optgroup label="Lizards">
-          <option value="50" data-label="Small lizard">Small lizard — £50</option>
-          <option value="75" data-label="Medium lizard">Medium lizard — £75</option>
-          <option value="100" data-label="Large lizard">Large lizard — £100</option>
+          <option value="50" data-label="Small lizard">Small lizard â€” Â£50</option>
+          <option value="75" data-label="Medium lizard">Medium lizard â€” Â£75</option>
+          <option value="100" data-label="Large lizard">Large lizard â€” Â£100</option>
         </optgroup>
         <optgroup label="Small animals and birds">
-          <option value="10" data-label="Rats">Rats — £10</option>
-          <option value="10" data-label="Mice">Mice — £10</option>
-          <option value="40" data-label="Rabbits">Rabbits — £40</option>
-          <option value="30" data-label="Guinea pigs">Guinea pigs — £30</option>
-          <option value="25" data-label="Standard birds">Standard birds — £25</option>
-          <option value="200" data-label="Exotic birds">Exotic birds — £200</option>
+          <option value="10" data-label="Rats">Rats â€” Â£10</option>
+          <option value="10" data-label="Mice">Mice â€” Â£10</option>
+          <option value="40" data-label="Rabbits">Rabbits â€” Â£40</option>
+          <option value="30" data-label="Guinea pigs">Guinea pigs â€” Â£30</option>
+          <option value="25" data-label="Standard birds">Standard birds â€” Â£25</option>
+          <option value="200" data-label="Exotic birds">Exotic birds â€” Â£200</option>
         </optgroup>
         <optgroup label="Invertebrates">
-          <option value="10" data-label="Spiderlings">Spiderlings — £10</option>
-          <option value="25" data-label="Juvenile spiders">Juvenile spiders — £25</option>
-          <option value="35" data-label="Adult spiders">Adult spiders — £35</option>
-          <option value="10" data-label="Baby scorpions">Baby scorpions — £10</option>
-          <option value="15" data-label="Juvenile scorpions">Juvenile scorpions — £15</option>
-          <option value="25" data-label="Adult scorpions">Adult scorpions — £25</option>
-          <option value="15" data-label="Small tailless whip scorpion">Small tailless whip scorpion — £15</option>
-          <option value="25" data-label="Large tailless whip scorpion">Large tailless whip scorpion — £25</option>
+          <option value="10" data-label="Spiderlings">Spiderlings â€” Â£10</option>
+          <option value="25" data-label="Juvenile spiders">Juvenile spiders â€” Â£25</option>
+          <option value="35" data-label="Adult spiders">Adult spiders â€” Â£35</option>
+          <option value="10" data-label="Baby scorpions">Baby scorpions â€” Â£10</option>
+          <option value="15" data-label="Juvenile scorpions">Juvenile scorpions â€” Â£15</option>
+          <option value="25" data-label="Adult scorpions">Adult scorpions â€” Â£25</option>
+          <option value="15" data-label="Small tailless whip scorpion">Small tailless whip scorpion â€” Â£15</option>
+          <option value="25" data-label="Large tailless whip scorpion">Large tailless whip scorpion â€” Â£25</option>
         </optgroup>
       </select>
 
       <div class="adoption-cost-notes" aria-label="Fixed adoption fees">
-        <div><strong>£15</strong><span>Admin fee</span></div>
-        <div><strong>£30</strong><span>Reservation planning option</span></div>
+        <div><strong>Â£15</strong><span>Admin fee</span></div>
+        <div><strong>Â£30</strong><span>Reservation planning option</span></div>
       </div>
 
       <h3>2. Add optional extras</h3>
       <div class="adoption-addon-list">
-        <label class="addon adoption-addon"><input type="checkbox" data-adoption-addon data-label="Neutering" value="70"> <strong>Neutering</strong><span>£70</span></label>
-        <label class="addon adoption-addon"><input type="checkbox" data-adoption-addon data-label="Adoption Treat Pack" value="15"> <strong>Adoption Treat Pack</strong><span>£15</span></label>
-        <label class="addon adoption-addon"><input type="checkbox" data-adoption-addon data-label="Microchipping" value="10"> <strong>Microchipping</strong><span>£10</span></label>
-        <label class="addon adoption-addon reservation-addon"><input type="checkbox" id="includeReservationFee" data-adoption-addon data-label="Reservation fee" value="30"> <strong>Include reservation fee in estimate</strong><span>£30</span></label>
+        <label class="addon adoption-addon"><input type="checkbox" data-adoption-addon data-label="Neutering" value="70"> <strong>Neutering</strong><span>Â£70</span></label>
+        <label class="addon adoption-addon"><input type="checkbox" data-adoption-addon data-label="Adoption Treat Pack" value="15"> <strong>Adoption Treat Pack</strong><span>Â£15</span></label>
+        <label class="addon adoption-addon"><input type="checkbox" data-adoption-addon data-label="Microchipping" value="10"> <strong>Microchipping</strong><span>Â£10</span></label>
+        <label class="addon adoption-addon reservation-addon"><input type="checkbox" id="includeReservationFee" data-adoption-addon data-label="Reservation fee" value="30"> <strong>Include reservation fee in estimate</strong><span>Â£30</span></label>
       </div>
       <p class="small-text">The reservation fee is shown as an optional planning item because it may be paid before the final adoption balance.</p>
     </article>
 
     <aside class="adoption-total-card" aria-live="polite">
       <div class="adoption-total-header">
-        <span class="adoption-icon" aria-hidden="true">💚</span>
-        <div><p>Estimated total</p><h3 id="adoptionFeeTotal">£15</h3></div>
+        <span class="adoption-icon" aria-hidden="true">ðŸ’š</span>
+        <div><p>Estimated total</p><h3 id="adoptionFeeTotal">Â£15</h3></div>
       </div>
       <div class="adoption-total-chips" aria-label="Estimate summary">
         <span id="adoptionAnimalChip">Animal: not selected</span>
-        <span id="adoptionAddonChip">Add-ons: £0</span>
-        <span>Admin: £15</span>
+        <span id="adoptionAddonChip">Add-ons: Â£0</span>
+        <span>Admin: Â£15</span>
       </div>
       <div class="adoption-breakdown-box">
         <h4>Breakdown</h4>
-        <ul id="adoptionFeeBreakdown"><li>Admin fee: £15</li><li>Select an animal fee to complete the estimate.</li></ul>
+        <ul id="adoptionFeeBreakdown"><li>Admin fee: Â£15</li><li>Select an animal fee to complete the estimate.</li></ul>
       </div>
       <div class="adoption-total-actions">
         <a class="button-gold" href="https://service.sheltermanager.com/asmservice?account=apes&amp;formid=54&amp;method=online_form_html" target="_blank" rel="noopener noreferrer">Start reservation form</a>
@@ -298,10 +234,10 @@
     </div>
   </div>
   <div class="grid-4">
-    <article class="card feature"><span class="adoption-icon">📋</span><h3>Adoption pack</h3><p>Clear adoption information and welfare expectations for the animal’s ongoing care.</p></article>
-    <article class="card feature"><span class="adoption-icon">🩺</span><h3>Health awareness</h3><p>Known health notes, care context and post-adoption monitoring where applicable.</p></article>
-    <article class="card feature"><span class="adoption-icon">🏅</span><h3>Certificate</h3><p>A positive adoption moment while still keeping welfare responsibilities clear.</p></article>
-    <article class="card feature"><span class="adoption-icon">🤝</span><h3>Aftercare check</h3><p>Follow-up support to help the animal settle into a safe, stable routine.</p></article>
+    <article class="card feature"><span class="adoption-icon">ðŸ“‹</span><h3>Adoption pack</h3><p>Clear adoption information and welfare expectations for the animalâ€™s ongoing care.</p></article>
+    <article class="card feature"><span class="adoption-icon">ðŸ©º</span><h3>Health awareness</h3><p>Known health notes, care context and post-adoption monitoring where applicable.</p></article>
+    <article class="card feature"><span class="adoption-icon">ðŸ…</span><h3>Certificate</h3><p>A positive adoption moment while still keeping welfare responsibilities clear.</p></article>
+    <article class="card feature"><span class="adoption-icon">ðŸ¤</span><h3>Aftercare check</h3><p>Follow-up support to help the animal settle into a safe, stable routine.</p></article>
   </div>
 </section>
 
@@ -338,7 +274,7 @@
   <aside class="card note adoption-note">
     <h2>Before you reserve</h2>
     <ul>
-      <li>Check the animal’s species-specific setup requirements.</li>
+      <li>Check the animalâ€™s species-specific setup requirements.</li>
       <li>Budget for ongoing food, heating, lighting, substrate, enrichment and veterinary care.</li>
       <li>Confirm household agreement, landlord permission where needed and long-term capacity.</li>
       <li>Ask APES before applying if you are unsure which animal type is suitable.</li>
@@ -346,43 +282,7 @@
   </aside>
 </section>
 </main>
-<footer class="site-footer">
-  <div class="wrap footer-grid">
-    <section>
-      <h2>APES Shelter &amp; Rescue</h2>
-      <p>A colourful home for rescue, rehabilitation, rehoming and education across exotic animal welfare.</p>
-      <p>Support urgent welfare work, long-term residents and the next stage of the APES move. <span class="version-badge">v0.0.7 Beta</span></p>
-    </section>
-    <section>
-      <h3>Get help</h3>
-      <p><a href="contact.html">Contact page</a></p>
-      <p><a href="https://contact.apes.org.uk/help/3459567754" data-popup-link="ticket" data-popup-width="960" data-popup-height="760">Open a ticket</a></p>
-      <p><a href="https://myapes.me.uk" target="_blank" rel="noopener noreferrer">MyAPES Account</a></p>
-      <p>40 Morris Street, St Helens, WA9 3EN</p>
-    </section>
-    <section>
-      <h3>Support</h3>
-      <p><a href="donate.html">Donate</a></p>
-      <p><a href="sponsorships.html">Sponsorship hub</a></p>
-      <p><a href="primate-sponsor.html">Primate Sponsor</a></p>
-      <p><a href="our-sponsors.html">Who sponsors us</a></p>
-    </section>
-    <section>
-      <h3>Stay connected</h3>
-      <p><a href="https://www.apesnews.org.uk/" target="_blank" rel="noopener noreferrer">APES News</a></p>
-      <p><a href="policies.html">Policies</a></p>
-      <p><a href="search.html">Search</a></p>
-      <div class="onesignal-customlink-container"></div>
-    </section>
-  </div>
-  <div class="wrap footer-partners">
-    <strong>In partnership with:</strong>
-    <a href="our-sponsors.html#partners">British Arachnological Society</a>
-    <a href="our-sponsors.html#partners">FBH</a>
-    <a href="our-sponsors.html#partners">Merseyside Police</a>
-  </div>
-  <div class="wrap fineprint">&copy; 2026 Association of Protecting Exotic Species CIC &middot; CIC No: 16253848 &middot; APES Shelter &amp; Rescue &middot; v0.0.7 Beta</div>
-</footer>
+<div data-include="footer"></div>
 <dbox-widget designation="Area of greatest need" campaign="donations-909664" type="popup" button-label="Donate Today!" button-type="sticky" button-color="#128aed" button-size="medium" sticky-position="left" amount="30" show-icon=""></dbox-widget>
 <script>
   window.chatwootSettings = {"position":"right","type":"expanded_bubble","launcherTitle":"Speak with an advisor"};
@@ -401,3 +301,4 @@
   })(document,"script");
 </script>
 </body></html>
+

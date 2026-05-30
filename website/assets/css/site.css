@@ -329,6 +329,11 @@ body .mega-card:hover strong{color:#026f74!important;}
 .snapshot-card::after{content:"";position:absolute;right:-46px;top:-46px;width:150px;height:150px;border-radius:50%;background:rgba(3,152,158,.10)}
 .snapshot-icon{width:3rem;height:3rem;display:grid;place-items:center;border-radius:18px;background:radial-gradient(circle at 30% 20%,rgba(108,246,246,.45),transparent 35%),linear-gradient(135deg,var(--green),var(--green-dark));color:#fff;font-size:1.4rem;box-shadow:0 10px 22px rgba(4,16,11,.14);margin-bottom:.6rem}
 
+.hugo-before-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-top:1rem}
+.hugo-before-photo{margin:0;overflow:hidden;border:1px solid var(--border);border-radius:18px;background:#fff;box-shadow:0 8px 20px rgba(4,16,11,.08)}
+.hugo-before-photo img{display:block;width:100%;height:220px;object-fit:cover}
+.hugo-before-photo figcaption{padding:.75rem .85rem;color:var(--muted);font-weight:700;font-size:.92rem;line-height:1.45}
+
 .fun-timeline{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1rem}
 .fun-step{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:.4rem;background:#fff;border:1px solid var(--border);border-radius:18px;padding:1.1rem;box-shadow:0 12px 32px rgba(4,16,11,.08)}
 .fun-step span{width:2.25rem;height:2.25rem;border-radius:999px;display:grid;place-items:center;background:linear-gradient(135deg,var(--green),var(--green-dark));color:#fff;font-weight:950;box-shadow:0 0 0 5px rgba(3,152,158,.13)}
@@ -360,8 +365,16 @@ body .mega-card:hover strong{color:#026f74!important;}
 .copy-button{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:.55rem .85rem;border-radius:999px;border:1px solid rgba(3,152,158,.22);background:var(--mint);color:var(--green-dark);font-weight:950;cursor:pointer}
 .copy-button:disabled{opacity:.7;cursor:not-allowed}
 
+.donation-form-card dbox-widget,
+.donation-form-card iframe[name="donorbox"]{
+  display:block;
+  width:100%!important;
+  max-width:100%!important;
+}
+
 @media(max-width:1020px){.snapshot-grid,.fun-timeline{grid-template-columns:repeat(2,minmax(0,1fr))}.impact-grid{grid-template-columns:1fr}}
 @media(max-width:760px){.snapshot-grid,.fun-timeline{grid-template-columns:1fr}}
+@media(max-width:760px){.hugo-before-grid{grid-template-columns:1fr}.hugo-before-photo img{height:auto}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card{transition:none}.card:hover,.card:active{transform:none}.accordion-button span:last-child{transition:none}}
 
 
