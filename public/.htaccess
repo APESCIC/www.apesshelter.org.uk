@@ -1,0 +1,23 @@
+# APES Shelter & Rescue v0.0.6 Beta
+# Upload this file with the website if Apache allows .htaccess overrides.
+Options -Indexes
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+RewriteEngine On
+RewriteRule ^adopt/?$ /adoptions.html [R=301,L]
+RewriteRule ^services/adoptions/adopt/?$ /adoptions.html [R=301,L]
+RewriteRule ^services/adoptions/adoption-process/?$ /adoptions.html#process [R=301,L]
+RewriteRule ^services/adoptions/trial-adoptions/?$ /trial-adoptions.html [R=301,L]
+RewriteRule ^adoptions/trial/?$ /trial-adoptions.html [R=301,L]
+RewriteRule ^schemes/fostering/foster/?$ /foster-scheme.html [R=301,L]
+RewriteRule ^foster/?$ /foster-scheme.html [R=301,L]
+RewriteRule ^services/adoptions/adoption-fees/?$ /adoptions.html#fees [R=301,L]
+RewriteRule ^services/Surrenders%20and%20Rescues/surrender/?$ /surrender.html [R=301,L]
+RewriteRule ^services/Surrenders%20and%20Rescues/rescue-services/?$ /rescues.html [R=301,L]
+RewriteRule ^sponsor-our-primates/?$ /sponsorships.html [R=301,L]
+RewriteRule ^primate-welfare-education/?$ /education.html [R=301,L]
+RewriteRule ^primate-welfare-education/tools-recources/?$ /education.html [R=301,L]
+RewriteRule ^signin/?$ /portal.html [R=301,L]
+RewriteRule ^donate/?$ /donate.html [R=301,L]
+RewriteRule ^contact/?$ /contact.html [R=301,L]
+RewriteRule ^news/offical/?$ /news.html [R=301,L]
