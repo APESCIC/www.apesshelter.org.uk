@@ -13,6 +13,13 @@
 - Run WCAG 2.2 AA accessibility testing before public launch.
 
 
+## v0.0.9 Beta notes
+- Change type: Feature. Check dog-cat-rehoming.html loads and all listed rescue/shelter links open correctly.
+- Change type: Filtering. Check the Dog & Cat Rehoming finder search and category tabs (All, Dogs, Cats) work as expected.
+- Change type: Guidance. Confirm highlighted "APES does not intake dogs or cats" callouts appear on surrender.html and rescues.html.
+- Change type: Navigation. Confirm Dog & Cat Rehoming appears in mega menu, Services and Search.
+- Change type: Update. Confirm footer version badge and changelog current version both show v0.0.9 Beta.
+
 ## v0.0.8 Beta notes
 - Change type: Bug logged. Confirm previously reported mojibake patterns no longer appear on public pages.
 - Change type: Bug fixed. Check icon glyphs and emojis render correctly on Homepage, Services, Adoptions, Contact, Rescues, Surrender and Changelog pages.

@@ -1,6 +1,6 @@
 # Integration Register
 
-Version: v0.0.8 Beta
+Version: v0.0.9 Beta
 
 | Service | URL | Treatment |
 |---|---|---|
@@ -11,6 +11,13 @@ Version: v0.0.8 Beta
 | Contact Centre | https://contact.apesshelter.org.uk/ | External support route |
 | Service User Portal | https://www.apesshelter.org.uk/signin | External authenticated route |
 
+
+## v0.0.9 Beta notes
+- Change type: Feature. Added dog-cat-rehoming.html with official dog and cat rescue and shelter listings.
+- Change type: Guidance. Added clear APES non-intake messaging for dogs and cats on surrender.html and rescues.html.
+- Change type: Navigation. Added Dog & Cat Rehoming links to mega menu, Services and Search indexes.
+- Change type: Compatibility. Added redirect from /cat-dog-sheltering to /dog-cat-rehoming.html.
+- Change type: Update. Current public release version bumped to v0.0.9 Beta in live labels and release notes.
 
 ## v0.0.8 Beta notes
 - Change type: Bug logged. Site-wide mojibake issue reported affecting icons and symbol rendering.

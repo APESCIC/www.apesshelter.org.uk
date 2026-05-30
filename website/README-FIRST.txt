@@ -1,5 +1,5 @@
 # APES Shelter & Rescue Website
-Version: v0.0.8 Beta
+Version: v0.0.9 Beta
 
 ## Simple upload instructions
 
@@ -41,6 +41,13 @@ No database is needed. No command line is needed. No build step is needed.
 Check every button, external form and phone/email link. Review policies, privacy/cookies, refund address, donation provider and newsletter wording before making the site live.
 
 Menu update: the main navigation now uses Home, Services, Education, News and Contact. Services opens the mega menu and includes the service finder, adoptions, surrender, rescues and sponsorships.
+
+v0.0.9 Beta changes:
+- Change type: Feature. Added dog-cat-rehoming.html with official dog and cat rescue/shelter listings and a filterable finder.
+- Change type: Guidance. Added highlighted notices on surrender and rescues pages confirming APES does not intake dogs or cats.
+- Change type: Navigation. Added Dog & Cat Rehoming links to the mega menu, Services directory and Search page.
+- Change type: Compatibility. Added legacy redirect from /cat-dog-sheltering to /dog-cat-rehoming.html.
+- Change type: Update. Bumped current package version labels and release docs to v0.0.9 Beta.
 
 v0.0.8 Beta changes:
 - Change type: Bug logged. Site-wide garbled encoding issue identified (for example broken symbols and malformed emoji byte strings).

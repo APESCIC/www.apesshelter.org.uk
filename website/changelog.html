@@ -26,7 +26,7 @@
       <div>
         <p class="eyebrow">Changelog</p>
         <h1>Website version history.</h1>
-        <p>Current package version: v0.0.8 Beta. This page tracks live release history with clear change types for each update.</p>
+        <p>Current package version: v0.0.9 Beta. This page tracks live release history with clear change types for each update.</p>
         <div class="actions">
           <a class="button-gold" href="#changelog-entries">View entries</a>
           <a class="button-secondary" href="search.html">Search pages</a>
@@ -35,10 +35,10 @@
       <aside class="logo-card" aria-label="Changelog highlights">
         <img src="assets/img/apes-shelter-rescue-logo.png" alt="APES Shelter and Rescue logo">
         <div class="hero-badges" aria-label="Changelog change types">
-          <span>🐞 Bug logged</span>
-          <span>✅ Bug fixed</span>
-          <span>🩹 Patch</span>
-          <span>🔄 Update</span>
+          <span>🐶🐱 Rehoming</span>
+          <span>🧭 Navigation</span>
+          <span>📣 Guidance</span>
+          <span>🔄 Versioning</span>
         </div>
       </aside>
     </div>
@@ -46,30 +46,45 @@
 
   <section class="snapshot-grid section" aria-label="Recent change highlights">
     <article class="card snapshot-card">
-      <span class="snapshot-icon" aria-hidden="true">🐞</span>
-      <h2>Bug logged</h2>
-      <p>Reported: site-wide mojibake affected icons, punctuation and currency symbols.</p>
+      <span class="snapshot-icon" aria-hidden="true">🐶</span>
+      <h2>New rehoming page</h2>
+      <p>Added a dedicated Dog &amp; Cat Rehoming page with official shelter and rescue listings.</p>
     </article>
     <article class="card snapshot-card">
-      <span class="snapshot-icon" aria-hidden="true">✅</span>
-      <h2>Bug fixed</h2>
-      <p>Corrupted characters were repaired across all affected public website pages.</p>
+      <span class="snapshot-icon" aria-hidden="true">🧭</span>
+      <h2>Navigation updates</h2>
+      <p>Added the new page to the mega menu and linked it from Service Finder and Search.</p>
     </article>
     <article class="card snapshot-card">
-      <span class="snapshot-icon" aria-hidden="true">🩹</span>
-      <h2>Patches</h2>
-      <p>UTF-8 text patches restored emoji icons and symbols such as £, apostrophes and dashes.</p>
+      <span class="snapshot-icon" aria-hidden="true">📣</span>
+      <h2>Clear guidance</h2>
+      <p>Added highlighted notices on Surrender and Rescues pages that APES does not intake dogs or cats.</p>
     </article>
     <article class="card snapshot-card">
       <span class="snapshot-icon" aria-hidden="true">🔄</span>
       <h2>Updates</h2>
-      <p>Version references were updated to v0.0.8 Beta in changelog and release badges.</p>
+      <p>Version references were updated to v0.0.9 Beta in changelog, release badges and release docs.</p>
     </article>
   </section>
 
   <section class="accordion section" id="changelog-entries" aria-label="Changelog entries">
     <article class="accordion-item open">
-      <button class="accordion-button" type="button" aria-expanded="true"><span>v0.0.8 Beta — Encoding and icon rendering patch</span><span aria-hidden="true">+</span></button>
+      <button class="accordion-button" type="button" aria-expanded="true"><span>v0.0.9 Beta — Dog &amp; Cat Rehoming launch</span><span aria-hidden="true">+</span></button>
+      <div class="accordion-content">
+        <p><strong>Release date:</strong> 30 May 2026.</p>
+        <p><strong>Release type:</strong> Feature and content update.</p>
+        <ul>
+          <li><strong>Feature:</strong> Added a dedicated Dog &amp; Cat Rehoming page with official rescue and shelter listings and a filterable finder.</li>
+          <li><strong>Guidance:</strong> Added clear messaging that APES does not intake dogs or cats, with highlighted callouts on Surrender and Rescues pages.</li>
+          <li><strong>Navigation:</strong> Added the new page to the mega menu, Service Finder, Search index, sitemap and page manifest.</li>
+          <li><strong>Compatibility:</strong> Added redirect support from legacy <code>/cat-dog-sheltering</code> to <code>/dog-cat-rehoming.html</code>.</li>
+          <li><strong>Update:</strong> Updated current site version labels and release docs to v0.0.9 Beta.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="accordion-item">
+      <button class="accordion-button" type="button" aria-expanded="false"><span>v0.0.8 Beta — Encoding and icon rendering patch</span><span aria-hidden="true">+</span></button>
       <div class="accordion-content">
         <p><strong>Release date:</strong> 30 May 2026.</p>
         <p><strong>Release type:</strong> Patch release.</p>
