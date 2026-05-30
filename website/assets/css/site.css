@@ -363,3 +363,20 @@ body .mega-card:hover strong{color:#026f74!important;}
 @media(max-width:1020px){.snapshot-grid,.fun-timeline{grid-template-columns:repeat(2,minmax(0,1fr))}.impact-grid{grid-template-columns:1fr}}
 @media(max-width:760px){.snapshot-grid,.fun-timeline{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card{transition:none}.card:hover,.card:active{transform:none}.accordion-button span:last-child{transition:none}}
+
+
+/* v0.0.8 Beta shared layout extras */
+.top-strip{position:relative;z-index:110}
+.top-strip .wrap.top-strip-inner{display:flex;justify-content:space-between;align-items:center;gap:.85rem;flex-wrap:wrap;padding:.5rem 0}
+.top-strip-links{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.top-strip-actions a,.social-link{display:inline-flex;align-items:center;justify-content:center;min-height:34px;padding:.45rem .75rem;border-radius:999px;text-decoration:none;font-weight:900}
+.top-strip-actions a{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16)}
+.top-strip-actions a:hover,.top-strip-actions a:focus-visible{background:rgba(255,255,255,.16)}
+.social-link{min-width:34px;padding:.45rem;background:rgba(18,138,237,.14);border:1px solid rgba(18,138,237,.26);color:#fff!important;font-size:.8rem;letter-spacing:.03em}
+.social-link:hover,.social-link:focus-visible{background:rgba(18,138,237,.24)}
+.footer-partners{display:flex;flex-wrap:wrap;gap:.7rem;align-items:center;margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.14)}
+.footer-partners a{display:inline-flex;align-items:center;padding:.35rem .65rem;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);text-decoration:none}
+.partner-logo{display:block;width:min(100%,220px);height:96px;object-fit:contain;margin:0 auto 1rem}
+.site-footer iframe{background:#fff;border-radius:20px}
+.site-footer .onesignal-customlink-container{margin-top:.5rem}
+@media(max-width:760px){.top-strip .wrap.top-strip-inner{justify-content:center}.top-strip-links{justify-content:center}.footer-partners{justify-content:center;text-align:center}}
