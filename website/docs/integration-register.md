@@ -1,6 +1,6 @@
 # Integration Register
 
-Version: v0.0.6 Beta
+Version: v0.0.7 Beta
 
 | Service | URL | Treatment |
 |---|---|---|
@@ -12,18 +12,21 @@ Version: v0.0.6 Beta
 | Service User Portal | https://www.apesshelter.org.uk/signin | External authenticated route |
 
 
-## v0.0.6 Beta notes
-- Chatwoot live support widget added to public HTML pages.
-- Full-width page layout applied across templates.
+## v0.0.7 Beta notes
+- Verify the new explorers (Policies, Education, News, Search) filter and search correctly.
+- Verify the Donate impact explorer updates smoothly on button click and slider drag.
+- Verify Contact helper + copy buttons work on mobile and desktop.
+- Verify Rescues helper, Sponsorships planner and Portal helper update the recommended actions.
 
-
 ## v0.0.6 Beta notes
+- Rebuilt surrender.html with route helper, readiness checker, animal category filter, process journey and FAQ sections.
+- Kept ShelterManager surrender form as the external system of record.
+
+## v0.0.5 Beta notes
 - Confirm dark-card and mega-menu contrast in browser QA.
 - Confirm Trial Adoptions and Foster Scheme remain under construction until service wording is approved.
 - Check links from the mega menu, Services directory and Adoptions page to the new pages.
 
-
-v0.0.6 Beta changes:
-- Rebuilt surrender.html with advanced route helper, readiness checker, animal category filter, process journey and FAQ sections.
-- Kept ShelterManager surrender form as the external system of record.
-- Updated version and changelog.
+## v0.0.2 Beta notes
+- Chatwoot live support widget added to public HTML pages.
+- Full-width page layout applied across templates.

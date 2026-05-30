@@ -289,3 +289,267 @@
     });
   });
 })();
+
+
+// v0.0.7 Beta reusable accordion behaviour (used across multiple pages)
+(function(){
+  document.querySelectorAll('.accordion-button').forEach(function(button){
+    button.addEventListener('click', function(){
+      const item = button.closest('.accordion-item');
+      if(!item) return;
+      const isOpen = item.classList.contains('open');
+      item.classList.toggle('open');
+      button.setAttribute('aria-expanded', String(!isOpen));
+    });
+  });
+})();
+
+
+// v0.0.7 Beta copy-to-clipboard buttons (used on contact + other pages)
+(function(){
+  const buttons = Array.from(document.querySelectorAll('[data-copy-text]'));
+  if(!buttons.length) return;
+
+  function fallbackCopy(text){
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    textarea.setAttribute('readonly','');
+    textarea.style.position = 'fixed';
+    textarea.style.left = '-9999px';
+    textarea.style.top = '0';
+    document.body.appendChild(textarea);
+    textarea.select();
+    try{ document.execCommand('copy'); } catch(e){}
+    document.body.removeChild(textarea);
+  }
+
+  function copy(text){
+    if(navigator.clipboard && window.isSecureContext){
+      return navigator.clipboard.writeText(text);
+    }
+    fallbackCopy(text);
+    return Promise.resolve();
+  }
+
+  buttons.forEach(function(button){
+    const originalLabel = button.textContent.trim() || 'Copy';
+    button.addEventListener('click', function(){
+      const text = button.getAttribute('data-copy-text') || '';
+      if(!text) return;
+      button.disabled = true;
+      copy(text).then(function(){
+        button.textContent = 'Copied!';
+        setTimeout(function(){
+          button.textContent = originalLabel;
+          button.disabled = false;
+        }, 1200);
+      }).catch(function(){
+        button.textContent = 'Copy failed';
+        setTimeout(function(){
+          button.textContent = originalLabel;
+          button.disabled = false;
+        }, 1400);
+      });
+    });
+  });
+})();
+
+
+// v0.0.7 Beta Donate page impact explorer
+(function(){
+  const shell = document.querySelector('[data-donation-impact]');
+  if(!shell) return;
+
+  const amountEl = shell.querySelector('[data-impact-amount]');
+  const listEl = shell.querySelector('[data-impact-list]');
+  const range = shell.querySelector('input[type="range"]');
+  const choiceButtons = Array.from(shell.querySelectorAll('[data-impact-choice]'));
+
+  function money(value){ return '£' + Number(value || 0).toLocaleString('en-GB'); }
+
+  function impactFor(amount){
+    const value = Number(amount || 0);
+    if(value <= 0){
+      return {
+        headline: 'Choose an amount to see examples.',
+        items: ['Food, bedding, heating, equipment and enrichment all matter.']
+      };
+    }
+    if(value < 10){
+      return {
+        headline: 'A small gift still helps.',
+        items: ['Contributes towards daily care essentials.','Adds a little capacity for rescue responses.']
+      };
+    }
+    if(value < 25){
+      return {
+        headline: 'A practical boost for day-to-day welfare.',
+        items: ['Helps with supplies like bedding, heating top-ups or enrichment.','Supports intake prep and cleaning essentials.']
+      };
+    }
+    if(value < 50){
+      return {
+        headline: 'Supports intake and ongoing care.',
+        items: ['Can contribute towards equipment, enclosure repairs and specialist supplies.','Helps APES respond when urgent welfare cases arrive.']
+      };
+    }
+    if(value < 100){
+      return {
+        headline: 'A meaningful contribution to welfare capacity.',
+        items: ['Can contribute towards veterinary support and treatment costs.','Helps keep space, heat and care running for animals in the shelter.']
+      };
+    }
+    return {
+      headline: 'Helps build emergency rescue capacity.',
+      items: ['Supports food, care, heating, equipment and treatment costs.','Helps APES keep space available for welfare cases.']
+    };
+  }
+
+  function setActiveButton(amount){
+    choiceButtons.forEach(function(btn){
+      const value = Number(btn.getAttribute('data-impact-choice') || 0);
+      btn.classList.toggle('active', value === Number(amount));
+    });
+  }
+
+  function render(amount){
+    const value = Math.max(0, Math.round(Number(amount || 0)));
+    const impact = impactFor(value);
+    if(amountEl) amountEl.textContent = money(value);
+    if(listEl){
+      listEl.innerHTML = [
+        '<li><strong>' + impact.headline.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</strong></li>'
+      ].concat(impact.items.map(function(item){
+        return '<li>' + String(item).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</li>';
+      })).join('');
+    }
+    if(range) range.value = String(value);
+    setActiveButton(value);
+  }
+
+  if(range){
+    range.addEventListener('input', function(){ render(range.value); });
+  }
+  choiceButtons.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      const value = btn.getAttribute('data-impact-choice') || '0';
+      render(value);
+    });
+  });
+
+  render(range ? range.value : 25);
+})();
+
+
+// v0.0.7 Beta Contact page helper
+(function(){
+  const helper = document.querySelector('[data-contact-helper]');
+  if(!helper) return;
+
+  const result = helper.querySelector('#contact-route-result');
+  const actions = helper.querySelector('#contact-route-actions');
+  const routes = {
+    adopt:{message:'Recommended route: browse adoptable animals and the adoption process first, then use the contact centre if you have a specific question.',actions:'<a class="button-gold" href="adoptions.html">Open adoptions</a><a class="button-secondary" href="https://contact.apesshelter.org.uk/" target="_blank" rel="noopener noreferrer">Contact centre</a>'},
+    surrender:{message:'Recommended route: use the surrender form for owners/keepers. If you are unsure, use the contact centre first.',actions:'<a class="button-gold" href="surrender.html">Open surrender route</a><a class="button-secondary" href="https://service.sheltermanager.com/asmservice?account=apes&method=online_form_html&formid=112" target="_blank" rel="noopener noreferrer">Start surrender form</a>'},
+    rescue:{message:'Recommended route: use rescue services for animals that are not yours (stray, escaped, abandoned, unwanted).',actions:'<a class="button-gold" href="rescues.html">Open rescue services</a><a class="button-secondary" href="https://contact.apesshelter.org.uk/" target="_blank" rel="noopener noreferrer">Contact centre</a>'},
+    lost:{message:'Recommended route: register a lost pet so APES can record the case and route help.',actions:'<a class="button-gold" href="contact.html#lost-found">Lost and found hub</a><a class="button-secondary" href="https://service.sheltermanager.com/asmservice?account=apes&method=online_form_html&formid=26" target="_blank" rel="noopener noreferrer">Register lost pet</a>'},
+    found:{message:'Recommended route: report a found pet so APES can record the details and advise.',actions:'<a class="button-gold" href="contact.html#lost-found">Lost and found hub</a><a class="button-secondary" href="https://service.sheltermanager.com/asmservice?account=apes&method=online_form_html&formid=25" target="_blank" rel="noopener noreferrer">Report found pet</a>'},
+    general:{message:'Recommended route: use the contact centre for routed enquiries, updates, complaints, welfare questions and web support.',actions:'<a class="button-gold" href="https://contact.apesshelter.org.uk/" target="_blank" rel="noopener noreferrer">Open contact centre</a><a class="button-secondary" href="tel:03003020227">Call 0300 302 0227</a>'}
+  };
+
+  helper.querySelectorAll('input[name="contact-route"]').forEach(function(input){
+    input.addEventListener('change', function(){
+      const selected = routes[input.value];
+      if(!selected || !result || !actions) return;
+      result.textContent = selected.message;
+      actions.innerHTML = selected.actions;
+    });
+  });
+})();
+
+
+// v0.0.7 Beta Rescue page helper
+(function(){
+  const helper = document.querySelector('[data-rescue-helper]');
+  if(!helper) return;
+
+  const result = helper.querySelector('#rescue-route-result');
+  const actions = helper.querySelector('#rescue-route-actions');
+  const routes = {
+    notmine:{message:'Recommended route: use rescue services. Include species (if known), location, photos where safe, and any risks.',actions:'<a class="button-gold" href="https://contact.apesshelter.org.uk/" target="_blank" rel="noopener noreferrer">Request rescue support</a><a class="button-secondary" href="rescues.html">Read rescue guidance</a>'},
+    wildlife:{message:'Recommended route: if injured or at risk, seek appropriate emergency or wildlife support first. Then contact APES with details so we can advise/signpost.',actions:'<a class="button-gold" href="tel:03003020227">Call APES</a><a class="button-secondary" href="https://contact.apesshelter.org.uk/" target="_blank" rel="noopener noreferrer">Contact centre</a>'},
+    public:{message:'Recommended route: public-sector and corporate cases should use the contact centre and include reference numbers and risk info.',actions:'<a class="button-gold" href="https://contact.apesshelter.org.uk/" target="_blank" rel="noopener noreferrer">Open contact centre</a><a class="button-secondary" href="contact.html">Contact page</a>'},
+    mine:{message:'Recommended route: if this is your pet and you cannot safely care for them, use the surrender route instead of rescue services.',actions:'<a class="button-gold" href="surrender.html">Owner surrender</a><a class="button-secondary" href="https://service.sheltermanager.com/asmservice?account=apes&method=online_form_html&formid=112" target="_blank" rel="noopener noreferrer">Start surrender form</a>'}
+  };
+
+  helper.querySelectorAll('input[name="rescue-route"]').forEach(function(input){
+    input.addEventListener('change', function(){
+      const selected = routes[input.value];
+      if(!selected || !result || !actions) return;
+      result.textContent = selected.message;
+      actions.innerHTML = selected.actions;
+    });
+  });
+})();
+
+
+// v0.0.7 Beta Sponsorship planner
+(function(){
+  const shell = document.querySelector('[data-sponsor-planner]');
+  if(!shell) return;
+
+  const amountEl = shell.querySelector('[data-sponsor-amount]');
+  const noteEl = shell.querySelector('[data-sponsor-note]');
+  const actions = shell.querySelector('[data-sponsor-actions]');
+  const inputs = Array.from(shell.querySelectorAll('input[name="sponsor-plan"]'));
+
+  function money(value){ return '£' + Number(value || 0).toLocaleString('en-GB'); }
+
+  const plans = {
+    5:{note:'A starter sponsorship helps with daily care essentials like food, bedding and enrichment.'},
+    10:{note:'A steady monthly sponsorship helps with routine care and supplies.'},
+    20:{note:'A generous plan helps with specialist diets, enrichment and equipment pressure.'},
+    30:{note:'A major boost that helps build capacity for welfare cases and long-term residents.'}
+  };
+
+  function render(amount){
+    const value = Number(amount || 0);
+    if(amountEl) amountEl.textContent = money(value) + ' / month';
+    const plan = plans[value] || plans[10];
+    if(noteEl) noteEl.textContent = plan.note;
+    if(actions){
+      actions.innerHTML = '<a class="button-gold" href="https://www.apesshelter.org.uk/sponsorships" target="_blank" rel="noopener noreferrer">Start sponsorship</a><a class="button-secondary" href="donate.html">One-off donation</a>';
+    }
+  }
+
+  inputs.forEach(function(input){
+    input.addEventListener('change', function(){ render(input.value); });
+  });
+
+  const checked = inputs.find(function(input){ return input.checked; });
+  render(checked ? checked.value : 10);
+})();
+
+
+// v0.0.7 Beta Portal helper
+(function(){
+  const helper = document.querySelector('[data-portal-helper]');
+  if(!helper) return;
+
+  const result = helper.querySelector('#portal-route-result');
+  const actions = helper.querySelector('#portal-route-actions');
+  const routes = {
+    signin:{message:'Recommended route: use the portal sign-in page. Keep your email address consistent with your application.',actions:'<a class="button-gold" href="https://www.apesshelter.org.uk/signin" target="_blank" rel="noopener noreferrer">Sign in</a><a class="button-secondary" href="mailto:web.accounts@cu.apes.org.uk">Portal support</a>'},
+    help:{message:'Recommended route: use the contact centre for routed support and include as much detail as you can.',actions:'<a class="button-gold" href="https://contact.apesshelter.org.uk/" target="_blank" rel="noopener noreferrer">Contact centre</a><a class="button-secondary" href="contact.html">Contact page</a>'},
+    update:{message:'Recommended route: if your query relates to a live case or application, use the portal where possible, otherwise use the contact centre.',actions:'<a class="button-gold" href="https://www.apesshelter.org.uk/signin" target="_blank" rel="noopener noreferrer">Open portal</a><a class="button-secondary" href="https://contact.apesshelter.org.uk/" target="_blank" rel="noopener noreferrer">Contact centre</a>'}
+  };
+
+  helper.querySelectorAll('input[name="portal-route"]').forEach(function(input){
+    input.addEventListener('change', function(){
+      const selected = routes[input.value];
+      if(!selected || !result || !actions) return;
+      result.textContent = selected.message;
+      actions.innerHTML = selected.actions;
+    });
+  });
+})();

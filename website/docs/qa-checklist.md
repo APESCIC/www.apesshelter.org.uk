@@ -13,18 +13,23 @@
 - Run WCAG 2.2 AA accessibility testing before public launch.
 
 
-## v0.0.6 Beta notes
-- Chatwoot live support widget added to public HTML pages.
-- Full-width page layout applied across templates.
+## v0.0.7 Beta notes
+- Check Donate impact explorer buttons and slider update the result panel.
+- Check Contact route helper updates and copy buttons work (phone/email/address).
+- Check Rescues route helper updates and accordion opens/closes.
+- Check Sponsorship planner updates the selected plan summary.
+- Check Portal helper updates recommended actions.
+- Check Policies/Education/News/Search explorers filter + search properly.
 
-
 ## v0.0.6 Beta notes
+- Rebuilt surrender.html with route helper, readiness checker, animal category filter, process journey and FAQ sections.
+- Kept ShelterManager surrender form as the external system of record.
+
+## v0.0.5 Beta notes
 - Confirm dark-card and mega-menu contrast in browser QA.
 - Confirm Trial Adoptions and Foster Scheme remain under construction until service wording is approved.
 - Check links from the mega menu, Services directory and Adoptions page to the new pages.
 
-
-v0.0.6 Beta changes:
-- Rebuilt surrender.html with advanced route helper, readiness checker, animal category filter, process journey and FAQ sections.
-- Kept ShelterManager surrender form as the external system of record.
-- Updated version and changelog.
+## v0.0.2 Beta notes
+- Chatwoot live support widget added to public HTML pages.
+- Full-width page layout applied across templates.

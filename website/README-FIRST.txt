@@ -1,5 +1,5 @@
 # APES Shelter & Rescue Website
-Version: v0.0.6 Beta
+Version: v0.0.7 Beta
 
 ## Simple upload instructions
 
@@ -42,12 +42,30 @@ Check every button, external form and phone/email link. Review policies, privacy
 
 Menu update: the main navigation now uses Home, Services, Education, News and Contact. Services opens the mega menu and includes the service finder, adoptions, surrender, rescues and sponsorships.
 
+v0.0.7 Beta changes:
+- Refreshed all pages to match the colourful, interactive Adoptions style using reusable highlight cards, badges, timelines and accordions.
+- Added a donation impact explorer to donate.html.
+- Added a contact-route helper and copy buttons to contact.html.
+- Added a rescue-route helper and FAQs to rescues.html.
+- Added a sponsorship planner to sponsorships.html.
+- Added a portal helper to portal.html.
+- Added searchable explorers to policies.html, education.html, news.html and search.html.
+- Updated version references and changelog.
+
 v0.0.6 Beta changes:
+- Rebuilt the Surrender page using the advanced Shelter and Surrender layout with route helper, readiness checker, animal category filtering, journey and FAQs.
+
+v0.0.5 Beta changes:
+- Fixed unreadable text on dark green cards and strengthened contrast across reusable components.
+- Renamed the mega menu service item to Service Finder.
+- Added under-construction Trial Adoptions and Foster Scheme pages.
+- Added Trial Adoptions and Foster Scheme links to the mega menu, Services directory and Adoptions page.
+
+v0.0.4 Beta changes:
 - Enhanced the Adoptions page with a more engaging adoption journey, fee explorer and adopter guidance.
 - Expanded the adoption fee calculator to include every listed animal fee type.
 - Added optional add-ons and optional reservation-fee planning to the calculator.
 - Restyled the estimate total box using APES green and gold branding with live summary chips and a clear breakdown.
-- Updated the public changelog and version references.
 
 v0.0.3 Beta changes:
 - Services mega menu now stays open after click and closes only on outside click, Escape or navigation.
@@ -57,11 +75,3 @@ v0.0.2 Beta changes:
 - Homepage hero spacing fix.
 - Readability refinements for cards, grids and route helper.
 - Chatwoot live support widget added to public pages.
-
-
-
-v0.0.6 Beta changes:
-- Fixed unreadable text on dark green cards and strengthened contrast across reusable components.
-- Renamed the mega menu service item to Service Finder.
-- Added under-construction Trial Adoptions and Foster Scheme pages.
-- Added Trial Adoptions and Foster Scheme links to the mega menu, Services directory and Adoptions page.
