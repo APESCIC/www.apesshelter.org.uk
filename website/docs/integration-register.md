@@ -1,6 +1,6 @@
 # Integration Register
 
-Version: v0.0.9 Beta
+Version: v0.0.10 Beta
 
 | Service | URL | Treatment |
 |---|---|---|
@@ -11,6 +11,12 @@ Version: v0.0.9 Beta
 | Contact Centre | https://contact.apesshelter.org.uk/ | External support route |
 | Service User Portal | https://www.apesshelter.org.uk/signin | External authenticated route |
 
+
+## v0.0.10 Beta notes
+- Change type: Navigation. Enhanced Animal Services, Support APES and Information mega menus with improved hierarchy and visual scanability.
+- Change type: Content. Added route intros, quick category pills and clearer mega-menu link cards.
+- Change type: Tracking. Added a dedicated Known issues section to changelog.html sourced from the repository issue tracker.
+- Change type: Versioning. Current public release version bumped to v0.0.10 Beta in live labels, changelog and release docs.
 
 ## v0.0.9 Beta notes
 - Change type: Feature. Added dog-cat-rehoming.html with official dog and cat rescue and shelter listings.
