@@ -1,6 +1,6 @@
 # Integration Register
 
-Version: v0.0.10 Beta
+Version: v0.0.11 Beta
 
 | Service | URL | Treatment |
 |---|---|---|
@@ -11,6 +11,12 @@ Version: v0.0.10 Beta
 | Contact Centre | https://contact.apesshelter.org.uk/ | External support route |
 | Service User Portal | https://www.apesshelter.org.uk/signin | External authenticated route |
 
+
+## v0.0.11 Beta notes
+- Change type: Layout. Shared page containers now use a 90% viewport width on desktop and tablet with a mobile readability exception.
+- Change type: Footer. Shared footer replaced with an APES-style shelter footer including partner pills, social links and legal/contact details.
+- Change type: Compliance. Footer links checked against Donate, Privacy Policy, Terms of Service, Refund Policy and Change Log Hub routes.
+- Change type: Versioning. Current public release version bumped to v0.0.11 Beta in live labels, changelog and release docs.
 
 ## v0.0.10 Beta notes
 - Change type: Navigation. Enhanced Animal Services, Support APES and Information mega menus with improved hierarchy and visual scanability.

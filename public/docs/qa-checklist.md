@@ -19,6 +19,13 @@
 - Change type: Tracking. Confirm changelog.html contains a dedicated Known issues section with links to active GitHub issues.
 - Change type: Versioning. Confirm footer version badge and changelog current version both show v0.0.10 Beta.
 
+## v0.0.11 Beta notes
+- Change type: Layout. Confirm shared containers use the 90% width override on desktop and tablet without breaking card or hero layouts.
+- Change type: Footer. Confirm the new footer shows four panels, partner pills, social buttons and expanded legal/contact details.
+- Change type: Links. Confirm Donate, Privacy Policy, Terms of Service, Refund Policy and Change Log Hub footer links open correctly.
+- Change type: Responsive. Confirm the footer stacks cleanly on tablet and mobile with no horizontal scrolling.
+- Change type: Versioning. Confirm footer version badge and changelog current version both show v0.0.11 Beta.
+
 ## v0.0.9 Beta notes
 - Change type: Feature. Check dog-cat-rehoming.html loads and all listed rescue/shelter links open correctly.
 - Change type: Filtering. Check the Dog & Cat Rehoming finder search and category tabs (All, Dogs, Cats) work as expected.

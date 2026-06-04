@@ -4,6 +4,12 @@ Official development repository for **[www.apesshelter.org.uk](http://www.apessh
 
 This repository is used to support the development, maintenance, improvement and issue tracking of the APES Shelter and Rescue website.
 
+## Current Release Note
+
+Current public release: **v0.0.11 Beta**.
+
+This release refreshes the shared website footer to a fuller APES-style layout, updates shared containers to a 90% desktop/tablet viewport width, and records the footer/legal route checks required for a user-visible shared template change.
+
 ## About APES Shelter and Rescue
 
 APES Shelter and Rescue supports exotic animals requiring rescue, sheltering, rehabilitation, rehoming and long-term welfare support.
@@ -147,6 +153,7 @@ Update surrender guidance wording
 Improve mobile layout on rescue services page
 Add new foster programme content
 Correct contact information in footer
+Refresh shared footer layout and 90 percent page width
 ```
 
 ## Pull Requests
