@@ -660,7 +660,9 @@ main.wrap{width:90%;max-width:none;margin-inline:auto}
 /* v0.0.12 Beta APES-style drawer navigation port */
 body.nav-open{overflow:hidden}
 .site-header{overflow:visible}
+.site-header{z-index:320}
 .header-inner{position:relative;align-items:center}
+.main-nav-shell.open{position:relative;z-index:330}
 .nav-toggle,.nav-close{
   display:inline-flex;
   align-items:center;
@@ -816,7 +818,7 @@ body.nav-widgets-suppressed [class*="hellobar"]{
     box-shadow:-24px 0 54px rgba(4,16,11,.18);
     transform:translateX(104%);
     transition:transform .24s ease;
-    z-index:240;
+    z-index:340;
   }
   .main-nav-shell.open .main-nav-panel{
     transform:translateX(0);

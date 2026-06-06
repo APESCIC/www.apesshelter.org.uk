@@ -6,9 +6,9 @@ This repository is used to support the development, maintenance, improvement and
 
 ## Current Release Note
 
-Current public release: **v0.0.12 Beta**.
+Current public release: **v0.0.13 Beta**.
 
-This release ports the shared Shelter navigation onto the more robust APES drawer-and-details behaviour model, preserves existing Shelter menu content, and records the shared-template QA and footer/SEO/error-page checks required for a user-visible nav change.
+This release fixes the shared mobile navigation layering so the drawer and overlay stay above hero content on small screens, preserves the existing drawer behaviour, and records the footer/SEO/error-page checks required for a user-visible nav fix.
 
 ## About APES Shelter and Rescue
 

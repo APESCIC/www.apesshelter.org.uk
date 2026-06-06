@@ -1,5 +1,5 @@
 # APES Shelter & Rescue Website
-Version: v0.0.12 Beta
+Version: v0.0.13 Beta
 
 ## Simple upload instructions
 
@@ -41,6 +41,13 @@ No database is needed. No command line is needed. No build step is needed.
 Check every button, external form and phone/email link. Review policies, privacy/cookies, refund address, donation provider and newsletter wording before making the site live.
 
 Menu update: the main navigation now uses Home, Animal Services, Support APES and Information, each with its own mega menu route.
+
+v0.0.13 Beta changes:
+- Change type: Navigation. Raised the shared mobile drawer layering so the menu, overlay and grouped routes stay above hero content and other page sections on small screens.
+- Change type: UX. Preserved overlay close, Escape close, outside-click close, resize sync and scroll-lock behaviour while fixing the layering bug.
+- Change type: Compliance. Re-checked shared footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub after the nav fix.
+- Change type: SEO and error pages. Confirmed the sitemap and page metadata needed no route changes and verified the shared nav still works on the branded 404 page.
+- Change type: Versioning. Bumped current package version labels and release docs to v0.0.13 Beta.
 
 v0.0.12 Beta changes:
 - Change type: Navigation. Rebuilt the shared Shelter nav into an APES-style mobile drawer with native grouped menu behaviour while keeping Shelter labels and links unchanged.

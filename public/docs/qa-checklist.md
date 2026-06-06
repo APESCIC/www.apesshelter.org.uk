@@ -34,6 +34,14 @@
 - Change type: Compliance. Re-check footer links for Donate, Privacy Policy, Terms of Service and Change Log Hub after the shared-nav change.
 - Change type: Versioning. Confirm footer version badge and changelog current version both show v0.0.12 Beta.
 
+## v0.0.13 Beta notes
+- Change type: Navigation. Confirm the mobile drawer sits above the homepage hero, urgent appeal and other page sections on phone-width viewports.
+- Change type: Grouped menus. Confirm Animal Services, Support APES and Information grouped routes remain visible and tappable when opened inside the drawer.
+- Change type: Responsive. Confirm the drawer still closes cleanly on outside click, Escape and viewport resize from mobile to desktop.
+- Change type: Widget suppression. Confirm donor, chat, push and banner widgets still stay behind the drawer while it is open.
+- Change type: Compliance. Re-check footer links for Donate, Privacy Policy, Terms of Service and Change Log Hub after the layering fix.
+- Change type: Versioning. Confirm footer version badge and changelog current version both show v0.0.13 Beta.
+
 ## v0.0.9 Beta notes
 - Change type: Feature. Check dog-cat-rehoming.html loads and all listed rescue/shelter links open correctly.
 - Change type: Filtering. Check the Dog & Cat Rehoming finder search and category tabs (All, Dogs, Cats) work as expected.

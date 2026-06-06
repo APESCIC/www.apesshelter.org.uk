@@ -1,5 +1,13 @@
 # APES Shelter and Rescue Website Changelog
 
+## v0.0.13 Beta - 6 June 2026
+
+- Change type: Navigation. Raised the shared mobile drawer navigation stacking order so the menu, overlay and grouped routes stay above homepage hero content and other page sections on small screens.
+- Change type: UX. Preserved the existing mobile drawer behaviour for overlay close, Escape close, outside-click close, scroll lock and grouped-menu expansion while fixing the layering bug.
+- Change type: Compliance. Re-checked shared footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub after the navigation fix.
+- Change type: SEO and error pages. Verified that sitemap records, page metadata and the branded 404 page required no route changes for this presentation-layer update.
+- Change type: Release records. Updated visible version labels, public changelog records and release documentation to v0.0.13 Beta.
+
 ## v0.0.12 Beta - 6 June 2026
 
 - Change type: Navigation. Rebuilt the shared Shelter header to use an APES-style mobile drawer with native `details`-based grouped menus while preserving all existing Shelter labels, routes and external-link behaviour.

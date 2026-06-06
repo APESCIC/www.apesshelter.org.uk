@@ -1,6 +1,6 @@
 # Integration Register
 
-Version: v0.0.12 Beta
+Version: v0.0.13 Beta
 
 | Service | URL | Treatment |
 |---|---|---|
@@ -11,6 +11,13 @@ Version: v0.0.12 Beta
 | Contact Centre | https://contact.apesshelter.org.uk/ | External support route |
 | Service User Portal | https://www.apesshelter.org.uk/signin | External authenticated route |
 
+
+## v0.0.13 Beta notes
+- Change type: Navigation. Shared mobile drawer layering raised so the menu, overlay and grouped routes stay above homepage hero content and other page sections on small screens.
+- Change type: UX. Existing overlay close, Escape close, outside-click close, resize sync and widget suppression behaviour preserved while the layering bug was fixed.
+- Change type: Compliance. Footer links checked again against Donate, Privacy Policy, Terms of Service and Change Log Hub routes.
+- Change type: SEO and error pages. Shared nav verified against the branded 404 page with no sitemap or metadata route changes required.
+- Change type: Versioning. Current public release version bumped to v0.0.13 Beta in live labels, changelog, manifests and release docs.
 
 ## v0.0.12 Beta notes
 - Change type: Navigation. Shared header updated to the APES drawer-and-details behaviour model without changing Shelter route destinations.
