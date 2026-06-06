@@ -1,89 +1,142 @@
 (function(){
   function initPrimaryNav(){
     const header = document.querySelector('.site-header');
-    const toggle = document.querySelector('.nav-toggle');
-    const nav = document.querySelector('.main-nav');
-    const megas = [...document.querySelectorAll('.mega')];
+    const toggle = header ? header.querySelector('.nav-toggle') : null;
+    const close = header ? header.querySelector('.nav-close') : null;
+    const shell = header ? header.querySelector('.main-nav-shell') : null;
+    const panel = header ? header.querySelector('.main-nav-panel') : null;
+    const overlay = header ? header.querySelector('.nav-overlay') : null;
+    const nav = header ? header.querySelector('.main-nav') : null;
+    const details = header ? Array.from(header.querySelectorAll('.mega-details')) : [];
+    const desktopBreakpoint = window.matchMedia('(min-width: 981px)');
 
-    if(!header || !toggle || !nav || !megas.length) return;
+    if(!header || !toggle || !close || !shell || !panel || !overlay || !nav || !details.length) return;
     if(header.getAttribute('data-nav-initialized') === 'true') return;
     header.setAttribute('data-nav-initialized', 'true');
 
-    function closeMega(mega){
-      const btn = mega.querySelector('.mega-trigger');
-      mega.classList.remove('open');
-      if(btn) btn.setAttribute('aria-expanded','false');
+    function syncSummary(detailsEl){
+      const summary = detailsEl.querySelector('.mega-trigger');
+      if(summary) summary.setAttribute('aria-expanded', String(detailsEl.open));
+      detailsEl.closest('.mega').classList.toggle('open', detailsEl.open);
     }
 
-    function closeAllMegas(except){
-      megas.forEach(function(mega){
-        if(mega !== except) closeMega(mega);
+    function closeOtherDetails(active){
+      details.forEach(function(item){
+        if(item !== active){
+          item.open = false;
+          syncSummary(item);
+        }
       });
     }
 
-    toggle.addEventListener('click', function(e){
-      e.stopPropagation();
-      const open = nav.classList.toggle('open');
+    function closeAllDetails(){
+      closeOtherDetails(null);
+    }
+
+    function isNavOpen(){
+      return shell.classList.contains('open');
+    }
+
+    function setWidgetSuppression(active){
+      document.body.classList.toggle('nav-open', active);
+      document.body.classList.toggle('nav-widgets-suppressed', active);
+    }
+
+    function setNavOpen(open){
+      shell.classList.toggle('open', open);
       toggle.setAttribute('aria-expanded', String(open));
-      if(!open) closeAllMegas();
+      overlay.hidden = !open;
+      setWidgetSuppression(open);
+      if(!open) closeAllDetails();
+    }
+
+    function closeNav(){
+      setNavOpen(false);
+    }
+
+    function openNav(){
+      setNavOpen(true);
+    }
+
+    toggle.addEventListener('click', function(){
+      if(isNavOpen()) closeNav();
+      else openNav();
     });
 
-    megas.forEach(function(mega){
-      const btn = mega.querySelector('.mega-trigger');
-      const panel = mega.querySelector('.mega-panel');
+    close.addEventListener('click', closeNav);
+    overlay.addEventListener('click', closeNav);
 
-      function setOpen(open){
-        closeAllMegas(open ? mega : null);
-        mega.classList.toggle('open', open);
-        if(btn) btn.setAttribute('aria-expanded', String(open));
-      }
-
-      if(btn){
-        btn.addEventListener('click', function(e){
-          e.preventDefault();
-          e.stopPropagation();
-          setOpen(true);
-        });
-
-        btn.addEventListener('keydown', function(e){
-          if(e.key === 'Enter' || e.key === ' ' || e.key === 'ArrowDown'){
-            e.preventDefault();
-            setOpen(true);
-            const firstLink = panel ? panel.querySelector('a, button') : null;
-            if(firstLink && e.key === 'ArrowDown') firstLink.focus();
-          }
-          if(e.key === 'Escape'){
-            e.preventDefault();
-            closeMega(mega);
-            btn.focus();
-          }
-        });
-      }
-
-      mega.addEventListener('click', function(e){
-        e.stopPropagation();
+    details.forEach(function(item){
+      syncSummary(item);
+      item.addEventListener('toggle', function(){
+        syncSummary(item);
+        if(item.open) closeOtherDetails(item);
       });
-
-      if(panel){
-        panel.addEventListener('keydown', function(e){
-          if(e.key === 'Escape'){
-            e.preventDefault();
-            closeMega(mega);
-            if(btn) btn.focus();
+      const summary = item.querySelector('.mega-trigger');
+      if(summary){
+        summary.addEventListener('keydown', function(event){
+          if(event.key === 'ArrowDown' && item.open){
+            const firstLink = item.querySelector('.mega-panel a, .mega-panel button');
+            if(firstLink){
+              event.preventDefault();
+              firstLink.focus();
+            }
           }
         });
       }
     });
 
-    document.addEventListener('click', function(e){
-      megas.forEach(function(mega){
-        if(!mega.contains(e.target)) closeMega(mega);
-      });
+    nav.addEventListener('click', function(event){
+      const link = event.target.closest('a[href]');
+      if(!link) return;
+      if(!shell.contains(link)) return;
+      closeNav();
     });
 
-    document.addEventListener('keydown', function(e){
-      if(e.key === 'Escape') closeAllMegas();
+    function handleEscape(event){
+      if(event.key !== 'Escape') return;
+      const openDetail = details.find(function(item){ return item.open; });
+      if(openDetail){
+        event.preventDefault();
+        openDetail.open = false;
+        syncSummary(openDetail);
+        const summary = openDetail.querySelector('.mega-trigger');
+        if(summary) summary.focus();
+        return;
+      }
+      if(isNavOpen()){
+        event.preventDefault();
+        closeNav();
+        toggle.focus();
+      }
+    }
+
+    panel.addEventListener('keydown', handleEscape);
+    document.addEventListener('keydown', handleEscape);
+
+    document.addEventListener('click', function(event){
+      if(header.contains(event.target)) return;
+      closeAllDetails();
+      if(isNavOpen()) closeNav();
     });
+
+    function syncForViewport(){
+      if(desktopBreakpoint.matches){
+        shell.classList.remove('open');
+        overlay.hidden = true;
+        setWidgetSuppression(false);
+      } else {
+        closeAllDetails();
+      }
+    }
+
+    if(typeof desktopBreakpoint.addEventListener === 'function'){
+      desktopBreakpoint.addEventListener('change', syncForViewport);
+    } else if(typeof desktopBreakpoint.addListener === 'function'){
+      desktopBreakpoint.addListener(syncForViewport);
+    }
+
+    syncForViewport();
   }
 
   initPrimaryNav();
