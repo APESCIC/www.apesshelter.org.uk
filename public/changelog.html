@@ -26,7 +26,7 @@
       <div>
         <p class="eyebrow">Changelog</p>
         <h1>Website version history.</h1>
-        <p>Current package version: v0.0.11 Beta. This page tracks live release history with clear change types for each update.</p>
+        <p>Current package version: v0.0.12 Beta. This page tracks live release history with clear change types for each update.</p>
         <div class="actions">
           <a class="button-gold" href="#changelog-entries">View entries</a>
           <a class="button-outline" href="#known-issues">Known issues</a>
@@ -64,13 +64,29 @@
     <article class="card snapshot-card">
       <span class="snapshot-icon" aria-hidden="true">🔄</span>
       <h2>Updates</h2>
-      <p>Version references were updated to v0.0.11 Beta in changelog, release badges, release docs and manifests.</p>
+      <p>Version references were updated to v0.0.12 Beta in changelog, release badges, release docs and manifests.</p>
     </article>
   </section>
 
   <section class="accordion section" id="changelog-entries" aria-label="Changelog entries">
     <article class="accordion-item open">
-      <button class="accordion-button" type="button" aria-expanded="true"><span>v0.0.11 Beta — Footer refresh and 90% shared-width layout</span><span aria-hidden="true">+</span></button>
+      <button class="accordion-button" type="button" aria-expanded="true"><span>v0.0.12 Beta — APES-style drawer navigation port</span><span aria-hidden="true">+</span></button>
+      <div class="accordion-content">
+        <p><strong>Release date:</strong> 6 June 2026.</p>
+        <p><strong>Release type:</strong> Shared navigation UX and versioning update.</p>
+        <ul>
+          <li><strong>Navigation:</strong> Rebuilt the shared header to use the APES drawer-and-details nav behaviour while keeping every Shelter label, group and destination unchanged.</li>
+          <li><strong>Mobile UX:</strong> Added overlay close, Escape close, outside-click close, resize sync and scroll-lock behaviour for the shared mobile drawer.</li>
+          <li><strong>Compatibility:</strong> Added shared-nav safeguards so third-party widgets are suppressed while the mobile nav is open.</li>
+          <li><strong>Compliance:</strong> Re-checked footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub after the shared nav change.</li>
+          <li><strong>SEO/Error pages:</strong> Verified no sitemap or metadata route changes were needed and confirmed the shared nav still applies to the branded 404 page.</li>
+          <li><strong>Update:</strong> Updated current site version labels and release docs to v0.0.12 Beta.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="accordion-item">
+      <button class="accordion-button" type="button" aria-expanded="false"><span>v0.0.11 Beta — Footer refresh and 90% shared-width layout</span><span aria-hidden="true">+</span></button>
       <div class="accordion-content">
         <p><strong>Release date:</strong> 4 June 2026.</p>
         <p><strong>Release type:</strong> Shared layout, footer UX and versioning update.</p>

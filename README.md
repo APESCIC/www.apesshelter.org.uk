@@ -6,9 +6,9 @@ This repository is used to support the development, maintenance, improvement and
 
 ## Current Release Note
 
-Current public release: **v0.0.11 Beta**.
+Current public release: **v0.0.12 Beta**.
 
-This release refreshes the shared website footer to a fuller APES-style layout, updates shared containers to a 90% desktop/tablet viewport width, and records the footer/legal route checks required for a user-visible shared template change.
+This release ports the shared Shelter navigation onto the more robust APES drawer-and-details behaviour model, preserves existing Shelter menu content, and records the shared-template QA and footer/SEO/error-page checks required for a user-visible nav change.
 
 ## About APES Shelter and Rescue
 

@@ -26,6 +26,14 @@
 - Change type: Responsive. Confirm the footer stacks cleanly on tablet and mobile with no horizontal scrolling.
 - Change type: Versioning. Confirm footer version badge and changelog current version both show v0.0.11 Beta.
 
+## v0.0.12 Beta notes
+- Change type: Navigation. Confirm the mobile drawer opens and closes on homepage, contact page and 404 page.
+- Change type: Grouped menus. Confirm Animal Services, Support APES and Information use native grouped-menu behaviour and close on outside click and Escape.
+- Change type: Responsive. Confirm the shared nav remains horizontal at desktop widths and scroll-contained at mobile widths without horizontal overflow.
+- Change type: Widget suppression. Confirm donor, chat, push and banner widgets do not cover the mobile drawer while it is open.
+- Change type: Compliance. Re-check footer links for Donate, Privacy Policy, Terms of Service and Change Log Hub after the shared-nav change.
+- Change type: Versioning. Confirm footer version badge and changelog current version both show v0.0.12 Beta.
+
 ## v0.0.9 Beta notes
 - Change type: Feature. Check dog-cat-rehoming.html loads and all listed rescue/shelter links open correctly.
 - Change type: Filtering. Check the Dog & Cat Rehoming finder search and category tabs (All, Dogs, Cats) work as expected.

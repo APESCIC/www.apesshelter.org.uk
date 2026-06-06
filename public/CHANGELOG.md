@@ -1,5 +1,13 @@
 # Public Website Changelog
 
+## v0.0.12 Beta - 6 June 2026
+
+- Shared navigation rebuilt to use an APES-style mobile drawer and native grouped menu behaviour without changing Shelter route labels or destinations.
+- Mobile nav now supports overlay close, Escape close, outside-click close, scroll lock and safer behaviour around shared widgets.
+- Footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub were re-checked after the nav update.
+- Sitemap, page metadata and the branded 404 page were reviewed and did not need route-related changes.
+- Public release labels and release records updated to v0.0.12 Beta.
+
 ## v0.0.11 Beta - 4 June 2026
 
 - Shared layout updated to a 90% viewport width on desktop and tablet, with a mobile readability exception.
