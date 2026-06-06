@@ -1,6 +1,6 @@
 # Integration Register
 
-Version: v0.0.15 Beta
+Version: v0.0.16 Beta
 
 | Service | URL | Treatment |
 |---|---|---|
@@ -10,6 +10,15 @@ Version: v0.0.15 Beta
 | ShelterManager found pet form | https://service.sheltermanager.com/asmservice?account=apes&method=online_form_html&formid=25 | External hosted form |
 | Contact Centre | https://contact.apesshelter.org.uk/ | External support route |
 | Service User Portal | https://www.apesshelter.org.uk/signin | External authenticated route |
+
+## v0.0.16 Beta notes
+- Change type: Navigation. Shared Shelter menu controller hardened so mobile drawer state, grouped route toggles, Escape handling and resize sync behave more reliably on smaller screens.
+- Change type: Runtime. OneSignal and Hellobar moved into a shared guarded loader so unsupported beta hosts no longer throw production-only console errors.
+- Change type: Compatibility. Existing widget suppression remains in place while the mobile menu is open, and the remaining `share-modal.js` error has been verified as not originating from this repository.
+- Change type: Compliance. Footer links checked again against Donate, Privacy Policy, Terms of Service and Change Log Hub routes.
+- Change type: SEO and error pages. Shared nav verified against the branded 404 page with no sitemap or metadata route changes required.
+- Change type: Versioning. Current public release version bumped to v0.0.16 Beta in live labels, version files, changelog, manifests and release docs.
+
 
 ## v0.0.15 Beta notes
 - Change type: Navigation. Shared Shelter mobile navigation rebuilt to use a wider APES-style panel below the sticky header instead of a narrow right-edge drawer.

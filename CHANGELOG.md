@@ -1,5 +1,14 @@
 # APES Shelter and Rescue Website Changelog
 
+## v0.0.16 Beta - 6 June 2026
+
+- Change type: Navigation. Hardened the shared Shelter menu controller so mobile open and close state, grouped menu toggles, Escape handling and resize sync behave more reliably across injected layouts and smaller screens.
+- Change type: Runtime. Replaced repeated page-level OneSignal and Hellobar bootstraps with a shared guarded loader so unsupported beta hosts no longer throw production-domain errors in the console.
+- Change type: Compatibility. Preserved donor, chat, push and banner widget suppression while the mobile menu is open and confirmed the remaining `share-modal.js` error is not sourced from this repository.
+- Change type: Compliance. Re-checked shared footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub after the shared runtime patch.
+- Change type: SEO and error pages. Verified that sitemap records, page metadata and the branded 404 page required no route changes for this navigation and runtime patch.
+- Change type: Release records. Added synced root and public `VERSION` files, updated visible version labels, manifest records, QA notes and release documentation to v0.0.16 Beta.
+
 ## v0.0.15 Beta - 6 June 2026
 
 - Change type: Navigation. Reworked the shared Shelter mobile navigation to match the wider `www.apes.org.uk` mobile-menu pattern, replacing the narrow right-edge drawer feel with a centered, header-offset panel.

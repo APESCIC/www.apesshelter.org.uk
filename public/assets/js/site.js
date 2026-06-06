@@ -9,6 +9,7 @@
     const nav = header ? header.querySelector('.main-nav') : null;
     const details = header ? Array.from(header.querySelectorAll('.mega-details')) : [];
     const desktopBreakpoint = window.matchMedia('(min-width: 981px)');
+    const mobileBreakpoint = window.matchMedia('(max-width: 980px)');
 
     if(!header || !toggle || !close || !shell || !panel || !overlay || !nav || !details.length) return;
     if(header.getAttribute('data-nav-initialized') === 'true') return;
@@ -31,6 +32,12 @@
 
     function closeAllDetails(){
       closeOtherDetails(null);
+    }
+
+    function setDetailOpen(detailsEl, open){
+      detailsEl.open = open;
+      syncSummary(detailsEl);
+      if(open) closeOtherDetails(detailsEl);
     }
 
     function isNavOpen(){
@@ -81,7 +88,18 @@
       });
       const summary = item.querySelector('.mega-trigger');
       if(summary){
+        summary.addEventListener('click', function(event){
+          if(!mobileBreakpoint.matches) return;
+          if(event.detail === 0) return;
+          event.preventDefault();
+          setDetailOpen(item, !item.open);
+        });
         summary.addEventListener('keydown', function(event){
+          if((event.key === 'Enter' || event.key === ' ') && mobileBreakpoint.matches){
+            event.preventDefault();
+            setDetailOpen(item, !item.open);
+            return;
+          }
           if(event.key === 'ArrowDown' && item.open){
             const firstLink = item.querySelector('.mega-panel a, .mega-panel button');
             if(firstLink){
@@ -105,8 +123,7 @@
       const openDetail = details.find(function(item){ return item.open; });
       if(openDetail){
         event.preventDefault();
-        openDetail.open = false;
-        syncSummary(openDetail);
+        setDetailOpen(openDetail, false);
         const summary = openDetail.querySelector('.mega-trigger');
         if(summary) summary.focus();
         return;

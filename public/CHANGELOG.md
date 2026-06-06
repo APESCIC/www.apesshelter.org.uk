@@ -1,5 +1,14 @@
 # Public Website Changelog
 
+## v0.0.16 Beta - 6 June 2026
+
+- Shared mobile navigation logic now handles menu open and close state, grouped route toggles, Escape close and resize sync more reliably on smaller screens.
+- OneSignal and Hellobar are now loaded through a shared host-aware script so the beta hostname no longer throws production-only console errors.
+- Existing widget suppression for donor, chat, push and banner layers was preserved while the mobile menu is open.
+- Footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub were re-checked after the shared runtime patch.
+- Sitemap, page metadata and the branded 404 page were reviewed and did not need route-related changes.
+- Public release labels, version files and release records updated to v0.0.16 Beta.
+
 ## v0.0.15 Beta - 6 June 2026
 
 - Shared mobile navigation now opens as a wider APES-style panel below the sticky header instead of a narrow drawer isolated to the header edge.

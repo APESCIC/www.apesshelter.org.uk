@@ -6,9 +6,9 @@ This repository is used to support the development, maintenance, improvement and
 
 ## Current Release Note
 
-Current public release: **v0.0.15 Beta**.
+Current public release: **v0.0.16 Beta**.
 
-This release rebuilds the shared Shelter mobile navigation to match the wider `www.apes.org.uk` mobile-menu behaviour, keeps the menu offset below the sticky header, preserves close and widget-suppression safeguards, and records the required footer, SEO and error-page checks for the user-visible nav fix.
+This release hardens the shared Shelter navigation so the mobile menu opens and grouped sections toggle more reliably on smaller screens, moves OneSignal and Hellobar into a host-aware shared loader so beta no longer throws production-domain errors, and records the required footer, SEO and error-page checks for the navigation patch.
 
 ## About APES Shelter and Rescue
 

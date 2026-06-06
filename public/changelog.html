@@ -7,17 +7,8 @@
 <link rel="stylesheet" href="assets/css/site.css">
 <script defer src="assets/js/layout.js"></script>
 <script defer src="assets/js/site.js"></script>
+<script defer src="assets/js/third-party.js"></script>
 <script type="module" src="https://donorbox.org/widgets.js" async></script>
-<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-<script>
-  window.OneSignalDeferred = window.OneSignalDeferred || [];
-  OneSignalDeferred.push(async function(OneSignal) {
-    await OneSignal.init({
-      appId: "1d337087-6946-41fd-a6ce-e615bf18528a",
-    });
-  });
-</script>
-<script src="https://my.hellobar.com/d3bc15faadce398d8d09ec3c74fbd3bdd10be771.js" type="text/javascript" charset="utf-8" async="async"></script>
 </head><body><a class="skip-link" href="#main">Skip to main content</a>
 <div data-include="header"></div>
 <main id="main" class="wrap">
@@ -26,7 +17,7 @@
       <div>
         <p class="eyebrow">Changelog</p>
         <h1>Website version history.</h1>
-        <p>Current package version: v0.0.15 Beta. This page tracks live release history with clear change types for each update.</p>
+        <p>Current package version: v0.0.16 Beta. This page tracks live release history with clear change types for each update.</p>
         <div class="actions">
           <a class="button-gold" href="#changelog-entries">View entries</a>
           <a class="button-outline" href="#known-issues">Known issues</a>
@@ -48,29 +39,45 @@
   <section class="snapshot-grid section" aria-label="Recent change highlights">
     <article class="card snapshot-card">
       <span class="snapshot-icon" aria-hidden="true">🐶</span>
-      <h2>New rehoming page</h2>
-      <p>Added a dedicated Dog &amp; Cat Rehoming page with official shelter and rescue listings.</p>
+      <h2>Menu controller patch</h2>
+      <p>Hardened the shared Shelter menu controller so the mobile panel and grouped route toggles behave more reliably.</p>
     </article>
     <article class="card snapshot-card">
       <span class="snapshot-icon" aria-hidden="true">🧭</span>
-      <h2>Navigation updates</h2>
-      <p>Added the new page to the mega menu and linked it from Service Finder and Search.</p>
+      <h2>Host-aware scripts</h2>
+      <p>Moved OneSignal and Hellobar into a shared guarded loader so beta avoids production-only console errors.</p>
     </article>
     <article class="card snapshot-card">
       <span class="snapshot-icon" aria-hidden="true">📣</span>
-      <h2>Clear guidance</h2>
-      <p>Added highlighted notices on Surrender and Rescues pages that APES does not intake dogs or cats.</p>
+      <h2>Runtime cleanup</h2>
+      <p>Preserved widget suppression around the mobile menu while removing repo-owned bootstrap noise from the console.</p>
     </article>
     <article class="card snapshot-card">
       <span class="snapshot-icon" aria-hidden="true">🔄</span>
-      <h2>Updates</h2>
-      <p>Version references were updated to v0.0.15 Beta in changelog, release badges, release docs and manifests.</p>
+      <h2>Release sync</h2>
+      <p>Version references, footer labels, `VERSION` files and release docs were updated to v0.0.16 Beta.</p>
     </article>
   </section>
 
   <section class="accordion section" id="changelog-entries" aria-label="Changelog entries">
     <article class="accordion-item open">
-      <button class="accordion-button" type="button" aria-expanded="true"><span>v0.0.15 Beta — APES-style mobile menu panel alignment patch</span><span aria-hidden="true">+</span></button>
+      <button class="accordion-button" type="button" aria-expanded="true"><span>v0.0.16 Beta — Shared menu controller and runtime guard patch</span><span aria-hidden="true">+</span></button>
+      <div class="accordion-content">
+        <p><strong>Release date:</strong> 6 June 2026.</p>
+        <p><strong>Release type:</strong> Shared navigation bug fix, runtime hardening and versioning update.</p>
+        <ul>
+          <li><strong>Navigation:</strong> Hardened the shared Shelter menu controller so mobile open and close state, grouped route toggles, Escape handling and resize sync behave more reliably on smaller screens.</li>
+          <li><strong>Runtime:</strong> Replaced repeated page-level OneSignal and Hellobar bootstraps with a shared guarded loader so unsupported beta hosts no longer throw production-domain errors.</li>
+          <li><strong>Compatibility:</strong> Preserved donor, chat, push and banner widget suppression while the menu is open and confirmed the remaining `share-modal.js` error is not sourced from this repository.</li>
+          <li><strong>Compliance:</strong> Re-checked footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub after the shared runtime patch.</li>
+          <li><strong>SEO/Error pages:</strong> Verified no sitemap or metadata route changes were needed and confirmed the shared nav still applies to the branded 404 page.</li>
+          <li><strong>Update:</strong> Added synced root and public `VERSION` files and updated current site version labels and release docs to v0.0.16 Beta.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="accordion-item">
+      <button class="accordion-button" type="button" aria-expanded="false"><span>v0.0.15 Beta — APES-style mobile menu panel alignment patch</span><span aria-hidden="true">+</span></button>
       <div class="accordion-content">
         <p><strong>Release date:</strong> 6 June 2026.</p>
         <p><strong>Release type:</strong> Shared navigation UX, mobile presentation and versioning update.</p>
@@ -82,23 +89,6 @@
           <li><strong>Compliance:</strong> Re-checked footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub after the shared nav update.</li>
           <li><strong>SEO/Error pages:</strong> Verified no sitemap or metadata route changes were needed and confirmed the shared nav still applies to the branded 404 page.</li>
           <li><strong>Update:</strong> Updated current site version labels and release docs to v0.0.15 Beta.</li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="accordion-item">
-      <button class="accordion-button" type="button" aria-expanded="false"><span>v0.0.14 Beta — Mobile drawer layering hardening patch</span><span aria-hidden="true">+</span></button>
-      <div class="accordion-content">
-        <p><strong>Release date:</strong> 6 June 2026.</p>
-        <p><strong>Release type:</strong> Shared navigation layering hardening, deployment verification and versioning update.</p>
-        <ul>
-          <li><strong>Navigation:</strong> Added an explicit top-layer stacking context around the shared header, overlay and drawer so the mobile menu stays above hero content, urgent banners and other page sections.</li>
-          <li><strong>Deployment verification:</strong> Confirmed the beta hostname is serving the current shared CSS asset path and flagged that the live hostname should be synced with a full public-folder upload because it does not expose the same asset URL.</li>
-          <li><strong>Mobile UX:</strong> Preserved overlay close, Escape close, outside-click close, resize sync and scroll-lock behaviour while tightening the layering rules.</li>
-          <li><strong>Compatibility:</strong> Kept the shared widget-suppression safeguards in place so donor, chat, push and banner widgets do not cover the mobile drawer.</li>
-          <li><strong>Compliance:</strong> Re-checked footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub after the shared nav patch.</li>
-          <li><strong>SEO/Error pages:</strong> Verified no sitemap or metadata route changes were needed and confirmed the shared nav still applies to the branded 404 page.</li>
-          <li><strong>Update:</strong> Updated current site version labels and release docs to v0.0.14 Beta.</li>
         </ul>
       </div>
     </article>

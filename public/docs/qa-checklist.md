@@ -13,6 +13,15 @@
 - Run WCAG 2.2 AA accessibility testing before public launch.
 
 
+## v0.0.16 Beta notes
+- Change type: Navigation. Confirm the mobile menu button opens and closes the shared panel reliably and that grouped routes toggle open and shut cleanly on smaller screens.
+- Change type: Behaviour. Confirm close button, overlay tap, outside click, Escape and link follow all close the menu cleanly, and that resizing back to desktop does not leave drawer classes stuck.
+- Change type: Runtime. Confirm the beta hostname no longer logs the repo-owned OneSignal or Hellobar unsupported-host errors in the console.
+- Change type: Widget suppression. Confirm donor, chat, push and banner widgets still stay behind the mobile panel while it is open.
+- Change type: Compliance. Re-check footer links for Donate, Privacy Policy, Terms of Service and Change Log Hub after the shared runtime patch.
+- Change type: Versioning. Confirm footer version badge, changelog current version and `VERSION` files all show v0.0.16 Beta.
+
+
 ## v0.0.15 Beta notes
 - Change type: Navigation. Confirm the mobile menu opens below the sticky header as a centered or wide APES-style panel rather than a narrow right-edge drawer.
 - Change type: Responsive. Confirm the panel looks substantial and usable at approximately 980px, 768px, 430px and 360px with no clipped grouped routes.

@@ -727,6 +727,8 @@ body.nav-open{overflow:hidden}
   border:0;
   font:inherit;
   cursor:pointer;
+  touch-action:manipulation;
+  -webkit-tap-highlight-color:transparent;
 }
 .main-nav a:hover,
 .main-nav a:focus-visible,
@@ -882,6 +884,10 @@ body.nav-widgets-suppressed [class*="hellobar"]{
   .main-nav .mega-trigger{
     position:relative;
     padding-right:3.2rem;
+  }
+  .main-nav .mega-details{
+    display:grid;
+    gap:.45rem;
   }
   .main-nav .mega-trigger span[aria-hidden="true"]{
     position:absolute;
