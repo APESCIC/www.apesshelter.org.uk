@@ -1,5 +1,14 @@
 # Public Website Changelog
 
+## v0.0.19 Beta - 6 June 2026
+
+- Mobile header spacing now leaves a small gap below the Menu button instead of letting it sit flush with the bottom of the sticky nav bar.
+- The opened mobile navigation panel now sits just below the nav bar with only a small intentional gap instead of the larger space shown on phone screens.
+- Existing menu close, reopen, overlay, grouped-route and widget-suppression behaviour was preserved while refining spacing only.
+- Footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub were re-checked after the mobile navigation spacing patch.
+- Sitemap, robots/noindex rules, page metadata, Newsroom routing and the branded 404 page were reviewed and did not need route-related changes.
+- Public release labels, version files and release records updated to v0.0.19 Beta.
+
 ## v0.0.18 Beta - 6 June 2026
 
 - Mobile navigation now removes the closed drawer shell from the phone and tablet layout so it opens directly below the sticky header instead of being pushed down by stale hidden panel height.

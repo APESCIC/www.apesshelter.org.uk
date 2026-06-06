@@ -17,7 +17,7 @@
       <div>
         <p class="eyebrow">Changelog</p>
         <h1>Website version history.</h1>
-        <p>Current package version: v0.0.18 Beta. This page tracks live release history with clear change types for each update.</p>
+        <p>Current package version: v0.0.19 Beta. This page tracks live release history with clear change types for each update.</p>
         <div class="actions">
           <a class="button-gold" href="#changelog-entries">View entries</a>
           <a class="button-outline" href="#known-issues">Known issues</a>
@@ -39,29 +39,45 @@
   <section class="snapshot-grid section" aria-label="Recent change highlights">
     <article class="card snapshot-card">
       <span class="snapshot-icon" aria-hidden="true">🐶</span>
-      <h2>Mobile menu close state</h2>
-      <p>Removed the closed mobile drawer from layout so it opens directly below the sticky header and no longer leaves a blank panel after close.</p>
+      <h2>Mobile header spacing</h2>
+      <p>Added a small bottom gutter to the sticky mobile header so the Menu button no longer sits flush against the nav bar border.</p>
     </article>
     <article class="card snapshot-card">
       <span class="snapshot-icon" aria-hidden="true">🧭</span>
-      <h2>Close and reopen behaviour</h2>
-      <p>Hardened overlay, scroll lock, grouped menu reset, widget suppression and focus handling across mobile menu close paths.</p>
+      <h2>Drawer offset refinement</h2>
+      <p>Tightened the opened mobile drawer offset so the navigation panel sits just below the nav bar with only a small intentional gap.</p>
     </article>
     <article class="card snapshot-card">
       <span class="snapshot-icon" aria-hidden="true">📣</span>
-      <h2>Console log triage</h2>
-      <p>Reviewed uploaded developer-panel errors and documented external share-modal and donation/captcha warnings separately from the nav fix.</p>
+      <h2>Behaviour preserved</h2>
+      <p>Kept existing close, reopen, overlay, grouped-route and widget-suppression behaviour unchanged while refining spacing only.</p>
     </article>
     <article class="card snapshot-card">
       <span class="snapshot-icon" aria-hidden="true">🔄</span>
       <h2>Release sync</h2>
-      <p>Version references, footer labels, `VERSION` files and release docs were updated to v0.0.18 Beta.</p>
+      <p>Version references, footer labels, `VERSION` files and release docs were updated to v0.0.19 Beta.</p>
     </article>
   </section>
 
   <section class="accordion section" id="changelog-entries" aria-label="Changelog entries">
     <article class="accordion-item open">
-      <button class="accordion-button" type="button" aria-expanded="true"><span>v0.0.18 Beta — Mobile navigation close and reopen state patch</span><span aria-hidden="true">+</span></button>
+      <button class="accordion-button" type="button" aria-expanded="true"><span>v0.0.19 Beta — Mobile navigation spacing refinement patch</span><span aria-hidden="true">+</span></button>
+      <div class="accordion-content">
+        <p><strong>Release date:</strong> 6 June 2026.</p>
+        <p><strong>Release type:</strong> Mobile navigation spacing fix, compliance check and versioning update.</p>
+        <ul>
+          <li><strong>Navigation spacing:</strong> Added a mobile-only bottom gutter to the sticky header so the Menu button no longer sits flush against the lower nav bar border.</li>
+          <li><strong>Mobile UX:</strong> Reduced the opened drawer top offset so the navigation panel sits directly below the nav bar with only a small intentional gap on phones.</li>
+          <li><strong>Behaviour:</strong> Preserved overlay state, body scroll lock, grouped routes, widget suppression and close or reopen behaviour while limiting the patch to spacing only.</li>
+          <li><strong>Footer compliance:</strong> Re-checked Donate, Privacy Policy, Terms of Service and Change Log Hub footer routes after the mobile navigation spacing patch.</li>
+          <li><strong>SEO/Error pages:</strong> Verified no sitemap, robots/noindex, metadata, Newsroom routing or branded 404 route changes were needed for this presentation-only patch.</li>
+          <li><strong>Update:</strong> Updated current site version labels, public changelog records, manifest records, QA notes and release docs to v0.0.19 Beta.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="accordion-item">
+      <button class="accordion-button" type="button" aria-expanded="false"><span>v0.0.18 Beta — Mobile navigation close and reopen state patch</span><span aria-hidden="true">+</span></button>
       <div class="accordion-content">
         <p><strong>Release date:</strong> 6 June 2026.</p>
         <p><strong>Release type:</strong> Mobile navigation bug fix, console-log triage, compliance check and versioning update.</p>
