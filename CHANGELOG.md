@@ -1,5 +1,14 @@
 # APES Shelter and Rescue Website Changelog
 
+## v0.0.19 Beta - 6 June 2026
+
+- Change type: Navigation spacing. Added a mobile-only bottom gutter to the sticky header so the Menu button no longer sits flush against the lower header border.
+- Change type: Mobile UX. Reduced the open mobile drawer top offset to a small intentional gap so the navigation panel sits directly below the nav bar instead of leaving a large visual break.
+- Change type: Behaviour preservation. Kept the existing overlay, scroll lock, grouped route, close, reopen and widget-suppression behaviour unchanged while refining spacing only.
+- Change type: Footer compliance. Re-checked shared footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub after the mobile navigation spacing patch.
+- Change type: SEO and error pages. Verified that sitemap records, robots/noindex rules, page metadata, Newsroom routing and the branded 404 page required no route changes for this presentation-only patch.
+- Change type: Release records. Updated root and public `VERSION` files, visible footer labels, public changelog records, manifest records, QA notes and release documentation to v0.0.19 Beta.
+
 ## v0.0.18 Beta - 6 June 2026
 
 - Change type: Navigation fix. Removed the closed mobile navigation shell from the under-980px layout so it cannot add header height, create a large opening gap or leave a blank white panel after close.

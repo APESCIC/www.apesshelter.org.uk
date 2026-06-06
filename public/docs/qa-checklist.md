@@ -13,6 +13,15 @@
 - Run WCAG 2.2 AA accessibility testing before public launch.
 
 
+## v0.0.19 Beta notes
+
+- Change type: Navigation spacing. Confirm the closed mobile header shows a visible gap below the Menu button before the sticky header border.
+- Change type: Mobile UX. Confirm the opened mobile navigation panel sits just below the nav bar with only a small gap at approximately 390px and 585px widths.
+- Change type: Behaviour. Confirm close button, overlay click, Escape, reopen, grouped routes and widget suppression still behave as before.
+- Change type: Compliance. Re-check footer links for Donate, Privacy Policy, Terms of Service and Change Log Hub after the mobile spacing patch.
+- Change type: SEO and error pages. Confirm sitemap records, robots/noindex rules, page metadata, Newsroom routing and the branded 404 page still need no route-related changes.
+- Change type: Versioning. Confirm footer version badge, changelog current version, manifest records and `VERSION` files all show v0.0.19 Beta.
+
 ## v0.0.18 Beta notes
 - Change type: Navigation. Confirm the mobile menu opens directly below the sticky header at 375x667, 390x844, 414x896 and widths just below 980px with no appeal-strip-sized gap.
 - Change type: Close/reopen. Confirm close button, overlay tap, outside click, Escape and link follow remove the drawer cleanly, leave no blank white panel while scrolling and allow at least five repeated reopen cycles.

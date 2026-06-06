@@ -6,9 +6,9 @@ This repository is used to support the development, maintenance, improvement and
 
 ## Current Release Note
 
-Current public release: **v0.0.18 Beta**.
+Current public release: **v0.0.19 Beta**.
 
-This release fixes the mobile navigation close and reopen state so the drawer opens directly below the sticky header, closes without leaving a blank white panel, and records the required console-log, footer, SEO, sitemap and branded 404 checks for the patch.
+This release refines the mobile navigation spacing so the Menu button sits with a small gap above the sticky header border and the opened drawer sits just below the nav bar without the oversized gap seen on phones, while keeping the required footer, SEO, sitemap and branded 404 checks in sync.
 
 ## About APES Shelter and Rescue
 

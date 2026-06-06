@@ -1,6 +1,6 @@
 # Integration Register
 
-Version: v0.0.18 Beta
+Version: v0.0.19 Beta
 
 | Service | URL | Treatment |
 |---|---|---|
@@ -10,6 +10,15 @@ Version: v0.0.18 Beta
 | ShelterManager found pet form | https://service.sheltermanager.com/asmservice?account=apes&method=online_form_html&formid=25 | External hosted form |
 | Contact Centre | https://contact.apesshelter.org.uk/ | External support route |
 | Service User Portal | https://www.apesshelter.org.uk/signin | External authenticated route |
+
+## v0.0.19 Beta notes
+
+- Change type: Navigation spacing. Added a mobile-only bottom header gutter so the Menu button no longer sits flush against the sticky header border.
+- Change type: Mobile UX. Reduced the opened drawer offset so the navigation panel sits just below the nav bar with a small intentional gap.
+- Change type: Behaviour. Preserved overlay, close, reopen, grouped-route and widget-suppression behaviour while limiting the change to spacing.
+- Change type: Compliance. Footer links checked again against Donate, Privacy Policy, Terms of Service and Change Log Hub routes.
+- Change type: SEO and error pages. Confirmed sitemap, robots/noindex, metadata, Newsroom routing and branded 404 behaviour needed no route changes.
+- Change type: Versioning. Current public release version bumped to v0.0.19 Beta in live labels, version files, changelog, manifests and release docs.
 
 ## v0.0.18 Beta notes
 - Change type: Navigation fix. Closed mobile navigation shell no longer participates in the under-980px layout, preventing stale hidden panel height from pushing the drawer below the sticky header.

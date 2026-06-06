@@ -8,6 +8,45 @@ Use this file as repository-level guidance for keeping GitHub work planned, trac
 
 ---
 
+## Project
+
+This is a website project. Make changes on a new branch unless told otherwise.
+
+## Setup
+
+Run:
+
+```bash
+npm install
+```
+
+## Local development
+
+Run:
+
+```bash
+npm run dev
+```
+
+## Checks before completion
+
+Run:
+
+```bash
+npm run lint
+npm run typecheck
+npm run test:e2e
+```
+
+## Safety
+
+Do not edit production secrets.
+Do not deploy automatically.
+Do not commit unless explicitly asked.
+Show the diff and test results first.
+
+---
+
 ## 1. Operating Principles
 
 Before changing a repository, understand the repository structure, the user's request, and the likely public, operational, compliance, or maintenance impact of the work.
