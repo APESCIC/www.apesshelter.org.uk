@@ -6,9 +6,9 @@ This repository is used to support the development, maintenance, improvement and
 
 ## Current Release Note
 
-Current public release: **v0.0.19 Beta**.
+Current public release: **v0.0.20 Beta**.
 
-This release refines the mobile navigation spacing so the Menu button sits with a small gap above the sticky header border and the opened drawer sits just below the nav bar without the oversized gap seen on phones, while keeping the required footer, SEO, sitemap and branded 404 checks in sync.
+This release removes MyAPES Account from the shared main navigation, adds a highlighted Donate route, updates the donation-page Donorbox popup button, and adds a homepage development notice with a dismissible website update popup and live chat route, while keeping footer, SEO, sitemap, 404 and release records in sync.
 
 ## About APES Shelter and Rescue
 

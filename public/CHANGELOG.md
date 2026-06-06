@@ -1,5 +1,16 @@
 # Public Website Changelog
 
+## v0.0.20 Beta - 6 June 2026
+
+- MyAPES Account has been removed from the shared main navigation areas.
+- A highlighted Donate link now appears in the main navigation and opens the donation page.
+- The donation page now uses the supplied Donorbox popup button installer and `Donate Today!` button.
+- The homepage now shows a development notice above the urgent appeal bar and a dismissible website update popup for first-time visitors in a browser profile.
+- Homepage live chat buttons now attempt to open Chatwoot and fall back to the routed APES support-ticket page if chat is not ready.
+- Footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub were re-checked after the navigation and donation update.
+- Sitemap, robots/noindex rules, Newsroom routing and the branded 404 page were reviewed and did not need structural route changes.
+- Public release labels, version files and release records updated to v0.0.20 Beta.
+
 ## v0.0.19 Beta - 6 June 2026
 
 - Mobile header spacing now leaves a small gap below the Menu button instead of letting it sit flush with the bottom of the sticky nav bar.

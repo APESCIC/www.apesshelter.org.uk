@@ -12,6 +12,17 @@
 - Review policies and privacy/cookie wording before public launch.
 - Run WCAG 2.2 AA accessibility testing before public launch.
 
+## v0.0.20 Beta notes
+
+- Change type: Navigation. Confirm MyAPES Account no longer appears in the shared top-strip, main navigation or Support APES mega menu.
+- Change type: Donation CTA. Confirm the highlighted Donate nav link appears on desktop and mobile and opens `donate.html`.
+- Change type: Donorbox. Confirm the donation page renders the supplied Donorbox popup installer button and preserves the donor wall and sticky Donorbox widget.
+- Change type: Homepage notice. Confirm the development notice appears above the urgent appeal bar and includes the requested copy and live chat button.
+- Change type: Popup. Confirm the website update popup appears on first load, closes through the close and Continue buttons, and remains dismissed in the same browser profile.
+- Change type: Live support. Confirm the live chat buttons attempt to open Chatwoot and fall back to the APES support-ticket route if the widget is unavailable.
+- Change type: Compliance. Re-check footer links for Donate, Privacy Policy, Terms of Service and Change Log Hub after the nav and donation patch.
+- Change type: SEO and error pages. Confirm sitemap records, robots/noindex rules, Newsroom routing and the branded 404 page still need no route-related changes.
+- Change type: Versioning. Confirm footer version badge, changelog current version, manifest records and `VERSION` files all show v0.0.20 Beta.
 
 ## v0.0.19 Beta notes
 

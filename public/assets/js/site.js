@@ -246,6 +246,80 @@
 })();
 
 
+// v0.0.20 Beta homepage development notice and live chat launcher
+(function(){
+  const chatFallbackUrl = 'https://contact.apes.org.uk/help/3459567754';
+  const modal = document.querySelector('[data-development-modal]');
+  const dismissButtons = modal ? Array.from(modal.querySelectorAll('[data-development-dismiss]')) : [];
+  const storageKey = 'apesShelterDevelopmentNoticeDismissed';
+
+  function openLiveChat(){
+    if(window.$chatwoot && typeof window.$chatwoot.toggle === 'function'){
+      window.$chatwoot.toggle('open');
+      return;
+    }
+    if(window.$chatwoot && typeof window.$chatwoot.open === 'function'){
+      window.$chatwoot.open();
+      return;
+    }
+    window.open(chatFallbackUrl, 'apes-live-chat-fallback', 'popup=yes,width=960,height=760,scrollbars=yes,resizable=yes');
+  }
+
+  document.addEventListener('click', function(event){
+    const trigger = event.target.closest('[data-open-live-chat]');
+    if(!trigger) return;
+    event.preventDefault();
+    if(modal && modal.contains(trigger)){
+      closeModal();
+    }
+    openLiveChat();
+  });
+
+  if(!modal) return;
+
+  function storageDismissed(){
+    try{
+      return window.localStorage && window.localStorage.getItem(storageKey) === 'true';
+    } catch(error){
+      return false;
+    }
+  }
+
+  function setDismissed(){
+    try{
+      if(window.localStorage) window.localStorage.setItem(storageKey, 'true');
+    } catch(error){}
+  }
+
+  function closeModal(){
+    setDismissed();
+    modal.hidden = true;
+    document.body.classList.remove('development-modal-open');
+  }
+
+  function openModal(){
+    modal.hidden = false;
+    document.body.classList.add('development-modal-open');
+    const closeButton = modal.querySelector('.development-modal-close');
+    if(closeButton) closeButton.focus();
+  }
+
+  dismissButtons.forEach(function(button){
+    button.addEventListener('click', closeModal);
+  });
+
+  document.addEventListener('keydown', function(event){
+    if(event.key === 'Escape' && !modal.hidden){
+      closeModal();
+    }
+  });
+
+  if(!storageDismissed()){
+    window.setTimeout(openModal, 500);
+  }
+})();
+
+
 (function(){
   const helper=document.querySelector('[data-route-helper]');
   if(!helper) return;

@@ -1,5 +1,5 @@
 # APES Shelter & Rescue Website
-Version: v0.0.19 Beta
+Version: v0.0.20 Beta
 
 ## Simple upload instructions
 
@@ -41,6 +41,15 @@ No database is needed. No command line is needed. No build step is needed.
 Check every button, external form and phone/email link. Review policies, privacy/cookies, refund address, donation provider and newsletter wording before making the site live.
 
 Menu update: the main navigation now uses Home, Animal Services, Support APES and Information, each with its own mega menu route.
+
+v0.0.20 Beta changes:
+
+- Change type: Navigation. Removed MyAPES Account from the shared main navigation areas and added a highlighted Donate link to the donation page.
+- Change type: Donations. Updated the donation page to use the supplied Donorbox popup installer and Donate Today button.
+- Change type: Homepage notice. Added a development notice above the urgent appeal bar and a dismissible website update popup with live chat support.
+- Change type: Compliance. Re-checked shared footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub after the navigation and donation patch.
+- Change type: SEO and error pages. Confirmed sitemap, robots/noindex, Newsroom routing and the branded 404 page needed no structural route changes.
+- Change type: Versioning. Bumped current package version labels and release docs to v0.0.20 Beta.
 
 v0.0.19 Beta changes:
 

@@ -1,5 +1,15 @@
 # APES Shelter and Rescue Website Changelog
 
+## v0.0.20 Beta - 6 June 2026
+
+- Change type: Navigation. Removed MyAPES Account from the shared top-strip, main navigation and Support APES mega menu, then added a highlighted Donate link pointing to the donation page.
+- Change type: Donations. Replaced the donation-page call-to-action with the supplied Donorbox popup button installer and inline `Donate Today!` button while preserving the donor wall and sticky Donorbox widget.
+- Change type: Homepage notice. Added a development notice above the urgent appeal bar and a dismissible website update popup that stays dismissed in the same browser profile using local storage.
+- Change type: Live support. Added shared live chat launch handling for the homepage notice and popup, with a routed support-ticket fallback if Chatwoot is not ready.
+- Change type: Footer compliance. Re-checked shared footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub after the navigation and donation updates.
+- Change type: SEO and error pages. Verified that no public routes were added, removed or renamed, so sitemap records, robots/noindex rules, Newsroom routing and the branded 404 page required no structural changes.
+- Change type: Release records. Updated root and public `VERSION` files, visible footer labels, public changelog records, manifest records, QA notes and release documentation to v0.0.20 Beta.
+
 ## v0.0.19 Beta - 6 June 2026
 
 - Change type: Navigation spacing. Added a mobile-only bottom gutter to the sticky header so the Menu button no longer sits flush against the lower header border.

@@ -1,6 +1,6 @@
 # Integration Register
 
-Version: v0.0.19 Beta
+Version: v0.0.20 Beta
 
 | Service | URL | Treatment |
 |---|---|---|
@@ -10,6 +10,15 @@ Version: v0.0.19 Beta
 | ShelterManager found pet form | https://service.sheltermanager.com/asmservice?account=apes&method=online_form_html&formid=25 | External hosted form |
 | Contact Centre | https://contact.apesshelter.org.uk/ | External support route |
 | Service User Portal | https://www.apesshelter.org.uk/signin | External authenticated route |
+
+## v0.0.20 Beta notes
+
+- Change type: Navigation. Removed MyAPES Account from shared main navigation areas and added a highlighted Donate route to `donate.html`.
+- Change type: Donations. Updated the donation-page call-to-action to use the supplied Donorbox popup installer while preserving the donor wall and sticky Donorbox widget.
+- Change type: Live support. Added homepage development notice and popup live chat buttons that use Chatwoot when available and fall back to the APES support-ticket route.
+- Change type: Compliance. Footer links checked again against Donate, Privacy Policy, Terms of Service and Change Log Hub routes.
+- Change type: SEO and error pages. Confirmed sitemap, robots/noindex, Newsroom routing and branded 404 behaviour needed no structural route changes.
+- Change type: Versioning. Current public release version bumped to v0.0.20 Beta in live labels, version files, changelog, manifests and release docs.
 
 ## v0.0.19 Beta notes
 
