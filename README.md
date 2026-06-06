@@ -6,9 +6,9 @@ This repository is used to support the development, maintenance, improvement and
 
 ## Current Release Note
 
-Current public release: **v0.0.17 Beta**.
+Current public release: **v0.0.18 Beta**.
 
-This release aligns the shared Shelter header, footer and navigation more closely with the APESCIC shared pattern, hardens desktop mega-panel positioning and mobile menu lifecycle cleanup, and records the required footer, SEO, sitemap and branded 404 checks for the patch.
+This release fixes the mobile navigation close and reopen state so the drawer opens directly below the sticky header, closes without leaving a blank white panel, and records the required console-log, footer, SEO, sitemap and branded 404 checks for the patch.
 
 ## About APES Shelter and Rescue
 

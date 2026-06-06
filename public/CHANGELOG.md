@@ -1,5 +1,14 @@
 # Public Website Changelog
 
+## v0.0.18 Beta - 6 June 2026
+
+- Mobile navigation now removes the closed drawer shell from the phone and tablet layout so it opens directly below the sticky header instead of being pushed down by stale hidden panel height.
+- Closing the mobile menu now clears overlay, scroll lock, grouped routes, widget suppression and focus state more reliably, preventing the blank white panel flash and allowing the menu to reopen repeatedly.
+- The uploaded developer panel log was reviewed: the repeated `share-modal.js` error is not sourced from this repository, and donation/captcha/fingerprint messages remain third-party embed warnings unless a donation-flow failure is confirmed.
+- Footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub were re-checked after the mobile navigation patch.
+- Sitemap, robots/noindex rules, page metadata, Newsroom routing and the branded 404 page were reviewed and did not need route-related changes.
+- Public release labels, version files and release records updated to v0.0.18 Beta.
+
 ## v0.0.17 Beta - 6 June 2026
 
 - Shared header, footer and navigation behaviour now aligns more closely with the APESCIC shared pattern while preserving Shelter-specific labels, routes, branding, contact details and legal links.

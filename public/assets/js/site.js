@@ -55,18 +55,33 @@
       document.body.classList.toggle('nav-widgets-suppressed', active);
     }
 
-    function setNavOpen(open){
+    function setPanelDisabled(disabled){
+      if(disabled){
+        panel.setAttribute('aria-hidden', 'true');
+        panel.setAttribute('inert', '');
+      } else {
+        panel.removeAttribute('aria-hidden');
+        panel.removeAttribute('inert');
+      }
+    }
+
+    function setNavOpen(open, options){
+      const settings = options || {};
       syncNavigationOffsets();
+      if(!open) closeAllDetails();
       shell.classList.toggle('open', open);
       toggle.setAttribute('aria-expanded', String(open));
       toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
       overlay.hidden = !open;
+      setPanelDisabled(!open);
       setWidgetSuppression(open);
-      if(!open) closeAllDetails();
+      if(!open && settings.restoreFocus && document.contains(toggle)){
+        toggle.focus();
+      }
     }
 
-    function closeNav(){
-      setNavOpen(false);
+    function closeNav(options){
+      setNavOpen(false, options);
     }
 
     function openNav(){
@@ -78,8 +93,12 @@
       else openNav();
     });
 
-    close.addEventListener('click', closeNav);
-    overlay.addEventListener('click', closeNav);
+    close.addEventListener('click', function(){
+      closeNav({ restoreFocus: true });
+    });
+    overlay.addEventListener('click', function(){
+      closeNav({ restoreFocus: true });
+    });
 
     details.forEach(function(item){
       syncSummary(item);
@@ -131,8 +150,7 @@
       }
       if(isNavOpen()){
         event.preventDefault();
-        closeNav();
-        toggle.focus();
+        closeNav({ restoreFocus: true });
       }
     }
 
@@ -142,7 +160,7 @@
     document.addEventListener('click', function(event){
       if(header.contains(event.target)) return;
       closeAllDetails();
-      if(isNavOpen()) closeNav();
+      if(isNavOpen()) closeNav({ restoreFocus: true });
     });
 
     function syncForViewport(){
@@ -150,10 +168,12 @@
       if(desktopBreakpoint.matches){
         shell.classList.remove('open');
         overlay.hidden = true;
+        setPanelDisabled(false);
         setWidgetSuppression(false);
         syncNavigationOffsets();
       } else {
         closeAllDetails();
+        setPanelDisabled(!isNavOpen());
       }
     }
 
@@ -161,6 +181,7 @@
       closeNav();
       closeAllDetails();
       overlay.hidden = true;
+      setPanelDisabled(!desktopBreakpoint.matches);
       setWidgetSuppression(false);
       syncNavigationOffsets();
     }
@@ -183,6 +204,7 @@
       syncForViewport();
     });
 
+    setPanelDisabled(mobileBreakpoint.matches);
     syncForViewport();
   }
 

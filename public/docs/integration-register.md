@@ -1,6 +1,6 @@
 # Integration Register
 
-Version: v0.0.17 Beta
+Version: v0.0.18 Beta
 
 | Service | URL | Treatment |
 |---|---|---|
@@ -10,6 +10,15 @@ Version: v0.0.17 Beta
 | ShelterManager found pet form | https://service.sheltermanager.com/asmservice?account=apes&method=online_form_html&formid=25 | External hosted form |
 | Contact Centre | https://contact.apesshelter.org.uk/ | External support route |
 | Service User Portal | https://www.apesshelter.org.uk/signin | External authenticated route |
+
+## v0.0.18 Beta notes
+- Change type: Navigation fix. Closed mobile navigation shell no longer participates in the under-980px layout, preventing stale hidden panel height from pushing the drawer below the sticky header.
+- Change type: Behaviour. Mobile close and reopen handling now resets overlay, body scroll lock, grouped menus, widget suppression and focus state consistently.
+- Change type: Console triage. Uploaded developer panel log reviewed; `share-modal.js` remains outside this repository, and Donorbox/FingerprintJS/reCAPTCHA/hCaptcha messages are tracked as third-party embed warnings unless donation testing confirms a user-facing fault.
+- Change type: Compliance. Footer links checked again against Donate, Privacy Policy, Terms of Service and Change Log Hub routes.
+- Change type: SEO and error pages. Sitemap, robots/noindex rules, page metadata, Newsroom routing and branded 404 page verified with no route changes required.
+- Change type: Versioning. Current public release version bumped to v0.0.18 Beta in live labels, version files, changelog, manifests and release docs.
+
 
 ## v0.0.17 Beta notes
 - Change type: Navigation. Shared APES-style Shelter header controller now syncs both mobile and desktop menu offsets and cleans up menu state on pagehide, beforeunload and persisted pageshow.

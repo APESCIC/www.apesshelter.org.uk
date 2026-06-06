@@ -1,5 +1,14 @@
 # APES Shelter and Rescue Website Changelog
 
+## v0.0.18 Beta - 6 June 2026
+
+- Change type: Navigation fix. Removed the closed mobile navigation shell from the under-980px layout so it cannot add header height, create a large opening gap or leave a blank white panel after close.
+- Change type: Behaviour. Hardened mobile close and reopen handling so overlay state, body scroll lock, grouped menu state, widget suppression and focus restoration reset consistently across close paths.
+- Change type: Console triage. Reviewed the uploaded developer panel log and documented that the repeated `share-modal.js` null listener error is not sourced from this repository, while Donorbox/FingerprintJS/reCAPTCHA/hCaptcha messages remain third-party embed noise unless donation testing shows a user-facing failure.
+- Change type: Footer compliance. Re-checked shared footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub after the mobile navigation patch.
+- Change type: SEO and error pages. Verified that sitemap records, robots/noindex rules, page metadata, Newsroom routing and the branded 404 page required no route changes for this behaviour-only patch.
+- Change type: Release records. Updated root and public `VERSION` files, visible footer labels, public changelog records, manifest records, QA notes and release documentation to v0.0.18 Beta.
+
 ## v0.0.17 Beta - 6 June 2026
 
 - Change type: Navigation. Hardened the shared APES-style Shelter header controller with synced mobile and desktop menu offsets, pagehide cleanup, beforeunload cleanup and persisted pageshow reset handling.
