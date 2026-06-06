@@ -26,7 +26,7 @@
       <div>
         <p class="eyebrow">Changelog</p>
         <h1>Website version history.</h1>
-        <p>Current package version: v0.0.14 Beta. This page tracks live release history with clear change types for each update.</p>
+        <p>Current package version: v0.0.15 Beta. This page tracks live release history with clear change types for each update.</p>
         <div class="actions">
           <a class="button-gold" href="#changelog-entries">View entries</a>
           <a class="button-outline" href="#known-issues">Known issues</a>
@@ -64,13 +64,30 @@
     <article class="card snapshot-card">
       <span class="snapshot-icon" aria-hidden="true">🔄</span>
       <h2>Updates</h2>
-      <p>Version references were updated to v0.0.14 Beta in changelog, release badges, release docs and manifests.</p>
+      <p>Version references were updated to v0.0.15 Beta in changelog, release badges, release docs and manifests.</p>
     </article>
   </section>
 
   <section class="accordion section" id="changelog-entries" aria-label="Changelog entries">
     <article class="accordion-item open">
-      <button class="accordion-button" type="button" aria-expanded="true"><span>v0.0.14 Beta — Mobile drawer layering hardening patch</span><span aria-hidden="true">+</span></button>
+      <button class="accordion-button" type="button" aria-expanded="true"><span>v0.0.15 Beta — APES-style mobile menu panel alignment patch</span><span aria-hidden="true">+</span></button>
+      <div class="accordion-content">
+        <p><strong>Release date:</strong> 6 June 2026.</p>
+        <p><strong>Release type:</strong> Shared navigation UX, mobile presentation and versioning update.</p>
+        <ul>
+          <li><strong>Navigation:</strong> Reworked the shared Shelter mobile navigation so it opens as a wider APES-style panel below the sticky header instead of a narrow right-edge drawer.</li>
+          <li><strong>Mobile UX:</strong> Added synced header offset positioning, stronger page overlay coverage and a scroll-contained route list so grouped routes open cleanly inside the mobile panel.</li>
+          <li><strong>Behaviour:</strong> Preserved overlay close, Escape close, outside-click close, resize sync, link-close behaviour and grouped-menu exclusivity while rebuilding the mobile panel layout.</li>
+          <li><strong>Compatibility:</strong> Kept the shared widget-suppression safeguards in place so donor, chat, push and banner widgets do not cover the mobile menu.</li>
+          <li><strong>Compliance:</strong> Re-checked footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub after the shared nav update.</li>
+          <li><strong>SEO/Error pages:</strong> Verified no sitemap or metadata route changes were needed and confirmed the shared nav still applies to the branded 404 page.</li>
+          <li><strong>Update:</strong> Updated current site version labels and release docs to v0.0.15 Beta.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="accordion-item">
+      <button class="accordion-button" type="button" aria-expanded="false"><span>v0.0.14 Beta — Mobile drawer layering hardening patch</span><span aria-hidden="true">+</span></button>
       <div class="accordion-content">
         <p><strong>Release date:</strong> 6 June 2026.</p>
         <p><strong>Release type:</strong> Shared navigation layering hardening, deployment verification and versioning update.</p>

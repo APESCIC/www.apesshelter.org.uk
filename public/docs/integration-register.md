@@ -1,6 +1,6 @@
 # Integration Register
 
-Version: v0.0.14 Beta
+Version: v0.0.15 Beta
 
 | Service | URL | Treatment |
 |---|---|---|
@@ -10,6 +10,15 @@ Version: v0.0.14 Beta
 | ShelterManager found pet form | https://service.sheltermanager.com/asmservice?account=apes&method=online_form_html&formid=25 | External hosted form |
 | Contact Centre | https://contact.apesshelter.org.uk/ | External support route |
 | Service User Portal | https://www.apesshelter.org.uk/signin | External authenticated route |
+
+## v0.0.15 Beta notes
+- Change type: Navigation. Shared Shelter mobile navigation rebuilt to use a wider APES-style panel below the sticky header instead of a narrow right-edge drawer.
+- Change type: UX. Added synced header-offset positioning, full-content overlay coverage and a scroll-contained route list so grouped menus stay usable on phone-width screens.
+- Change type: Behaviour. Existing overlay close, Escape close, outside-click close, resize sync, link-close behaviour and widget suppression preserved during the mobile-nav rebuild.
+- Change type: Compliance. Footer links checked again against Donate, Privacy Policy, Terms of Service and Change Log Hub routes.
+- Change type: SEO and error pages. Shared nav verified against the branded 404 page with no sitemap or metadata route changes required.
+- Change type: Versioning. Current public release version bumped to v0.0.15 Beta in live labels, changelog, manifests and release docs.
+
 
 ## v0.0.14 Beta notes
 - Change type: Navigation. Shared mobile drawer stacking context hardened so the menu, overlay and grouped routes render in a dedicated top layer above hero content, urgent banners and other page sections on small screens.

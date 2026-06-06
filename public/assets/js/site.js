@@ -37,14 +37,21 @@
       return shell.classList.contains('open');
     }
 
+    function syncMobileNavigationOffset(){
+      const headerBottom = header ? header.getBoundingClientRect().bottom : 0;
+      document.documentElement.style.setProperty('--mobile-nav-top', Math.max(Math.round(headerBottom), 0) + 'px');
+    }
+
     function setWidgetSuppression(active){
       document.body.classList.toggle('nav-open', active);
       document.body.classList.toggle('nav-widgets-suppressed', active);
     }
 
     function setNavOpen(open){
+      syncMobileNavigationOffset();
       shell.classList.toggle('open', open);
       toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
       overlay.hidden = !open;
       setWidgetSuppression(open);
       if(!open) closeAllDetails();
@@ -121,6 +128,7 @@
     });
 
     function syncForViewport(){
+      syncMobileNavigationOffset();
       if(desktopBreakpoint.matches){
         shell.classList.remove('open');
         overlay.hidden = true;
@@ -135,6 +143,16 @@
     } else if(typeof desktopBreakpoint.addListener === 'function'){
       desktopBreakpoint.addListener(syncForViewport);
     }
+
+    window.addEventListener('resize', syncForViewport);
+    window.addEventListener('scroll', syncMobileNavigationOffset, { passive: true });
+    window.addEventListener('load', syncForViewport);
+    window.addEventListener('pageshow', function(event){
+      if(event.persisted){
+        closeNav();
+      }
+      syncForViewport();
+    });
 
     syncForViewport();
   }

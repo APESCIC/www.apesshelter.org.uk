@@ -1,5 +1,14 @@
 # Public Website Changelog
 
+## v0.0.15 Beta - 6 June 2026
+
+- Shared mobile navigation now opens as a wider APES-style panel below the sticky header instead of a narrow drawer isolated to the header edge.
+- The mobile overlay and panel now use a synced header offset, stronger full-content coverage and a scrollable inner route list so grouped routes open cleanly inside the panel.
+- Existing menu close behaviour for overlay tap, Escape, outside click, resize sync, link follow and widget suppression was preserved while the mobile presentation was rebuilt.
+- Footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub were re-checked after the nav update.
+- Sitemap, page metadata and the branded 404 page were reviewed and did not need route-related changes.
+- Public release labels and release records updated to v0.0.15 Beta.
+
 ## v0.0.14 Beta - 6 June 2026
 
 - Shared mobile navigation now uses an explicit top-layer stacking context so the drawer, overlay and grouped routes stay above homepage hero content, urgent banners and other page sections on small screens.

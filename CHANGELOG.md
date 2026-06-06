@@ -1,5 +1,14 @@
 # APES Shelter and Rescue Website Changelog
 
+## v0.0.15 Beta - 6 June 2026
+
+- Change type: Navigation. Reworked the shared Shelter mobile navigation to match the wider `www.apes.org.uk` mobile-menu pattern, replacing the narrow right-edge drawer feel with a centered, header-offset panel.
+- Change type: UX. The mobile menu now opens below the sticky header with a wider panel, stronger overlay, scroll-contained route list and grouped sections that expand inside the panel instead of feeling trapped in the header bar.
+- Change type: Behaviour. Added a shared `--mobile-nav-top` offset sync so the overlay and panel stay anchored beneath the sticky header across open, resize, scroll, load and pageshow states.
+- Change type: Compliance. Re-checked shared footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub after the mobile navigation update.
+- Change type: SEO and error pages. Verified that sitemap records, page metadata and the branded 404 page required no route changes for this navigation-only patch.
+- Change type: Release records. Updated visible version labels, public changelog records, manifest records, QA notes and release documentation to v0.0.15 Beta.
+
 ## v0.0.14 Beta - 6 June 2026
 
 - Change type: Navigation. Hardened the shared mobile drawer stacking context so the menu and overlay render in a dedicated top layer above homepage hero content, urgent banners and other page sections on phone-width screens.

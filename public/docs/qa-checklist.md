@@ -13,6 +13,16 @@
 - Run WCAG 2.2 AA accessibility testing before public launch.
 
 
+## v0.0.15 Beta notes
+- Change type: Navigation. Confirm the mobile menu opens below the sticky header as a centered or wide APES-style panel rather than a narrow right-edge drawer.
+- Change type: Responsive. Confirm the panel looks substantial and usable at approximately 980px, 768px, 430px and 360px with no clipped grouped routes.
+- Change type: Overlay and scroll lock. Confirm the overlay covers page content below the header, the page behind cannot scroll and the menu list itself scrolls when needed.
+- Change type: Behaviour. Confirm overlay tap, Escape, outside click, link follow and resize back to desktop all close the mobile menu cleanly.
+- Change type: Widget suppression. Confirm donor, chat, push and banner widgets still stay behind the mobile panel while it is open.
+- Change type: Compliance. Re-check footer links for Donate, Privacy Policy, Terms of Service and Change Log Hub after the mobile-nav update.
+- Change type: Versioning. Confirm footer version badge and changelog current version both show v0.0.15 Beta.
+
+
 ## v0.0.14 Beta notes
 - Change type: Navigation. Confirm the mobile drawer sits above the homepage hero, urgent appeal, sticky helpers and other page sections on phone-width viewports.
 - Change type: Deployment verification. Confirm the deployed beta build is serving the current shared CSS asset path and that live deployment receives a full `public/` upload before release signoff.

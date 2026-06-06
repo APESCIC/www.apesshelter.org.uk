@@ -6,9 +6,9 @@ This repository is used to support the development, maintenance, improvement and
 
 ## Current Release Note
 
-Current public release: **v0.0.14 Beta**.
+Current public release: **v0.0.15 Beta**.
 
-This release hardens the shared mobile navigation stacking context so the drawer and overlay stay above page content on small screens, confirms the beta asset path is current, flags live deployment sync risk, and records the footer/SEO/error-page checks required for a user-visible nav fix.
+This release rebuilds the shared Shelter mobile navigation to match the wider `www.apes.org.uk` mobile-menu behaviour, keeps the menu offset below the sticky header, preserves close and widget-suppression safeguards, and records the required footer, SEO and error-page checks for the user-visible nav fix.
 
 ## About APES Shelter and Rescue
 
