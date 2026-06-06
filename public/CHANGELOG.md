@@ -1,5 +1,14 @@
 # Public Website Changelog
 
+## v0.0.14 Beta - 6 June 2026
+
+- Shared mobile navigation now uses an explicit top-layer stacking context so the drawer, overlay and grouped routes stay above homepage hero content, urgent banners and other page sections on small screens.
+- Deployment verification confirmed the beta hostname is serving the current shared CSS asset path and identified that the live hostname should be synced with a full `public/` upload because it does not expose the same asset URL.
+- Existing mobile drawer behaviour for overlay close, Escape close, outside-click close, scroll lock and grouped menus was preserved while the stacking rules were hardened.
+- Footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub were re-checked after the nav patch.
+- Sitemap, page metadata and the branded 404 page were reviewed and did not need route-related changes.
+- Public release labels and release records updated to v0.0.14 Beta.
+
 ## v0.0.13 Beta - 6 June 2026
 
 - Shared mobile navigation layering was raised so the drawer, overlay and grouped routes stay above the homepage hero and other page content on small screens.

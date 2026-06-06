@@ -6,9 +6,9 @@ This repository is used to support the development, maintenance, improvement and
 
 ## Current Release Note
 
-Current public release: **v0.0.13 Beta**.
+Current public release: **v0.0.14 Beta**.
 
-This release fixes the shared mobile navigation layering so the drawer and overlay stay above hero content on small screens, preserves the existing drawer behaviour, and records the footer/SEO/error-page checks required for a user-visible nav fix.
+This release hardens the shared mobile navigation stacking context so the drawer and overlay stay above page content on small screens, confirms the beta asset path is current, flags live deployment sync risk, and records the footer/SEO/error-page checks required for a user-visible nav fix.
 
 ## About APES Shelter and Rescue
 

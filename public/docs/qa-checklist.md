@@ -13,6 +13,16 @@
 - Run WCAG 2.2 AA accessibility testing before public launch.
 
 
+## v0.0.14 Beta notes
+- Change type: Navigation. Confirm the mobile drawer sits above the homepage hero, urgent appeal, sticky helpers and other page sections on phone-width viewports.
+- Change type: Deployment verification. Confirm the deployed beta build is serving the current shared CSS asset path and that live deployment receives a full `public/` upload before release signoff.
+- Change type: Grouped menus. Confirm Animal Services, Support APES and Information grouped routes remain visible and tappable when opened inside the drawer.
+- Change type: Responsive. Confirm the drawer still closes cleanly on outside click, Escape and viewport resize from mobile to desktop, with no horizontal overflow or clipped content.
+- Change type: Widget suppression. Confirm donor, chat, push and banner widgets still stay behind the drawer while it is open.
+- Change type: Compliance. Re-check footer links for Donate, Privacy Policy, Terms of Service and Change Log Hub after the layering hardening patch.
+- Change type: Versioning. Confirm footer version badge and changelog current version both show v0.0.14 Beta.
+
+
 ## v0.0.10 Beta notes
 - Change type: Navigation. Confirm Animal Services, Support APES and Information mega menus each open as separate menus and close correctly on outside click and Escape.
 - Change type: UX. Check mega-menu intros, pills and link cards are readable on desktop and mobile.

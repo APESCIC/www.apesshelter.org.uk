@@ -1,5 +1,14 @@
 # APES Shelter and Rescue Website Changelog
 
+## v0.0.14 Beta - 6 June 2026
+
+- Change type: Navigation. Hardened the shared mobile drawer stacking context so the menu and overlay render in a dedicated top layer above homepage hero content, urgent banners and other page sections on phone-width screens.
+- Change type: Deployment verification. Confirmed the beta hostname is serving the current shared CSS asset path and flagged that the live hostname deployment should be synced using a full `public/` upload because it does not currently expose the same asset URL.
+- Change type: UX. Preserved overlay close, Escape close, outside-click close, scroll lock, grouped-menu expansion and widget suppression while tightening the drawer layering rules.
+- Change type: Compliance. Re-checked shared footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub after the nav hardening patch.
+- Change type: SEO and error pages. Verified that sitemap records, page metadata and the branded 404 page required no route changes for this presentation-layer update.
+- Change type: Release records. Updated visible version labels, public changelog records and release documentation to v0.0.14 Beta.
+
 ## v0.0.13 Beta - 6 June 2026
 
 - Change type: Navigation. Raised the shared mobile drawer navigation stacking order so the menu, overlay and grouped routes stay above homepage hero content and other page sections on small screens.

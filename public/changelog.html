@@ -26,7 +26,7 @@
       <div>
         <p class="eyebrow">Changelog</p>
         <h1>Website version history.</h1>
-        <p>Current package version: v0.0.13 Beta. This page tracks live release history with clear change types for each update.</p>
+        <p>Current package version: v0.0.14 Beta. This page tracks live release history with clear change types for each update.</p>
         <div class="actions">
           <a class="button-gold" href="#changelog-entries">View entries</a>
           <a class="button-outline" href="#known-issues">Known issues</a>
@@ -64,13 +64,30 @@
     <article class="card snapshot-card">
       <span class="snapshot-icon" aria-hidden="true">🔄</span>
       <h2>Updates</h2>
-      <p>Version references were updated to v0.0.13 Beta in changelog, release badges, release docs and manifests.</p>
+      <p>Version references were updated to v0.0.14 Beta in changelog, release badges, release docs and manifests.</p>
     </article>
   </section>
 
   <section class="accordion section" id="changelog-entries" aria-label="Changelog entries">
     <article class="accordion-item open">
-      <button class="accordion-button" type="button" aria-expanded="true"><span>v0.0.13 Beta — Mobile drawer layering fix</span><span aria-hidden="true">+</span></button>
+      <button class="accordion-button" type="button" aria-expanded="true"><span>v0.0.14 Beta — Mobile drawer layering hardening patch</span><span aria-hidden="true">+</span></button>
+      <div class="accordion-content">
+        <p><strong>Release date:</strong> 6 June 2026.</p>
+        <p><strong>Release type:</strong> Shared navigation layering hardening, deployment verification and versioning update.</p>
+        <ul>
+          <li><strong>Navigation:</strong> Added an explicit top-layer stacking context around the shared header, overlay and drawer so the mobile menu stays above hero content, urgent banners and other page sections.</li>
+          <li><strong>Deployment verification:</strong> Confirmed the beta hostname is serving the current shared CSS asset path and flagged that the live hostname should be synced with a full public-folder upload because it does not expose the same asset URL.</li>
+          <li><strong>Mobile UX:</strong> Preserved overlay close, Escape close, outside-click close, resize sync and scroll-lock behaviour while tightening the layering rules.</li>
+          <li><strong>Compatibility:</strong> Kept the shared widget-suppression safeguards in place so donor, chat, push and banner widgets do not cover the mobile drawer.</li>
+          <li><strong>Compliance:</strong> Re-checked footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub after the shared nav patch.</li>
+          <li><strong>SEO/Error pages:</strong> Verified no sitemap or metadata route changes were needed and confirmed the shared nav still applies to the branded 404 page.</li>
+          <li><strong>Update:</strong> Updated current site version labels and release docs to v0.0.14 Beta.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="accordion-item">
+      <button class="accordion-button" type="button" aria-expanded="false"><span>v0.0.13 Beta — Mobile drawer layering fix</span><span aria-hidden="true">+</span></button>
       <div class="accordion-content">
         <p><strong>Release date:</strong> 6 June 2026.</p>
         <p><strong>Release type:</strong> Shared navigation bug fix and versioning update.</p>
