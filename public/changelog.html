@@ -17,7 +17,7 @@
       <div>
         <p class="eyebrow">Changelog</p>
         <h1>Website version history.</h1>
-        <p>Current package version: v0.0.20 Beta. This page tracks live release history with clear change types for each update.</p>
+        <p>Current package version: v0.0.21 Beta. This page tracks live release history with clear change types for each update.</p>
         <div class="actions">
           <a class="button-gold" href="#changelog-entries">View entries</a>
           <a class="button-outline" href="#known-issues">Known issues</a>
@@ -39,46 +39,45 @@
   <section class="snapshot-grid section" aria-label="Recent change highlights">
     <article class="card snapshot-card">
       <span class="snapshot-icon" aria-hidden="true">🐶</span>
-      <h2>Donation route</h2>
-      <p>Added a highlighted Donate link to the shared navigation and removed MyAPES Account from shared main navigation areas.</p>
+      <h2>Notice scope</h2>
+      <p>Moved the development notice bar into the shared header so it now appears across the site, while keeping the popup on the homepage only.</p>
     </article>
     <article class="card snapshot-card">
       <span class="snapshot-icon" aria-hidden="true">🧭</span>
-      <h2>Donorbox popup</h2>
-      <p>Updated the donation-page call-to-action to use the supplied Donorbox popup installer and Donate Today button.</p>
+      <h2>Homepage popup</h2>
+      <p>Kept the dismissible website update popup on the homepage and preserved its browser-profile dismissal behavior.</p>
     </article>
     <article class="card snapshot-card">
       <span class="snapshot-icon" aria-hidden="true">📣</span>
-      <h2>Development notice</h2>
-      <p>Added a homepage development notice, live chat button and dismissible website update popup for first-time browser visits.</p>
+      <h2>Shared live chat</h2>
+      <p>Preserved the shared live chat button behavior with Chatwoot launch and support-ticket fallback from the site-wide notice.</p>
     </article>
     <article class="card snapshot-card">
       <span class="snapshot-icon" aria-hidden="true">🔄</span>
       <h2>Release sync</h2>
-      <p>Version references, footer labels, `VERSION` files and release docs were updated to v0.0.20 Beta.</p>
+      <p>Version references, footer labels, `VERSION` files and release docs were updated to v0.0.21 Beta.</p>
     </article>
   </section>
 
   <section class="accordion section" id="changelog-entries" aria-label="Changelog entries">
     <article class="accordion-item open">
-      <button class="accordion-button" type="button" aria-expanded="true"><span>v0.0.20 Beta - Donate, navigation and development notice patch</span><span aria-hidden="true">+</span></button>
+      <button class="accordion-button" type="button" aria-expanded="true"><span>v0.0.21 Beta - Development notice scope correction patch</span><span aria-hidden="true">+</span></button>
       <div class="accordion-content">
         <p><strong>Release date:</strong> 6 June 2026.</p>
-        <p><strong>Release type:</strong> Navigation, donation call-to-action, homepage development notice, compliance check and versioning update.</p>
+        <p><strong>Release type:</strong> Development notice scope correction, compliance check and versioning update.</p>
         <ul>
-          <li><strong>Navigation:</strong> Removed MyAPES Account from the shared top-strip, main navigation and Support APES mega menu, then added a highlighted Donate route to the donation page.</li>
-          <li><strong>Donations:</strong> Replaced the donation-page call-to-action with the supplied Donorbox popup button installer and inline Donate Today button while preserving the donor wall and sticky Donorbox widget.</li>
-          <li><strong>Homepage notice:</strong> Added a development notice above the urgent appeal bar and a dismissible website update popup that remains closed in the same browser profile.</li>
-          <li><strong>Live support:</strong> Added shared live chat launcher handling for the homepage notice and popup, with a routed support-ticket fallback if Chatwoot is not ready.</li>
-          <li><strong>Footer compliance:</strong> Re-checked Donate, Privacy Policy, Terms of Service and Change Log Hub footer routes after the navigation and donation update.</li>
+          <li><strong>Notice scope:</strong> Moved the development notice bar into the shared header include so it now appears on shared public pages such as Education.</li>
+          <li><strong>Homepage popup:</strong> Kept the dismissible website update popup on the homepage only and preserved its existing localStorage dismissal behavior.</li>
+          <li><strong>Live support:</strong> Preserved the shared Chatwoot launcher and routed support-ticket fallback for site-wide notice buttons.</li>
+          <li><strong>Footer compliance:</strong> Re-checked Donate, Privacy Policy, Terms of Service and Change Log Hub footer routes after the notice-scope correction.</li>
           <li><strong>SEO/Error pages:</strong> Verified no public routes were added, removed or renamed, so sitemap records, robots/noindex rules, Newsroom routing and the branded 404 page required no structural changes.</li>
-          <li><strong>Update:</strong> Updated current site version labels, public changelog records, manifest records, QA notes and release docs to v0.0.20 Beta.</li>
+          <li><strong>Update:</strong> Updated current site version labels, public changelog records, manifest records, QA notes and release docs to v0.0.21 Beta.</li>
         </ul>
       </div>
     </article>
 
     <article class="accordion-item">
-      <button class="accordion-button" type="button" aria-expanded="false"><span>v0.0.19 Beta - Mobile navigation spacing refinement patch</span><span aria-hidden="true">+</span></button>
+      <button class="accordion-button" type="button" aria-expanded="false"><span>v0.0.20 Beta - Donate, navigation and development notice patch</span><span aria-hidden="true">+</span></button>
       <div class="accordion-content">
         <p><strong>Release date:</strong> 6 June 2026.</p>
         <p><strong>Release type:</strong> Mobile navigation spacing fix, compliance check and versioning update.</p>

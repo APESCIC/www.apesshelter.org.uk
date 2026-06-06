@@ -1,5 +1,14 @@
 # APES Shelter and Rescue Website Changelog
 
+## v0.0.21 Beta - 6 June 2026
+
+- Change type: Homepage notice scope. Moved the development notice bar into the shared header include so it now appears on shared public pages such as Education, while keeping the dismissible website update popup on the homepage only.
+- Change type: Live support. Preserved the existing shared Chatwoot launcher and support-ticket fallback for the site-wide development notice button.
+- Change type: Behaviour. Kept homepage localStorage dismissal behavior unchanged so the popup stays closed in the same browser profile once dismissed.
+- Change type: Footer compliance. Re-checked shared footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub after the notice-scope correction.
+- Change type: SEO and error pages. Verified that no routes were added, removed or renamed, so sitemap records, robots/noindex rules, Newsroom routing and the branded 404 page required no structural changes.
+- Change type: Release records. Updated root and public `VERSION` files, visible footer labels, public changelog records, manifest records, QA notes and release documentation to v0.0.21 Beta.
+
 ## v0.0.20 Beta - 6 June 2026
 
 - Change type: Navigation. Removed MyAPES Account from the shared top-strip, main navigation and Support APES mega menu, then added a highlighted Donate link pointing to the donation page.

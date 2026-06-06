@@ -1,5 +1,14 @@
 # Public Website Changelog
 
+## v0.0.21 Beta - 6 June 2026
+
+- The development notice bar now appears on shared public pages instead of only on the homepage.
+- The website update popup remains homepage-only and still stays dismissed in the same browser profile once closed.
+- Live chat buttons on the site-wide notice continue to use Chatwoot when available and fall back to the APES support-ticket route if chat is not ready.
+- Footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub were re-checked after the notice-scope correction.
+- Sitemap, robots/noindex rules, Newsroom routing and the branded 404 page were reviewed and did not need structural route changes.
+- Public release labels, version files and release records updated to v0.0.21 Beta.
+
 ## v0.0.20 Beta - 6 June 2026
 
 - MyAPES Account has been removed from the shared main navigation areas.

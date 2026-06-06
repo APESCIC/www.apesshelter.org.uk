@@ -1,6 +1,6 @@
 # Integration Register
 
-Version: v0.0.20 Beta
+Version: v0.0.21 Beta
 
 | Service | URL | Treatment |
 |---|---|---|
@@ -10,6 +10,15 @@ Version: v0.0.20 Beta
 | ShelterManager found pet form | https://service.sheltermanager.com/asmservice?account=apes&method=online_form_html&formid=25 | External hosted form |
 | Contact Centre | https://contact.apesshelter.org.uk/ | External support route |
 | Service User Portal | https://www.apesshelter.org.uk/signin | External authenticated route |
+
+## v0.0.21 Beta notes
+
+- Change type: Notice scope. Moved the development notice bar into the shared header include so it now appears on shared public pages.
+- Change type: Homepage popup. Kept the dismissible website update popup on the homepage only with the existing localStorage dismissal behavior.
+- Change type: Live support. Preserved Chatwoot launch and support-ticket fallback behavior for site-wide development notice buttons.
+- Change type: Compliance. Footer links checked again against Donate, Privacy Policy, Terms of Service and Change Log Hub routes.
+- Change type: SEO and error pages. Confirmed sitemap, robots/noindex, Newsroom routing and branded 404 behavior needed no structural route changes.
+- Change type: Versioning. Current public release version bumped to v0.0.21 Beta in live labels, version files, changelog, manifests and release docs.
 
 ## v0.0.20 Beta notes
 

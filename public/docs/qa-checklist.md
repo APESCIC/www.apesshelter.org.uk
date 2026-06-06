@@ -12,6 +12,16 @@
 - Review policies and privacy/cookie wording before public launch.
 - Run WCAG 2.2 AA accessibility testing before public launch.
 
+## v0.0.21 Beta notes
+
+- Change type: Notice scope. Confirm the development notice bar appears below the shared header on the homepage and non-homepage routes such as Education.
+- Change type: Homepage popup. Confirm the website update popup remains homepage-only and stays dismissed in the same browser profile once closed.
+- Change type: Live support. Confirm the shared notice bar live chat button still attempts to open Chatwoot and falls back to the APES support-ticket route if needed.
+- Change type: Navigation. Confirm the highlighted Donate nav link remains visible and MyAPES Account remains absent from shared header nav areas.
+- Change type: Compliance. Re-check footer links for Donate, Privacy Policy, Terms of Service and Change Log Hub after the notice-scope correction.
+- Change type: SEO and error pages. Confirm sitemap records, robots/noindex rules, Newsroom routing and the branded 404 page still need no route-related changes.
+- Change type: Versioning. Confirm footer version badge, changelog current version, manifest records and `VERSION` files all show v0.0.21 Beta.
+
 ## v0.0.20 Beta notes
 
 - Change type: Navigation. Confirm MyAPES Account no longer appears in the shared top-strip, main navigation or Support APES mega menu.

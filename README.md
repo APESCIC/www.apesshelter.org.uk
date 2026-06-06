@@ -6,9 +6,9 @@ This repository is used to support the development, maintenance, improvement and
 
 ## Current Release Note
 
-Current public release: **v0.0.20 Beta**.
+Current public release: **v0.0.21 Beta**.
 
-This release removes MyAPES Account from the shared main navigation, adds a highlighted Donate route, updates the donation-page Donorbox popup button, and adds a homepage development notice with a dismissible website update popup and live chat route, while keeping footer, SEO, sitemap, 404 and release records in sync.
+This release corrects the development-notice scope so the warning bar appears across shared site pages while the dismissible website update popup stays homepage-only, alongside the earlier Donate CTA, Donorbox and shared navigation updates.
 
 ## About APES Shelter and Rescue
 
