@@ -44,9 +44,10 @@
       return shell.classList.contains('open');
     }
 
-    function syncMobileNavigationOffset(){
-      const headerBottom = header ? header.getBoundingClientRect().bottom : 0;
-      document.documentElement.style.setProperty('--mobile-nav-top', Math.max(Math.round(headerBottom), 0) + 'px');
+    function syncNavigationOffsets(){
+      const headerRect = header ? header.getBoundingClientRect() : { bottom: 0, height: 0 };
+      document.documentElement.style.setProperty('--mobile-nav-top', Math.max(Math.round(headerRect.bottom), 0) + 'px');
+      document.documentElement.style.setProperty('--mega-panel-top', Math.max(Math.round(headerRect.height) + 10, 0) + 'px');
     }
 
     function setWidgetSuppression(active){
@@ -55,7 +56,7 @@
     }
 
     function setNavOpen(open){
-      syncMobileNavigationOffset();
+      syncNavigationOffsets();
       shell.classList.toggle('open', open);
       toggle.setAttribute('aria-expanded', String(open));
       toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
@@ -145,14 +146,23 @@
     });
 
     function syncForViewport(){
-      syncMobileNavigationOffset();
+      syncNavigationOffsets();
       if(desktopBreakpoint.matches){
         shell.classList.remove('open');
         overlay.hidden = true;
         setWidgetSuppression(false);
+        syncNavigationOffsets();
       } else {
         closeAllDetails();
       }
+    }
+
+    function cleanupNavigationState(){
+      closeNav();
+      closeAllDetails();
+      overlay.hidden = true;
+      setWidgetSuppression(false);
+      syncNavigationOffsets();
     }
 
     if(typeof desktopBreakpoint.addEventListener === 'function'){
@@ -162,11 +172,13 @@
     }
 
     window.addEventListener('resize', syncForViewport);
-    window.addEventListener('scroll', syncMobileNavigationOffset, { passive: true });
+    window.addEventListener('scroll', syncNavigationOffsets, { passive: true });
     window.addEventListener('load', syncForViewport);
+    window.addEventListener('pagehide', cleanupNavigationState);
+    window.addEventListener('beforeunload', cleanupNavigationState);
     window.addEventListener('pageshow', function(event){
       if(event.persisted){
-        closeNav();
+        cleanupNavigationState();
       }
       syncForViewport();
     });

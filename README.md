@@ -6,9 +6,9 @@ This repository is used to support the development, maintenance, improvement and
 
 ## Current Release Note
 
-Current public release: **v0.0.16 Beta**.
+Current public release: **v0.0.17 Beta**.
 
-This release hardens the shared Shelter navigation so the mobile menu opens and grouped sections toggle more reliably on smaller screens, moves OneSignal and Hellobar into a host-aware shared loader so beta no longer throws production-domain errors, and records the required footer, SEO and error-page checks for the navigation patch.
+This release aligns the shared Shelter header, footer and navigation more closely with the APESCIC shared pattern, hardens desktop mega-panel positioning and mobile menu lifecycle cleanup, and records the required footer, SEO, sitemap and branded 404 checks for the patch.
 
 ## About APES Shelter and Rescue
 

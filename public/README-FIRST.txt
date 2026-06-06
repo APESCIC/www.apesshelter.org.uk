@@ -1,5 +1,5 @@
 # APES Shelter & Rescue Website
-Version: v0.0.16 Beta
+Version: v0.0.17 Beta
 
 ## Simple upload instructions
 
@@ -41,6 +41,14 @@ No database is needed. No command line is needed. No build step is needed.
 Check every button, external form and phone/email link. Review policies, privacy/cookies, refund address, donation provider and newsletter wording before making the site live.
 
 Menu update: the main navigation now uses Home, Animal Services, Support APES and Information, each with its own mega menu route.
+
+v0.0.17 Beta changes:
+- Change type: Navigation. Hardened the shared APES-style Shelter header controller with synced mobile and desktop menu offsets, pagehide cleanup, beforeunload cleanup and persisted pageshow reset handling.
+- Change type: Desktop mega menus. Added a shared desktop mega-panel offset and constrained panel sizing to reduce horizontal overflow risk while keeping Shelter route labels and grouped menus unchanged.
+- Change type: Mobile navigation. Preserved the 980px mobile breakpoint, fixed header-offset overlay, scroll lock, grouped accordions, Escape close, overlay close, outside-click close, link-close behaviour and widget suppression.
+- Change type: Compliance. Re-checked shared footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub after the shared header/footer patch.
+- Change type: SEO and error pages. Confirmed the sitemap and page metadata needed no route changes and verified the shared nav still works on the branded 404 page.
+- Change type: Versioning. Bumped current package version labels and release docs to v0.0.17 Beta.
 
 v0.0.16 Beta changes:
 - Change type: Navigation. Hardened the shared menu controller so mobile open and close state, grouped route toggles, Escape handling and resize sync behave more reliably on smaller screens.

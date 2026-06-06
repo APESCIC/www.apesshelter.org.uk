@@ -17,7 +17,7 @@
       <div>
         <p class="eyebrow">Changelog</p>
         <h1>Website version history.</h1>
-        <p>Current package version: v0.0.16 Beta. This page tracks live release history with clear change types for each update.</p>
+        <p>Current package version: v0.0.17 Beta. This page tracks live release history with clear change types for each update.</p>
         <div class="actions">
           <a class="button-gold" href="#changelog-entries">View entries</a>
           <a class="button-outline" href="#known-issues">Known issues</a>
@@ -39,29 +39,45 @@
   <section class="snapshot-grid section" aria-label="Recent change highlights">
     <article class="card snapshot-card">
       <span class="snapshot-icon" aria-hidden="true">🐶</span>
-      <h2>Menu controller patch</h2>
-      <p>Hardened the shared Shelter menu controller so the mobile panel and grouped route toggles behave more reliably.</p>
+      <h2>Header and footer alignment</h2>
+      <p>Aligned the shared Shelter header, footer and navigation behaviour more closely with the APESCIC pattern.</p>
     </article>
     <article class="card snapshot-card">
       <span class="snapshot-icon" aria-hidden="true">🧭</span>
-      <h2>Host-aware scripts</h2>
-      <p>Moved OneSignal and Hellobar into a shared guarded loader so beta avoids production-only console errors.</p>
+      <h2>Desktop mega menus</h2>
+      <p>Added synced desktop menu offsets and constrained panel sizing to reduce horizontal overflow risk.</p>
     </article>
     <article class="card snapshot-card">
       <span class="snapshot-icon" aria-hidden="true">📣</span>
-      <h2>Runtime cleanup</h2>
-      <p>Preserved widget suppression around the mobile menu while removing repo-owned bootstrap noise from the console.</p>
+      <h2>Lifecycle cleanup</h2>
+      <p>Menu state now resets on browser lifecycle transitions including pagehide, beforeunload and persisted pageshow.</p>
     </article>
     <article class="card snapshot-card">
       <span class="snapshot-icon" aria-hidden="true">🔄</span>
       <h2>Release sync</h2>
-      <p>Version references, footer labels, `VERSION` files and release docs were updated to v0.0.16 Beta.</p>
+      <p>Version references, footer labels, `VERSION` files and release docs were updated to v0.0.17 Beta.</p>
     </article>
   </section>
 
   <section class="accordion section" id="changelog-entries" aria-label="Changelog entries">
     <article class="accordion-item open">
-      <button class="accordion-button" type="button" aria-expanded="true"><span>v0.0.16 Beta — Shared menu controller and runtime guard patch</span><span aria-hidden="true">+</span></button>
+      <button class="accordion-button" type="button" aria-expanded="true"><span>v0.0.17 Beta — Shared header, footer and navigation alignment patch</span><span aria-hidden="true">+</span></button>
+      <div class="accordion-content">
+        <p><strong>Release date:</strong> 6 June 2026.</p>
+        <p><strong>Release type:</strong> Shared header/footer navigation hardening, compliance check and versioning update.</p>
+        <ul>
+          <li><strong>Navigation:</strong> Hardened the shared APES-style Shelter header controller with synced mobile and desktop menu offsets, pagehide cleanup, beforeunload cleanup and persisted pageshow reset handling.</li>
+          <li><strong>Desktop mega menus:</strong> Added a shared desktop mega-panel offset and constrained panel sizing to reduce horizontal overflow risk while preserving Shelter route labels and grouped menus.</li>
+          <li><strong>Mobile UX:</strong> Preserved the fixed header-offset overlay, scroll lock, grouped accordions, Escape close, overlay close, outside-click close, link-close behaviour and widget suppression.</li>
+          <li><strong>Footer compliance:</strong> Re-checked Donate, Privacy Policy, Terms of Service and Change Log Hub footer routes after the shared header/footer patch.</li>
+          <li><strong>SEO/Error pages:</strong> Verified no sitemap or metadata route changes were needed and confirmed the shared nav still applies to the branded 404 page.</li>
+          <li><strong>Update:</strong> Updated current site version labels, public changelog records, manifest records, QA notes and release docs to v0.0.17 Beta.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="accordion-item">
+      <button class="accordion-button" type="button" aria-expanded="false"><span>v0.0.16 Beta — Shared menu controller and runtime guard patch</span><span aria-hidden="true">+</span></button>
       <div class="accordion-content">
         <p><strong>Release date:</strong> 6 June 2026.</p>
         <p><strong>Release type:</strong> Shared navigation bug fix, runtime hardening and versioning update.</p>

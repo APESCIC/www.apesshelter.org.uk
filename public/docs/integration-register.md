@@ -1,6 +1,6 @@
 # Integration Register
 
-Version: v0.0.16 Beta
+Version: v0.0.17 Beta
 
 | Service | URL | Treatment |
 |---|---|---|
@@ -10,6 +10,15 @@ Version: v0.0.16 Beta
 | ShelterManager found pet form | https://service.sheltermanager.com/asmservice?account=apes&method=online_form_html&formid=25 | External hosted form |
 | Contact Centre | https://contact.apesshelter.org.uk/ | External support route |
 | Service User Portal | https://www.apesshelter.org.uk/signin | External authenticated route |
+
+## v0.0.17 Beta notes
+- Change type: Navigation. Shared APES-style Shelter header controller now syncs both mobile and desktop menu offsets and cleans up menu state on pagehide, beforeunload and persisted pageshow.
+- Change type: Desktop mega menus. Mega panels now use a shared desktop offset and constrained sizing to reduce horizontal overflow risk while preserving Shelter route labels and grouped menu structure.
+- Change type: Mobile navigation. Existing fixed overlay, scroll lock, grouped accordions, Escape close, overlay close, outside-click close, link-close behaviour and widget suppression remain in place.
+- Change type: Compliance. Footer links checked again against Donate, Privacy Policy, Terms of Service and Change Log Hub routes.
+- Change type: SEO and error pages. Shared nav verified against the branded 404 page with no sitemap or metadata route changes required.
+- Change type: Versioning. Current public release version bumped to v0.0.17 Beta in live labels, version files, changelog, manifests and release docs.
+
 
 ## v0.0.16 Beta notes
 - Change type: Navigation. Shared Shelter menu controller hardened so mobile drawer state, grouped route toggles, Escape handling and resize sync behave more reliably on smaller screens.

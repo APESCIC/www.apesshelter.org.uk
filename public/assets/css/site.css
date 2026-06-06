@@ -923,3 +923,26 @@ body.nav-widgets-suppressed [class*="hellobar"]{
   }
   .main-nav .mega-panel.mega-panel-single .mega-card::after{display:none}
 }
+
+
+/* v0.0.17 Beta shared header, footer and navigation alignment hardening */
+@media(min-width:981px){
+  .main-nav .mega-panel{
+    top:var(--mega-panel-top,calc(100% + 10px));
+    width:min(680px,calc(100% - 2rem));
+    max-width:calc(100vw - 2rem);
+  }
+  .main-nav .mega-panel.mega-panel-single{
+    width:min(680px,calc(100% - 2rem));
+    max-width:calc(100vw - 2rem);
+  }
+}
+
+@media(max-width:980px){
+  .main-nav-shell.open{
+    overscroll-behavior:contain;
+  }
+  .main-nav-panel{
+    width:min(calc(100% - 1rem),42rem);
+  }
+}

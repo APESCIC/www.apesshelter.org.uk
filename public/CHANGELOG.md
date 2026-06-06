@@ -1,5 +1,15 @@
 # Public Website Changelog
 
+## v0.0.17 Beta - 6 June 2026
+
+- Shared header, footer and navigation behaviour now aligns more closely with the APESCIC shared pattern while preserving Shelter-specific labels, routes, branding, contact details and legal links.
+- Desktop mega menus now use a synced header-height offset and constrained panel sizing to reduce horizontal overflow risk.
+- Mobile navigation keeps the existing fixed overlay below the sticky header, internal scrolling, body scroll lock, grouped accordions, Escape close, overlay close, outside-click close and link-close behaviour.
+- Navigation cleanup now also runs on pagehide, beforeunload and persisted pageshow so menu state does not remain stuck across browser lifecycle transitions.
+- Footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub were re-checked after the shared header/footer patch.
+- Sitemap, page metadata and the branded 404 page were reviewed and did not need route-related changes.
+- Public release labels, version files and release records updated to v0.0.17 Beta.
+
 ## v0.0.16 Beta - 6 June 2026
 
 - Shared mobile navigation logic now handles menu open and close state, grouped route toggles, Escape close and resize sync more reliably on smaller screens.

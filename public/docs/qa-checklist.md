@@ -13,6 +13,16 @@
 - Run WCAG 2.2 AA accessibility testing before public launch.
 
 
+## v0.0.17 Beta notes
+- Change type: Navigation. Confirm desktop mega panels open below the sticky header, use the synced desktop offset and do not create horizontal scrolling at 1280px, 1366px, 1440px or 1920px.
+- Change type: Mobile navigation. Confirm the mobile menu opens below the sticky header at 360px, 390px, 768px and 980px, scrolls internally and keeps the page behind locked.
+- Change type: Behaviour. Confirm close button, overlay tap, outside click, Escape, link follow, resize, pagehide, beforeunload and persisted pageshow all clear open menu state.
+- Change type: Widget suppression. Confirm donor, chat, push and banner widgets stay behind the open mobile panel.
+- Change type: Compliance. Re-check footer links for Donate, Privacy Policy, Terms of Service and Change Log Hub after the shared header/footer patch.
+- Change type: SEO and error pages. Confirm the sitemap, page metadata and branded 404 page still need no route-related changes.
+- Change type: Versioning. Confirm footer version badge, changelog current version, manifest records and `VERSION` files all show v0.0.17 Beta.
+
+
 ## v0.0.16 Beta notes
 - Change type: Navigation. Confirm the mobile menu button opens and closes the shared panel reliably and that grouped routes toggle open and shut cleanly on smaller screens.
 - Change type: Behaviour. Confirm close button, overlay tap, outside click, Escape and link follow all close the menu cleanly, and that resizing back to desktop does not leave drawer classes stuck.

@@ -1,0 +1,287 @@
+[
+  {
+    "file": "01-primary-logo/apes-shelter-rescue-logo-primary-1024.png",
+    "bytes": 1327663,
+    "sha256_16": "ff40ab68a31ea4dd"
+  },
+  {
+    "file": "01-primary-logo/apes-shelter-rescue-logo-primary-1024.webp",
+    "bytes": 276012,
+    "sha256_16": "94afc451807b3d03"
+  },
+  {
+    "file": "01-primary-logo/apes-shelter-rescue-logo-primary-256.png",
+    "bytes": 86064,
+    "sha256_16": "575ed30acb6df73a"
+  },
+  {
+    "file": "01-primary-logo/apes-shelter-rescue-logo-primary-256.webp",
+    "bytes": 18768,
+    "sha256_16": "49ef949232265ef0"
+  },
+  {
+    "file": "01-primary-logo/apes-shelter-rescue-logo-primary-512.png",
+    "bytes": 330583,
+    "sha256_16": "87a38e6c1b95b6ab"
+  },
+  {
+    "file": "01-primary-logo/apes-shelter-rescue-logo-primary-512.webp",
+    "bytes": 68286,
+    "sha256_16": "483a77f8ad2d4b7b"
+  },
+  {
+    "file": "01-primary-logo/apes-shelter-rescue-logo-primary-original-1024.png",
+    "bytes": 1540509,
+    "sha256_16": "a3b9a41bf3ef5feb"
+  },
+  {
+    "file": "01-primary-logo/apes-shelter-rescue-logo-primary-trimmed-320w.png",
+    "bytes": 144126,
+    "sha256_16": "03aa5a74b6cd0ba5"
+  },
+  {
+    "file": "01-primary-logo/apes-shelter-rescue-logo-primary-trimmed-320w.webp",
+    "bytes": 32356,
+    "sha256_16": "cfce13d8a425faf8"
+  },
+  {
+    "file": "01-primary-logo/apes-shelter-rescue-logo-primary-trimmed-480w.png",
+    "bytes": 316726,
+    "sha256_16": "20df48c881dd16ac"
+  },
+  {
+    "file": "01-primary-logo/apes-shelter-rescue-logo-primary-trimmed-480w.webp",
+    "bytes": 66168,
+    "sha256_16": "651a7ae59336c9ba"
+  },
+  {
+    "file": "01-primary-logo/apes-shelter-rescue-logo-primary-trimmed-640w.png",
+    "bytes": 573863,
+    "sha256_16": "e08b88d628e4ab8e"
+  },
+  {
+    "file": "01-primary-logo/apes-shelter-rescue-logo-primary-trimmed-640w.webp",
+    "bytes": 125318,
+    "sha256_16": "7ab43ab0d453ee25"
+  },
+  {
+    "file": "01-primary-logo/apes-shelter-rescue-logo-primary-trimmed-900w.png",
+    "bytes": 1125148,
+    "sha256_16": "201cba344d224c57"
+  },
+  {
+    "file": "01-primary-logo/apes-shelter-rescue-logo-primary-trimmed-900w.webp",
+    "bytes": 238566,
+    "sha256_16": "05b108ff9f09312c"
+  },
+  {
+    "file": "02-header-logo/apes-shelter-rescue-logo-header-220w.png",
+    "bytes": 70422,
+    "sha256_16": "a4bc7bc93f42d91f"
+  },
+  {
+    "file": "02-header-logo/apes-shelter-rescue-logo-header-220w.webp",
+    "bytes": 15798,
+    "sha256_16": "f24b9580d4efcede"
+  },
+  {
+    "file": "02-header-logo/apes-shelter-rescue-logo-header-320w.png",
+    "bytes": 144126,
+    "sha256_16": "03aa5a74b6cd0ba5"
+  },
+  {
+    "file": "02-header-logo/apes-shelter-rescue-logo-header-320w.webp",
+    "bytes": 32356,
+    "sha256_16": "cfce13d8a425faf8"
+  },
+  {
+    "file": "02-header-logo/apes-shelter-rescue-logo-header-440w.png",
+    "bytes": 266498,
+    "sha256_16": "dca733902fa1c661"
+  },
+  {
+    "file": "02-header-logo/apes-shelter-rescue-logo-header-440w.webp",
+    "bytes": 56396,
+    "sha256_16": "58787a5440b77023"
+  },
+  {
+    "file": "02-header-logo/apes-shelter-rescue-logo-header-660w.png",
+    "bytes": 610895,
+    "sha256_16": "98b698a8d3378bc4"
+  },
+  {
+    "file": "02-header-logo/apes-shelter-rescue-logo-header-660w.webp",
+    "bytes": 128692,
+    "sha256_16": "a42bc870791974b5"
+  },
+  {
+    "file": "02-header-logo/apes-shelter-rescue-logo-header-880w.png",
+    "bytes": 1076750,
+    "sha256_16": "9a6469f1f1ebd8ac"
+  },
+  {
+    "file": "02-header-logo/apes-shelter-rescue-logo-header-880w.webp",
+    "bytes": 229866,
+    "sha256_16": "b16eb24859ee246a"
+  },
+  {
+    "file": "02-header-logo/apes-shelter-rescue-logo-header-source-440w.png",
+    "bytes": 266498,
+    "sha256_16": "dca733902fa1c661"
+  },
+  {
+    "file": "02-header-logo/apes-shelter-rescue-logo-navbar-40h.png",
+    "bytes": 4019,
+    "sha256_16": "2fd69eb86409994f"
+  },
+  {
+    "file": "02-header-logo/apes-shelter-rescue-logo-navbar-40h.webp",
+    "bytes": 1282,
+    "sha256_16": "5bf7e8c7ffabde12"
+  },
+  {
+    "file": "02-header-logo/apes-shelter-rescue-logo-navbar-56h.png",
+    "bytes": 7301,
+    "sha256_16": "c80bfcfda0fed4b0"
+  },
+  {
+    "file": "02-header-logo/apes-shelter-rescue-logo-navbar-56h.webp",
+    "bytes": 2114,
+    "sha256_16": "e2a51cfe6bdcb117"
+  },
+  {
+    "file": "02-header-logo/apes-shelter-rescue-logo-navbar-72h.png",
+    "bytes": 11592,
+    "sha256_16": "3c2ce9bdc8842fb7"
+  },
+  {
+    "file": "02-header-logo/apes-shelter-rescue-logo-navbar-72h.webp",
+    "bytes": 3230,
+    "sha256_16": "c84e84f38466aa61"
+  },
+  {
+    "file": "02-header-logo/apes-shelter-rescue-logo-navbar-96h.png",
+    "bytes": 19370,
+    "sha256_16": "2b37941c14382db3"
+  },
+  {
+    "file": "02-header-logo/apes-shelter-rescue-logo-navbar-96h.webp",
+    "bytes": 4826,
+    "sha256_16": "854b6a273703429d"
+  },
+  {
+    "file": "03-favicons-app-icons/android-chrome-192x192.png",
+    "bytes": 44687,
+    "sha256_16": "955e54e81fc2e53f"
+  },
+  {
+    "file": "03-favicons-app-icons/android-chrome-512x512.png",
+    "bytes": 286513,
+    "sha256_16": "21e34f5c75987225"
+  },
+  {
+    "file": "03-favicons-app-icons/apes-shelter-rescue-favicon-source-512.png",
+    "bytes": 286513,
+    "sha256_16": "21e34f5c75987225"
+  },
+  {
+    "file": "03-favicons-app-icons/apes-shelter-rescue-logo-raster.svg",
+    "bytes": 2054232,
+    "sha256_16": "daab7b439c5526f7"
+  },
+  {
+    "file": "03-favicons-app-icons/apple-touch-icon.png",
+    "bytes": 39621,
+    "sha256_16": "83c6e409cf0485c3"
+  },
+  {
+    "file": "03-favicons-app-icons/favicon-128x128.png",
+    "bytes": 21313,
+    "sha256_16": "0ed339cdb4c993a8"
+  },
+  {
+    "file": "03-favicons-app-icons/favicon-16x16.png",
+    "bytes": 692,
+    "sha256_16": "147649eb4b35f639"
+  },
+  {
+    "file": "03-favicons-app-icons/favicon-256x256.png",
+    "bytes": 75633,
+    "sha256_16": "284a391eccaf4bb9"
+  },
+  {
+    "file": "03-favicons-app-icons/favicon-32x32.png",
+    "bytes": 1959,
+    "sha256_16": "62b357b9da853d55"
+  },
+  {
+    "file": "03-favicons-app-icons/favicon-384x384.png",
+    "bytes": 166706,
+    "sha256_16": "fab13373881a29da"
+  },
+  {
+    "file": "03-favicons-app-icons/favicon-48x48.png",
+    "bytes": 3771,
+    "sha256_16": "95c3d6b02109db62"
+  },
+  {
+    "file": "03-favicons-app-icons/favicon-64x64.png",
+    "bytes": 6223,
+    "sha256_16": "891e03d88f587359"
+  },
+  {
+    "file": "03-favicons-app-icons/favicon-96x96.png",
+    "bytes": 12659,
+    "sha256_16": "70e7b795c73a12e5"
+  },
+  {
+    "file": "03-favicons-app-icons/favicon.ico",
+    "bytes": 6476,
+    "sha256_16": "dc38715c7fb0af41"
+  },
+  {
+    "file": "04-social-sharing/apes-shelter-rescue-og-image-1200x630.jpg",
+    "bytes": 85301,
+    "sha256_16": "70b2366ed1bbecb8"
+  },
+  {
+    "file": "04-social-sharing/apes-shelter-rescue-og-image-1200x630.png",
+    "bytes": 497740,
+    "sha256_16": "ffff412992e39be0"
+  },
+  {
+    "file": "04-social-sharing/apes-shelter-rescue-social-square-1080.jpg",
+    "bytes": 178863,
+    "sha256_16": "d060aebbee362e13"
+  },
+  {
+    "file": "04-social-sharing/apes-shelter-rescue-twitter-card-1200x600.jpg",
+    "bytes": 78926,
+    "sha256_16": "28537df31630f23f"
+  },
+  {
+    "file": "04-social-sharing/apes-shelter-rescue-twitter-card-1200x600.png",
+    "bytes": 452992,
+    "sha256_16": "8770ecafbdf68a0a"
+  },
+  {
+    "file": "05-implementation/html-head-snippet.html",
+    "bytes": 1003,
+    "sha256_16": "702413e391655e43"
+  },
+  {
+    "file": "05-implementation/logo-css-snippet.css",
+    "bytes": 170,
+    "sha256_16": "7e2b88c42c4905f1"
+  },
+  {
+    "file": "05-implementation/site.webmanifest",
+    "bytes": 411,
+    "sha256_16": "90e64cb740adfd2a"
+  },
+  {
+    "file": "README.md",
+    "bytes": 1881,
+    "sha256_16": "26bdf82b84da227b"
+  }
+]

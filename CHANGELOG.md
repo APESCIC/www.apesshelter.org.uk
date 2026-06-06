@@ -1,5 +1,14 @@
 # APES Shelter and Rescue Website Changelog
 
+## v0.0.17 Beta - 6 June 2026
+
+- Change type: Navigation. Hardened the shared APES-style Shelter header controller with synced mobile and desktop menu offsets, pagehide cleanup, beforeunload cleanup and persisted pageshow reset handling.
+- Change type: Desktop mega menus. Added a shared `--mega-panel-top` offset and constrained mega-panel sizing to reduce horizontal overflow risk while preserving Shelter route labels, grouped menus and APES-style card presentation.
+- Change type: Mobile navigation. Preserved the 980px mobile breakpoint, fixed header-offset overlay, scroll lock, accordion grouped routes, Escape close, overlay close, outside-click close, link-close behaviour and widget suppression.
+- Change type: Footer compliance. Re-checked shared footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub, and kept Shelter-specific partner, contact, legal and version content intact.
+- Change type: SEO and error pages. Verified that sitemap records, page metadata and the branded 404 page required no route changes for this header, footer and navigation hardening patch.
+- Change type: Release records. Updated root and public `VERSION` files, visible footer labels, public changelog records, manifest records, QA notes and release documentation to v0.0.17 Beta.
+
 ## v0.0.16 Beta - 6 June 2026
 
 - Change type: Navigation. Hardened the shared Shelter menu controller so mobile open and close state, grouped menu toggles, Escape handling and resize sync behave more reliably across injected layouts and smaller screens.
