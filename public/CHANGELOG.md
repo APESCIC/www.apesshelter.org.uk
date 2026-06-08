@@ -1,5 +1,14 @@
 # Public Website Changelog
 
+## v0.1.1 Stable - 8 June 2026
+
+- Hallobar has been removed from the shared third-party loader, so the Hallobar marketing script no longer loads on public pages.
+- OneSignal remains in place and still only initializes on the supported production hosts.
+- Mobile menu widget suppression now keeps Donorbox, Chatwoot and OneSignal behind the panel without retaining Hallobar-only selectors.
+- Footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub were re-checked after the integration cleanup.
+- Sitemap, robots/noindex rules, Newsroom routing and the branded 404 page were reviewed and did not need structural changes.
+- Public release labels, version files, manifest records and release documentation updated to v0.1.1 Stable.
+
 ## v0.1.0 Stable - 8 June 2026
 
 - A new Division Mission page has been added to explain the Shelter division mission, objectives and accountability within the wider APESCIC mission.

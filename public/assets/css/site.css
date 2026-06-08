@@ -783,9 +783,7 @@ body.nav-widgets-suppressed dbox-widget,
 body.nav-widgets-suppressed iframe[name="donorbox"],
 body.nav-widgets-suppressed .chatwoot-container,
 body.nav-widgets-suppressed #chatwoot_live_chat_widget,
-body.nav-widgets-suppressed .onesignal-customlink-container,
-body.nav-widgets-suppressed #hellobar-bar,
-body.nav-widgets-suppressed [class*="hellobar"]{
+body.nav-widgets-suppressed .onesignal-customlink-container{
   visibility:hidden!important;
   pointer-events:none!important;
 }

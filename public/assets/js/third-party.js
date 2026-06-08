@@ -5,7 +5,6 @@
   ]);
   const oneSignalAppId = '1d337087-6946-41fd-a6ce-e615bf18528a';
   const oneSignalSdkSrc = 'https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js';
-  const helloBarSrc = 'https://my.hellobar.com/d3bc15faadce398d8d09ec3c74fbd3bdd10be771.js';
 
   function loadScript(key, src, attributes){
     const existing = document.querySelector('script[data-managed-script="' + key + '"]');
@@ -56,21 +55,8 @@
     });
   }
 
-  function initHelloBar(){
-    if(!onSupportedMarketingHost()) return Promise.resolve(false);
-    return loadScript('hellobar', helloBarSrc, {
-      async: true,
-      charset: 'utf-8',
-      type: 'text/javascript'
-    }).catch(function(error){
-      console.warn(error.message);
-      return false;
-    });
-  }
-
   function boot(){
     initOneSignal();
-    initHelloBar();
   }
 
   if(document.readyState === 'loading'){

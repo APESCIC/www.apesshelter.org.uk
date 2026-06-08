@@ -1,5 +1,14 @@
 # APES Shelter and Rescue Website Changelog
 
+## v0.1.1 Stable - 8 June 2026
+
+- Change type: Runtime. Removed the shared Hallobar bootstrap from `public/assets/js/third-party.js` so the Hallobar marketing script no longer loads on public pages.
+- Change type: Compatibility. Kept the existing OneSignal host guard and supported production-host initialization path unchanged.
+- Change type: Navigation behaviour. Removed Hallobar-only mobile widget suppression selectors while preserving Donorbox, Chatwoot and OneSignal suppression during mobile menu open states.
+- Change type: Compliance. Re-checked shared footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub after the marketing integration cleanup.
+- Change type: SEO and error pages. Verified sitemap, robots/noindex rules, Newsroom routing and the branded 404 page required no structural changes for this integration-removal patch.
+- Change type: Release records. Updated root and public `VERSION` files, footer version labels, changelog records, manifest records, QA notes and release documentation to v0.1.1 Stable.
+
 ## v0.1.0 Stable - 8 June 2026
 
 - Change type: New route. Added `division-mission.html` as a formal public-facing mission page for APES Shelter & Rescue, covering division purpose, APESCIC alignment, core objectives and accountability.

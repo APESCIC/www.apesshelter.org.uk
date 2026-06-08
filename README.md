@@ -6,9 +6,9 @@ This repository is used to support the development, maintenance, improvement and
 
 ## Current Release Note
 
-Current public release: **v0.1.0 Stable**.
+Current public release: **v0.1.1 Stable**.
 
-This release adds the public Division Mission page, links it into shared site discovery, and publishes a stable mission-and-accountability statement aligned to APESCIC with approved 2023-2025 shelter baselines.
+This release removes the Hallobar marketing integration, keeps OneSignal limited to the supported production hosts, and syncs the related release records and footer version text.
 
 ## About APES Shelter and Rescue
 

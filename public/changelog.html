@@ -17,7 +17,7 @@
       <div>
         <p class="eyebrow">Changelog</p>
         <h1>Website version history.</h1>
-        <p>Current package version: v0.1.0 Stable. This page tracks live release history with clear change types for each update.</p>
+        <p>Current package version: v0.1.1 Stable. This page tracks live release history with clear change types for each update.</p>
         <div class="actions">
           <a class="button-gold" href="#changelog-entries">View entries</a>
           <a class="button-outline" href="#known-issues">Known issues</a>
@@ -27,10 +27,10 @@
       <aside class="logo-card" aria-label="Changelog highlights">
         <img src="assets/img/apes-shelter-rescue-logo.png" alt="APES Shelter and Rescue logo">
         <div class="hero-badges" aria-label="Changelog change types">
-          <span>🎯 Mission page</span>
-          <span>🧭 New route</span>
-          <span>📊 Shelter baselines</span>
-          <span>✅ Stable release</span>
+          <span>🧹 Hallobar removed</span>
+          <span>🔔 OneSignal retained</span>
+          <span>🛡️ Footer links checked</span>
+          <span>✅ Stable patch</span>
         </div>
       </aside>
     </div>
@@ -38,30 +38,46 @@
 
   <section class="snapshot-grid section" aria-label="Recent change highlights">
     <article class="card snapshot-card">
-      <span class="snapshot-icon" aria-hidden="true">🏢</span>
-      <h2>Division Mission published</h2>
-      <p>A new public mission page explains how Shelter &amp; Rescue supports the wider APESCIC mission through rescue, rehabilitation, rehoming, education and accountability.</p>
+      <span class="snapshot-icon" aria-hidden="true">🧹</span>
+      <h2>Hallobar removed</h2>
+      <p>The shared third-party loader no longer boots the Hallobar marketing script on public pages.</p>
     </article>
     <article class="card snapshot-card">
-      <span class="snapshot-icon" aria-hidden="true">🧭</span>
-      <h2>Shared discovery updated</h2>
-      <p>The new mission route now appears in shared navigation, the Service Finder, the Search page, sitemap coverage and manifest records.</p>
+      <span class="snapshot-icon" aria-hidden="true">🔔</span>
+      <h2>OneSignal preserved</h2>
+      <p>Push setup remains limited to the supported production hosts through the existing host-aware loader.</p>
     </article>
     <article class="card snapshot-card">
-      <span class="snapshot-icon" aria-hidden="true">🔎</span>
-      <h2>Approved baselines added</h2>
-      <p>Published shelter figures from 2023 to 2025 now appear as historical baselines for intakes, adoptions and live outcomes without inventing unapproved future figures.</p>
+      <span class="snapshot-icon" aria-hidden="true">📱</span>
+      <h2>Mobile suppression trimmed</h2>
+      <p>The mobile menu still suppresses donor, chat and OneSignal layers while open without carrying Hallobar-only selectors.</p>
     </article>
     <article class="card snapshot-card">
       <span class="snapshot-icon" aria-hidden="true">🔄</span>
-      <h2>Stable release sync</h2>
-      <p>Version references, footer labels, `VERSION` files and release docs were promoted from beta to v0.1.0 Stable.</p>
+      <h2>Stable patch synced</h2>
+      <p>Version references, footer labels, `VERSION` files, manifest records and release docs now show v0.1.1 Stable.</p>
     </article>
   </section>
 
   <section class="accordion section" id="changelog-entries" aria-label="Changelog entries">
     <article class="accordion-item open">
-      <button class="accordion-button" type="button" aria-expanded="true"><span>v0.1.0 Stable - Division Mission route and accountability release</span><span aria-hidden="true">+</span></button>
+      <button class="accordion-button" type="button" aria-expanded="true"><span>v0.1.1 Stable - Hallobar integration removal patch</span><span aria-hidden="true">+</span></button>
+      <div class="accordion-content">
+        <p><strong>Release date:</strong> 8 June 2026.</p>
+        <p><strong>Release type:</strong> Shared runtime cleanup, mobile widget-suppression trim, compliance check and stable patch versioning update.</p>
+        <ul>
+          <li><strong>Runtime:</strong> Removed the shared Hallobar bootstrap so the Hallobar marketing script no longer loads on public pages.</li>
+          <li><strong>Compatibility:</strong> Kept the existing OneSignal host guard and supported production-host initialization path unchanged.</li>
+          <li><strong>Mobile navigation:</strong> Removed Hallobar-only widget suppression selectors while preserving Donorbox, Chatwoot and OneSignal suppression when the mobile menu is open.</li>
+          <li><strong>Footer compliance:</strong> Re-checked Donate, Privacy Policy, Terms of Service and Change Log Hub footer routes after the integration cleanup.</li>
+          <li><strong>SEO/Error pages:</strong> Verified sitemap, robots/noindex rules, Newsroom routing and the branded 404 page needed no structural changes for this patch.</li>
+          <li><strong>Update:</strong> Updated current site version labels, public changelog records, manifest records, QA notes and release docs from <code>v0.1.0 Stable</code> to <code>v0.1.1 Stable</code>.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="accordion-item">
+      <button class="accordion-button" type="button" aria-expanded="false"><span>v0.1.0 Stable - Division Mission route and accountability release</span><span aria-hidden="true">+</span></button>
       <div class="accordion-content">
         <p><strong>Release date:</strong> 8 June 2026.</p>
         <p><strong>Release type:</strong> New public route, mission content publication, search discovery update and stable version promotion.</p>

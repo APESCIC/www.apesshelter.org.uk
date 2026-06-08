@@ -12,6 +12,15 @@
 - Review policies and privacy/cookie wording before public launch.
 - Run WCAG 2.2 AA accessibility testing before public launch.
 
+## v0.1.1 Stable notes
+
+- Change type: Runtime. Confirm Hallobar no longer loads or injects a marketing banner on representative public pages such as `index.html`.
+- Change type: Compatibility. Confirm OneSignal still initializes only on the supported production hosts and that `third-party.js` does not log repo-owned errors locally.
+- Change type: Navigation behaviour. Confirm donor, chat and OneSignal widgets still stay behind the mobile menu panel without Hallobar-specific suppression rules.
+- Change type: Compliance. Re-check footer links for Donate, Privacy Policy, Terms of Service and Change Log Hub after the Hallobar removal patch.
+- Change type: SEO and error pages. Confirm sitemap, robots/noindex rules, Newsroom routing and the branded 404 page still need no route-related changes.
+- Change type: Versioning. Confirm footer version badge, changelog current version, manifest records, release docs and `VERSION` files all show v0.1.1 Stable or `v0.1.1` as appropriate.
+
 ## v0.1.0 Stable notes
 
 - Change type: New route. Confirm `division-mission.html` loads correctly with the shared header, footer, development notice, Donorbox widget and Chatwoot script intact.

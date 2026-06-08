@@ -1,5 +1,5 @@
 # APES Shelter & Rescue Website
-Version: v0.1.0 Stable
+Version: v0.1.1 Stable
 
 ## Simple upload instructions
 
@@ -43,6 +43,15 @@ No database is needed. No command line is needed. No build step is needed.
 Check every button, external form and phone/email link. Review policies, privacy/cookies, refund address, donation provider and newsletter wording before making the site live.
 
 Menu update: the main navigation now uses Home, Animal Services, Support APES and Information, each with its own mega menu route.
+
+v0.1.1 Stable changes:
+
+- Change type: Runtime. Removed the shared Hallobar loader so the Hallobar marketing script no longer loads on public pages.
+- Change type: Compatibility. Kept OneSignal restricted to the supported production hosts through the existing shared loader.
+- Change type: Navigation behaviour. Removed Hallobar-only mobile widget suppression selectors while preserving Donorbox, Chatwoot and OneSignal suppression behaviour.
+- Change type: Compliance. Re-checked footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub.
+- Change type: SEO and error pages. Confirmed sitemap, robots/noindex, Newsroom routing and the branded 404 page needed no structural changes.
+- Change type: Versioning. Bumped current package version labels, manifest records and release docs to v0.1.1 Stable.
 
 v0.1.0 Stable changes:
 
