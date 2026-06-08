@@ -115,23 +115,35 @@ Do not complete the task while `VERSION`, `/public/VERSION`, Change Log Hub reco
 
 ---
 
-## 4. GitHub Workflow And Audit Trail
+## 4. GitHub Task Order And Audit Trail
 
-GitHub work must be easy to review after the fact. Keep repository changes tied to clear records of what changed, why it changed, and what validation was completed.
+GitHub work must follow a clear lifecycle so every change is traceable from request to issue, branch, validation, publication, review, merge, and closure.
 
-Use GitHub Issues as the operational record for repository work:
+Use this order for GitHub repository tasks unless the user gives a different workflow:
 
-- At the start of work, ask whether there is an existing GitHub Issue for the task and request the issue number or link where one exists.
-- If no issue is provided, give the user clear options: create a new issue before implementation, proceed without an issue for a trivial correction, or prepare issue text for the user to open themselves.
-- When creating an issue, ask for or infer from the repository evidence a concise title, problem summary, expected outcome, affected repository areas, priority, labels, assignees, milestone, and any acceptance criteria that should be tracked.
-- Triage the issue before implementation by confirming scope, priority, related files or routes, release impact, compliance impact, blockers, branch or pull request linkage, and whether documentation, changelog, version, SEO, sitemap, footer, error-page, generated-output, or README updates are required.
-- Link work to the issue in branches, pull requests, progress comments, changelog notes, release summaries, and final responses where applicable.
-- Update the issue when work starts, when a meaningful milestone is reached, when scope changes, when the task becomes blocked, when validation is complete, and when follow-up work is identified.
-- Record meaningful status updates for started, paused, blocked, resumed, validated, or completed work.
-- Note any documentation, changelog, release, SEO, sitemap, footer, error-page, generated-output, or compliance follow-up needed.
-- At completion, prepare a brief issue closure note covering what changed, affected files or routes, validation performed, release-record updates, known limitations, and follow-up work.
-- Close the issue only when the user has asked for closure or the agreed workflow clearly allows closure after validated completion. If closure is not confirmed, leave the closure note ready and state that the issue remains open.
-- Do not mark issue-related work as complete until the repository evidence supports completion.
+1. Understand the request and inspect the repository before deciding the implementation path.
+2. Check whether there is an existing GitHub Issue. Ask for the issue number or link if one exists.
+3. If no issue is provided, give the user clear options: create a new issue before implementation, proceed without an issue for a trivial correction, or prepare issue text for the user to open themselves.
+4. Create or update the issue when approved. Capture the problem summary, expected outcome, affected repository areas, priority, labels, assignees, milestone, acceptance criteria, known blockers, and related pull requests or previous issues.
+5. Triage the issue before implementation. Confirm scope, priority, release impact, compliance impact, affected files or routes, branch strategy, pull request expectations, and whether documentation, changelog, version, SEO, sitemap, footer, error-page, generated-output, or README updates are required.
+6. Verify the release state and repository rules before editing. Check versions, changelogs, Change Log Hub records, README current-release notes, generated output, and repository-specific instructions where present.
+7. Choose the branch path. Use an existing branch only after confirming it with the user, or create a short task-specific branch when the user approves branch creation.
+8. Start or update the issue before implementation begins. Record the chosen scope, branch, planned validation, and any release-record work expected.
+9. Implement the smallest safe change that satisfies the request while preserving APES CIC requirements and local repository conventions.
+10. Keep the issue current while work commences. Add brief progress notes when work starts, a meaningful milestone is reached, scope changes, the task becomes blocked, validation completes, or follow-up work is discovered.
+11. Update documentation, changelog, version, Change Log Hub, README, generated output, SEO, sitemap, footer, Newsroom, and error-page records where the change requires them.
+12. Run relevant checks and inspect the diff. Include build, lint, typecheck, tests, link checks, accessibility checks, SEO checks, sitemap checks, footer checks, Newsroom checks, robots checks, and error-page checks where applicable.
+13. Prepare a completion summary and issue update. State what changed, affected files or routes, validation performed, release-record updates, known limitations, and follow-up work.
+14. Provide a concise proposed commit message covering all completed work before any commit is created.
+15. Commit only when the user has explicitly asked for a commit or clearly approved committing. Use the proposed or user-supplied commit message.
+16. Push only after the user confirms publishing the branch. Do not push automatically after committing.
+17. Open or update a pull request when requested or when the agreed workflow requires one. Link the issue, summarize the change, list validation, and call out release-record, documentation, and follow-up status.
+18. Support review by responding to comments, updating the branch, rerunning checks, and keeping the issue and pull request status accurate.
+19. Merge only when the user has asked for merging, required checks and reviews are satisfied, release records are aligned, and any issue-closing behavior is confirmed.
+20. Close the issue only when the user has asked for closure or the agreed workflow clearly allows closure after validated completion or merge. Add a brief closure note explaining what happened and any remaining follow-up.
+21. Finish with a final summary covering changed files, validation, issue status, pull request or merge status, release-record status, remaining risks, and the commit message used or proposed.
+
+When a GitHub action affects the work plan, ask concise questions before acting. Do not create issues, create or switch branches, open pull requests, commit, push, merge, or close issues unless the user has asked for that action or clearly agreed to it.
 
 For pull requests, release notes, merge summaries, or GitHub issue comments, include:
 
@@ -142,16 +154,18 @@ For pull requests, release notes, merge summaries, or GitHub issue comments, inc
 - validation performed, including build, test, link, accessibility, SEO, sitemap, footer, Newsroom, robots, and error-page checks where applicable
 - known limitations, deferred work, or follow-up issues
 
-When a GitHub change affects the work plan, ask concise questions before acting. Do not create issues, create or switch branches, open pull requests, merge, or close issues unless the user has asked for that action or clearly agreed to it.
-
 Preferred GitHub coordination checkpoints:
 
-1. At the start: identify whether there is an existing GitHub Issue for the work; if one is not provided, ask whether to create one, proceed without one for a trivial correction, or draft one for the user.
-2. During triage: confirm issue scope, priority, affected areas, labels or assignees, acceptance criteria, branch or pull request linkage, release impact, and required documentation, changelog, version, README, generated-output, SEO, sitemap, footer, Newsroom, and error-page updates.
-3. During planning: identify the branch or pull request where the work should happen.
-4. During implementation: update or prepare an issue progress note when work starts, a meaningful milestone is reached, scope changes, the work becomes blocked, validation completes, or follow-up work is discovered.
-5. After validation: summarize the files changed, checks run, release-record updates, issue status, and any remaining risks; include a proposed issue completion or closure note.
-6. Before publishing or merging: confirm the requested branch, pull request, merge method, issue-closing behavior, and final commit message.
+1. Intake: confirm the request, repository, urgency, and whether the work is trivial or issue-tracked.
+2. Issue: ask for an existing issue, offer to create one, or draft issue text when none is supplied.
+3. Triage: confirm scope, priority, affected areas, acceptance criteria, labels, assignees, milestone, blockers, release impact, and required documentation or release-record updates.
+4. Branch: confirm the branch to use or ask permission to create a task-specific branch.
+5. Implementation: make the focused change and keep the issue updated as work commences.
+6. Validation: run checks, inspect the diff, and update issue or pull request notes with the evidence.
+7. Commit: provide a proposed commit message and commit only after approval.
+8. Publish: push only after approval, then open or update a pull request when requested.
+9. Review and merge: address review feedback, confirm merge readiness, and merge only with approval.
+10. Closure: post the completion brief and close the issue only after approval or agreed workflow rules.
 
 ---
 
@@ -311,6 +325,7 @@ When versioning is present, version records must match the changelog, release no
 
 When starting a task:
 
+- Follow the GitHub task order in Section 4: intake, issue, triage, release verification, branch, implementation, validation, commit, push, pull request, review, merge, issue closure, and final summary.
 - Inspect the relevant files before recommending or applying changes.
 - Verify whether the work has an existing GitHub Issue. If the user has not provided one, ask whether to create a new issue, proceed without one for a trivial correction, or draft issue text for the user.
 - Triage the issue or proposed issue by confirming scope, priority, affected files or routes, acceptance criteria, labels, assignees, milestone, blockers, branch or pull request linkage, and release or compliance impact.
@@ -333,9 +348,10 @@ Before completing work:
 - Verify user-visible website behavior when the task affects pages, routes, navigation, styling, scripts, forms, or build output.
 - Confirm whether Change Log Hub, root changelog, public changelog, README, version, generated-output, GitHub Issue, SEO, sitemap, footer, Newsroom, and error-page updates were completed or were not applicable.
 - Prepare an issue completion or closure note that briefly states what changed, affected files or routes, validation performed, release-record updates, known limitations, and follow-up work.
-- Ask for confirmation before closing an issue unless the user already requested issue closure or the agreed workflow clearly allows closure after validation.
+- Ask for confirmation before closing an issue unless the user already requested issue closure or the agreed workflow clearly allows closure after validation or merge.
 - Provide a concise proposed commit message covering all completed work so the user can use it when committing, even when no commit is created.
-- Summarize whether work was applied directly on GitHub, prepared for a pull request, left as guidance, or still needs a user decision.
+- Confirm whether the next GitHub step is commit, push, pull request creation or update, review response, merge, issue closure, or no further action.
+- Summarize whether work was applied directly on GitHub, prepared for a pull request, left as guidance, merged, or still needs a user decision.
 
 ---
 
@@ -350,6 +366,7 @@ When reporting completed repository work, clearly state:
 - any issue completion or closure note prepared for the user, including a brief of what happened
 - for website repositories, whether APES brand standards, Newsroom routing, universal footer compliance, footer links, SEO metadata, sitemap records, robots or noindex rules, and error pages were updated or verified, or why they were not applicable
 - whether the work was applied directly to GitHub, prepared for pull request review, merged, or left pending user confirmation
+- the next recommended GitHub step, such as commit, push, pull request, review, merge, issue closure, or no further action
 - a concise proposed commit message covering all work completed in the task
 
 Keep the final response concise, practical, and transparent about anything that still needs the user's decision.
