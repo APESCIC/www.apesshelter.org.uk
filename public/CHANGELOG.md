@@ -1,5 +1,14 @@
 # Public Website Changelog
 
+## v0.0.23 Beta - 8 June 2026
+
+- The shared development notice now uses the same desktop and tablet content width as the rest of the page instead of stretching edge-to-edge.
+- The notice still appears across shared public pages through the shared header and keeps the same live chat button behavior.
+- The narrower mobile width exception and full-width mobile notice button behavior were preserved while correcting the desktop and tablet layout only.
+- Footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub were re-checked after the notice layout correction.
+- Sitemap, robots/noindex rules, Newsroom routing and the branded 404 page were reviewed and did not need structural route changes.
+- Public release labels, version files and release records updated to v0.0.23 Beta.
+
 ## v0.0.22 Beta - 8 June 2026
 
 - A new corporate and public sector rescue page has been added for councils, housing associations, social services, landlords, businesses and partner organisations.

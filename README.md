@@ -6,9 +6,9 @@ This repository is used to support the development, maintenance, improvement and
 
 ## Current Release Note
 
-Current public release: **v0.0.22 Beta**.
+Current public release: **v0.0.23 Beta**.
 
-This release adds a dedicated corporate and public sector rescue page for councils, housing associations, social services, landlords, businesses and partner organisations, and links it into the rescue, search and service-finder journeys.
+This release constrains the shared development notice to the same aligned desktop and tablet content width as the rest of the site while preserving the existing shared header and mobile notice behavior.
 
 ## About APES Shelter and Rescue
 

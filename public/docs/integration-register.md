@@ -1,6 +1,6 @@
 # Integration Register
 
-Version: v0.0.22 Beta
+Version: v0.0.23 Beta
 
 | Service | URL | Treatment |
 |---|---|---|
@@ -10,6 +10,15 @@ Version: v0.0.22 Beta
 | ShelterManager found pet form | https://service.sheltermanager.com/asmservice?account=apes&method=online_form_html&formid=25 | External hosted form |
 | Contact Centre | https://contact.apesshelter.org.uk/ | External support route |
 | Service User Portal | https://www.apesshelter.org.uk/signin | External authenticated route |
+
+## v0.0.23 Beta notes
+
+- Change type: Layout fix. Constrained the shared development notice card to the same desktop and tablet content width as the rest of the site.
+- Change type: Shared header. Kept the existing header include and shared live chat button behavior unchanged so the notice remains site-wide where the shared header is used.
+- Change type: Responsive review. Preserved the narrower mobile width exception, stacked notice layout and full-width mobile notice button behavior while correcting the desktop and tablet width only.
+- Change type: Compliance. Footer links checked again against Donate, Privacy Policy, Terms of Service and Change Log Hub routes.
+- Change type: SEO and error pages. Confirmed sitemap, robots/noindex, Newsroom routing and branded 404 behavior needed no structural route changes.
+- Change type: Versioning. Current public release version bumped to v0.0.23 Beta in live labels, version files, changelog, manifests and release docs.
 
 ## v0.0.22 Beta notes
 

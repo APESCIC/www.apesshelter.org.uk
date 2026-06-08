@@ -1,5 +1,14 @@
 # APES Shelter and Rescue Website Changelog
 
+## v0.0.23 Beta - 8 June 2026
+
+- Change type: Layout fix. Constrained the shared development notice card to the same 90 percent desktop and tablet content width used by the rest of the website instead of allowing it to stretch edge-to-edge.
+- Change type: Shared header. Kept the existing shared header include and live chat button behavior unchanged so the notice still appears site-wide everywhere the shared header is used.
+- Change type: Responsive review. Preserved the narrower mobile width exception, stacked mobile notice layout, full-width mobile button behavior and unrelated modal backdrop styles while limiting the fix to the shared notice width only.
+- Change type: Compliance. Re-checked shared footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub after the shared notice layout correction.
+- Change type: SEO and error pages. Verified that sitemap, robots/noindex rules, Newsroom routing and the branded 404 page required no structural changes for this presentation-only patch.
+- Change type: Release records. Updated root and public `VERSION` files, visible footer labels, public changelog records, manifest records, QA notes and release documentation to v0.0.23 Beta.
+
 ## v0.0.22 Beta - 8 June 2026
 
 - Change type: New route. Added `corporations-public-sector.html` as a dedicated public rescue page for councils, housing associations, social services, mental health services, landlords, businesses, police or enforcement teams and partner organisations.
