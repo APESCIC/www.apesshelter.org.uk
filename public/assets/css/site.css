@@ -1004,7 +1004,7 @@ body.nav-widgets-suppressed [class*="hellobar"]{
   margin-top:1rem;
 }
 .development-notice .wrap{
-  width:100%;
+  width:90%;
   display:flex;
   align-items:center;
   justify-content:space-between;

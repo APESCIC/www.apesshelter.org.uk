@@ -12,6 +12,16 @@
 - Review policies and privacy/cookie wording before public launch.
 - Run WCAG 2.2 AA accessibility testing before public launch.
 
+## v0.0.23 Beta notes
+
+- Change type: Shared notice layout. Confirm the development notice card aligns to the same desktop and tablet content width as the rest of the page instead of stretching edge-to-edge.
+- Change type: Shared header. Confirm the notice still appears on the homepage and inner pages that use the shared header include, such as Education.
+- Change type: Mobile layout. Confirm the mobile notice still stacks cleanly and keeps the live chat button usable at full width.
+- Change type: Responsive layout. Check urgent appeal, hero, header spacing and CTA alignment remain visually consistent after the notice-width correction.
+- Change type: Compliance. Re-check footer links for Donate, Privacy Policy, Terms of Service and Change Log Hub after the shared notice correction.
+- Change type: SEO and error pages. Confirm sitemap records, robots/noindex rules, Newsroom routing and the branded 404 page still need no route-related changes.
+- Change type: Versioning. Confirm footer version badge, changelog current version, manifest records and `VERSION` files all show v0.0.23 Beta.
+
 ## v0.0.22 Beta notes
 
 - Change type: New route. Confirm `corporations-public-sector.html` loads correctly with the shared header, footer, development notice, ticket popup, Donorbox widget and Chatwoot script intact.

@@ -1,5 +1,5 @@
 # APES Shelter & Rescue Website
-Version: v0.0.22 Beta
+Version: v0.0.23 Beta
 
 ## Simple upload instructions
 
@@ -42,6 +42,15 @@ No database is needed. No command line is needed. No build step is needed.
 Check every button, external form and phone/email link. Review policies, privacy/cookies, refund address, donation provider and newsletter wording before making the site live.
 
 Menu update: the main navigation now uses Home, Animal Services, Support APES and Information, each with its own mega menu route.
+
+v0.0.23 Beta changes:
+
+- Change type: Layout fix. Constrained the shared development notice card to the same desktop and tablet content width as the rest of the site.
+- Change type: Shared header. Kept the existing shared header include and live chat button behavior unchanged so the notice still appears across shared public pages.
+- Change type: Responsive review. Preserved the narrower mobile width exception, stacked notice layout and full-width mobile notice button behavior while correcting the desktop and tablet width only.
+- Change type: Compliance. Re-checked footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub.
+- Change type: SEO and error pages. Confirmed sitemap, robots/noindex, Newsroom routing and the branded 404 page needed no structural changes.
+- Change type: Versioning. Bumped current package version labels and release docs to v0.0.23 Beta.
 
 v0.0.22 Beta changes:
 
