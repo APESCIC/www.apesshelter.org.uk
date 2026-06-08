@@ -1,6 +1,6 @@
 # Integration Register
 
-Version: v0.0.22 Beta
+Version: v0.0.23 Beta
 
 | Service | URL | Treatment |
 |---|---|---|
@@ -10,6 +10,15 @@ Version: v0.0.22 Beta
 | ShelterManager found pet form | https://service.sheltermanager.com/asmservice?account=apes&method=online_form_html&formid=25 | External hosted form |
 | Contact Centre | https://contact.apesshelter.org.uk/ | External support route |
 | Service User Portal | https://www.apesshelter.org.uk/signin | External authenticated route |
+
+## v0.0.23 Beta notes
+
+- Change type: Layout fix. Restored the final active shared page wrapper width to 90 percent on desktop and tablet after a later full-width override widened pages too far.
+- Change type: Development notice. Updated the shared development notice wrapper so its content width now matches the rest of the shared page layout.
+- Change type: Responsive review. Preserved the narrower mobile width exception, shared hero and grid behavior, mega-menu sizing, navigation behavior and full-screen modal backdrop treatment.
+- Change type: Compliance. Footer links checked again against Donate, Privacy Policy, Terms of Service and Change Log Hub routes.
+- Change type: SEO and error pages. Confirmed sitemap, robots/noindex, Newsroom routing and branded 404 behavior needed no structural route changes.
+- Change type: Versioning. Current public release version bumped to v0.0.23 Beta in live labels, version files, changelog, manifests and release docs.
 
 ## v0.0.22 Beta notes
 

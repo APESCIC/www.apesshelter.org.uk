@@ -1,5 +1,14 @@
 # Public Website Changelog
 
+## v0.0.23 Beta - 8 June 2026
+
+- Shared page containers now use the intended 90 percent viewport width again on desktop and tablet after a later layout override widened pages too far.
+- The shared development notice now follows the same 90 percent content width instead of stretching across the full available page area.
+- The narrower mobile width exception remains in place, and shared hero, grid, navigation, mega-menu and modal backdrop behaviour were preserved.
+- Footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub were re-checked after the shared layout correction.
+- Sitemap, robots/noindex rules, Newsroom routing and the branded 404 page were reviewed and did not need structural route changes.
+- Public release labels, version files and release records updated to v0.0.23 Beta.
+
 ## v0.0.22 Beta - 8 June 2026
 
 - A new corporate and public sector rescue page has been added for councils, housing associations, social services, landlords, businesses and partner organisations.

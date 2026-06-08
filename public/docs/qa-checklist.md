@@ -12,6 +12,16 @@
 - Review policies and privacy/cookie wording before public launch.
 - Run WCAG 2.2 AA accessibility testing before public launch.
 
+## v0.0.23 Beta notes
+
+- Change type: Shared width. Confirm homepage and inner-page shared containers render at 90 percent viewport width on desktop and tablet.
+- Change type: Development notice. Confirm the shared development notice aligns to the same 90 percent content width instead of stretching edge-to-edge.
+- Change type: Responsive layout. Confirm the narrower mobile width exception remains in place and hero, grid, footer and CTA alignment remain intact at mobile widths.
+- Change type: Navigation and overlays. Confirm mega-menu sizing, mobile navigation behaviour and the homepage development modal backdrop still behave as before.
+- Change type: Compliance. Re-check footer links for Donate, Privacy Policy, Terms of Service and Change Log Hub after the shared layout correction.
+- Change type: SEO and error pages. Confirm sitemap records, robots/noindex rules, Newsroom routing and the branded 404 page still need no route-related changes.
+- Change type: Versioning. Confirm footer version badge, changelog current version, manifest records and `VERSION` files all show v0.0.23 Beta.
+
 ## v0.0.22 Beta notes
 
 - Change type: New route. Confirm `corporations-public-sector.html` loads correctly with the shared header, footer, development notice, ticket popup, Donorbox widget and Chatwoot script intact.

@@ -105,11 +105,11 @@ p,li{max-width:72ch}.hero p,.dark-card p,.route-panel p,.route-result-card p{max
 
 /* v0.0.2 Beta full-width layout, hero correction and readability refinement */
 .wrap{
-  width:calc(100% - clamp(28px,4vw,88px));
+  width:90%;
   max-width:none;
   margin-inline:auto;
 }
-main.wrap{width:calc(100% - clamp(28px,4vw,88px));max-width:none;}
+main.wrap{width:90%;max-width:none;}
 .header-inner{min-height:84px;}
 .top-strip .wrap{max-width:none;}
 .hero{
@@ -1004,7 +1004,7 @@ body.nav-widgets-suppressed [class*="hellobar"]{
   margin-top:1rem;
 }
 .development-notice .wrap{
-  width:100%;
+  width:90%;
   display:flex;
   align-items:center;
   justify-content:space-between;
