@@ -12,6 +12,17 @@
 - Review policies and privacy/cookie wording before public launch.
 - Run WCAG 2.2 AA accessibility testing before public launch.
 
+## v0.1.0 Stable notes
+
+- Change type: New route. Confirm `division-mission.html` loads correctly with the shared header, footer, development notice, Donorbox widget and Chatwoot script intact.
+- Change type: Mission content. Confirm the page includes the mission statement, APESCIC alignment, core objectives, accountability wording and approved 2023 to 2025 shelter baselines.
+- Change type: Navigation and discovery. Confirm Division Mission appears in the Information mega menu, Service Finder, Search page, `sitemap.xml` and `manifest-pages.csv`.
+- Change type: Responsive layout. Check hero wrapping, card grids, related-route cards and CTA visibility on desktop and mobile widths.
+- Change type: Links. Confirm internal links to Services, Rescue, Surrender, Adoptions, Education, Contact and the APES CIC main site all resolve correctly.
+- Change type: Compliance. Re-check footer links for Donate, Privacy Policy, Terms of Service and Change Log Hub after the new public mission route was added.
+- Change type: SEO and error pages. Confirm sitemap coverage now includes the mission route and that robots/noindex rules, Newsroom routing and the branded 404 page still need no further route changes.
+- Change type: Versioning. Confirm footer version badge, changelog current version, manifest records, release docs and `VERSION` files all show v0.1.0 Stable or `v0.1.0` as appropriate.
+
 ## v0.0.23 Beta notes
 
 - Change type: Shared notice layout. Confirm the development notice card aligns to the same desktop and tablet content width as the rest of the page instead of stretching edge-to-edge.

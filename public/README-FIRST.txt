@@ -1,5 +1,5 @@
 # APES Shelter & Rescue Website
-Version: v0.0.23 Beta
+Version: v0.1.0 Stable
 
 ## Simple upload instructions
 
@@ -20,6 +20,7 @@ No database is needed. No command line is needed. No build step is needed.
 - surrender.html: owner surrender route
 - rescues.html: rescue and wildlife support route
 - corporations-public-sector.html: dedicated rescue route for organisations and public-sector casework
+- division-mission.html: public mission, objectives and accountability page
 - sponsorships.html: sponsorship route
 - education.html: primate welfare education page
 - news.html: news landing page
@@ -42,6 +43,15 @@ No database is needed. No command line is needed. No build step is needed.
 Check every button, external form and phone/email link. Review policies, privacy/cookies, refund address, donation provider and newsletter wording before making the site live.
 
 Menu update: the main navigation now uses Home, Animal Services, Support APES and Information, each with its own mega menu route.
+
+v0.1.0 Stable changes:
+
+- Change type: New route. Added division-mission.html as a public-facing mission page for APES Shelter & Rescue.
+- Change type: Mission content. Published division mission, APESCIC alignment, core objectives and public accountability wording.
+- Change type: Historical figures. Added approved 2023 to 2025 shelter baselines for intakes, adoptions and live outcomes without inventing unapproved outreach or partnership numbers.
+- Change type: Search and discovery. Added the new route to shared navigation, Service Finder, Search, sitemap and manifest records.
+- Change type: Compliance. Re-checked footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub.
+- Change type: Versioning. Promoted current package version labels and release docs from v0.0.23 Beta to v0.1.0 Stable.
 
 v0.0.23 Beta changes:
 

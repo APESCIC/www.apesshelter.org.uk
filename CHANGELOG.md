@@ -1,5 +1,15 @@
 # APES Shelter and Rescue Website Changelog
 
+## v0.1.0 Stable - 8 June 2026
+
+- Change type: New route. Added `division-mission.html` as a formal public-facing mission page for APES Shelter & Rescue, covering division purpose, APESCIC alignment, core objectives and accountability.
+- Change type: Mission content. Published mission copy that explicitly links Shelter work to rescue, rehabilitation, rehoming, owner support, education, advocacy, welfare standards and transparent community benefit.
+- Change type: Historical figures. Added approved 2023 to 2025 shelter baselines for intakes, adoptions and live outcomes without inventing unapproved future numeric targets for outreach or partnerships.
+- Change type: Navigation and discovery. Added the new route to the shared Information menu, Service Finder, Search page, sitemap and public manifest records.
+- Change type: Compliance. Re-checked shared footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub after the new public mission route was added.
+- Change type: SEO and error pages. Updated sitemap coverage for the new route and verified robots/noindex rules, Newsroom routing and the branded 404 page required no further structural changes.
+- Change type: Release records. Promoted the site from `v0.0.23b` to `v0.1.0` stable across root and public `VERSION` files, footer version labels, changelog records, manifest records, QA notes and release documentation.
+
 ## v0.0.23 Beta - 8 June 2026
 
 - Change type: Layout fix. Constrained the shared development notice card to the same 90 percent desktop and tablet content width used by the rest of the website instead of allowing it to stretch edge-to-edge.

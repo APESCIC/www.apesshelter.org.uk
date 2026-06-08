@@ -1,6 +1,6 @@
 # Integration Register
 
-Version: v0.0.23 Beta
+Version: v0.1.0 Stable
 
 | Service | URL | Treatment |
 |---|---|---|
@@ -10,6 +10,15 @@ Version: v0.0.23 Beta
 | ShelterManager found pet form | https://service.sheltermanager.com/asmservice?account=apes&method=online_form_html&formid=25 | External hosted form |
 | Contact Centre | https://contact.apesshelter.org.uk/ | External support route |
 | Service User Portal | https://www.apesshelter.org.uk/signin | External authenticated route |
+
+## v0.1.0 Stable notes
+
+- Change type: New route. Added `division-mission.html` as a public mission and accountability page for the Shelter division.
+- Change type: Mission content. Published APESCIC-aligned mission wording, core objectives and accountability commitments for rescue, rehabilitation, rehoming, owner support, education and advocacy.
+- Change type: Historical figures. Added approved 2023 to 2025 baselines for intakes, adoptions and live outcomes without publishing unapproved future outreach or partnership figures.
+- Change type: Search and discovery. Added the new route to the shared Information menu, Service Finder, Search page, sitemap and manifest records.
+- Change type: Compliance. Footer links checked again against Donate, Privacy Policy, Terms of Service and Change Log Hub routes.
+- Change type: Versioning. Current public release version promoted from `v0.0.23b` to `v0.1.0` stable in live labels, version files, changelog, manifests and release docs.
 
 ## v0.0.23 Beta notes
 

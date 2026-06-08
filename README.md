@@ -6,9 +6,9 @@ This repository is used to support the development, maintenance, improvement and
 
 ## Current Release Note
 
-Current public release: **v0.0.23 Beta**.
+Current public release: **v0.1.0 Stable**.
 
-This release constrains the shared development notice to the same aligned desktop and tablet content width as the rest of the site while preserving the existing shared header and mobile notice behavior.
+This release adds the public Division Mission page, links it into shared site discovery, and publishes a stable mission-and-accountability statement aligned to APESCIC with approved 2023-2025 shelter baselines.
 
 ## About APES Shelter and Rescue
 
@@ -19,6 +19,7 @@ The website provides information and public access to APES Shelter and Rescue se
 * Exotic animal rescue information
 * Shelter and surrender guidance
 * Adoption information and adoption-ready animals
+* Division mission, objectives and accountability
 * Trial adoption information
 * Foster programme information
 * Sponsorship information

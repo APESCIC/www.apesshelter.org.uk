@@ -1,21 +1,22 @@
 file,title,status,version
-index.html,,beta,v0.0.23 Beta
-services.html,,beta,v0.0.23 Beta
-adoptions.html,,beta,v0.0.23 Beta
-surrender.html,,beta,v0.0.23 Beta
-rescues.html,,beta,v0.0.23 Beta
-corporations-public-sector.html,Corporate and Public Sector Rescue,beta,v0.0.23 Beta
-dog-cat-rehoming.html,,beta,v0.0.23 Beta
-sponsorships.html,,beta,v0.0.23 Beta
-education.html,,beta,v0.0.23 Beta
-news.html,,beta,v0.0.23 Beta
-contact.html,,beta,v0.0.23 Beta
-policies.html,,beta,v0.0.23 Beta
-donate.html,,beta,v0.0.23 Beta
-portal.html,,beta,v0.0.23 Beta
-search.html,,beta,v0.0.23 Beta
-changelog.html,,beta,v0.0.23 Beta
-404.html,,beta,v0.0.23 Beta
-trial-adoptions.html,Trial Adoptions,beta,v0.0.23 Beta
-foster-scheme.html,Foster Scheme,beta,v0.0.23 Beta
+index.html,,stable,v0.1.0
+services.html,,stable,v0.1.0
+adoptions.html,,stable,v0.1.0
+surrender.html,,stable,v0.1.0
+rescues.html,,stable,v0.1.0
+corporations-public-sector.html,Corporate and Public Sector Rescue,stable,v0.1.0
+dog-cat-rehoming.html,,stable,v0.1.0
+sponsorships.html,,stable,v0.1.0
+education.html,,stable,v0.1.0
+division-mission.html,Division Mission,stable,v0.1.0
+news.html,,stable,v0.1.0
+contact.html,,stable,v0.1.0
+policies.html,,stable,v0.1.0
+donate.html,,stable,v0.1.0
+portal.html,,stable,v0.1.0
+search.html,,stable,v0.1.0
+changelog.html,,stable,v0.1.0
+404.html,,stable,v0.1.0
+trial-adoptions.html,Trial Adoptions,stable,v0.1.0
+foster-scheme.html,Foster Scheme,stable,v0.1.0
 

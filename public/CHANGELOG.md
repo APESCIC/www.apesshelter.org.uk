@@ -1,5 +1,14 @@
 # Public Website Changelog
 
+## v0.1.0 Stable - 8 June 2026
+
+- A new Division Mission page has been added to explain the Shelter division mission, objectives and accountability within the wider APESCIC mission.
+- The new page publishes approved 2023 to 2025 shelter baselines for intakes, adoptions and live outcomes while keeping outreach and partnership commitments non-numeric until formally approved.
+- Shared navigation, Service Finder, Search, sitemap and public manifest records now include the new mission route.
+- Footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub were re-checked after the new public page was added.
+- Sitemap coverage was updated for the new route, while robots/noindex rules, Newsroom routing and the branded 404 page needed no further structural changes.
+- Public release labels, version files and release records were promoted from beta to v0.1.0 Stable.
+
 ## v0.0.23 Beta - 8 June 2026
 
 - The shared development notice now uses the same desktop and tablet content width as the rest of the page instead of stretching edge-to-edge.
