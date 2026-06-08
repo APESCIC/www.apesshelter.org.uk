@@ -1,5 +1,14 @@
 # APES Shelter and Rescue Website Changelog
 
+## v0.0.22 Beta - 8 June 2026
+
+- Change type: New route. Added `corporations-public-sector.html` as a dedicated public rescue page for councils, housing associations, social services, mental health services, landlords, businesses, police or enforcement teams and partner organisations.
+- Change type: Rescue journey. Updated `rescues.html` and the rescue route helper so public-sector and corporate users are directed to the dedicated page before opening a support ticket.
+- Change type: Search and discovery. Added the new route to the Service Finder, Search page, sitemap and public manifest records so it is indexed and easier to share.
+- Change type: Compliance. Re-checked shared footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub after adding the new public page.
+- Change type: SEO and error pages. Added the new public route to sitemap and manifest records, and confirmed the branded 404 page plus shared public structure needed no further route handling changes.
+- Change type: Release records. Updated root and public `VERSION` files, visible footer labels, public changelog records, manifest records, QA notes and release documentation to v0.0.22 Beta.
+
 ## v0.0.21 Beta - 6 June 2026
 
 - Change type: Homepage notice scope. Moved the development notice bar into the shared header include so it now appears on shared public pages such as Education, while keeping the dismissible website update popup on the homepage only.

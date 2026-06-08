@@ -12,6 +12,16 @@
 - Review policies and privacy/cookie wording before public launch.
 - Run WCAG 2.2 AA accessibility testing before public launch.
 
+## v0.0.22 Beta notes
+
+- Change type: New route. Confirm `corporations-public-sector.html` loads correctly with the shared header, footer, development notice, ticket popup, Donorbox widget and Chatwoot script intact.
+- Change type: Rescue journey. Confirm the rescue-page organisational callout links to the dedicated page and still offers the ticket route.
+- Change type: Route helper. Confirm the Rescue helper `Public sector / corporate case` option recommends the dedicated page first and still exposes a working APES ticket action.
+- Change type: Search and discovery. Confirm the new page appears in Service Finder, Search, `sitemap.xml` and `manifest-pages.csv`.
+- Change type: Responsive layout. Check hero wrapping, card grids, two-column sections and CTA visibility on desktop and mobile widths.
+- Change type: Compliance. Re-check footer links for Donate, Privacy Policy, Terms of Service and Change Log Hub after the new public page was added.
+- Change type: Versioning. Confirm footer version badge, changelog current version, manifest records and `VERSION` files all show v0.0.22 Beta.
+
 ## v0.0.21 Beta notes
 
 - Change type: Notice scope. Confirm the development notice bar appears below the shared header on the homepage and non-homepage routes such as Education.

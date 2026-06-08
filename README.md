@@ -6,9 +6,9 @@ This repository is used to support the development, maintenance, improvement and
 
 ## Current Release Note
 
-Current public release: **v0.0.21 Beta**.
+Current public release: **v0.0.22 Beta**.
 
-This release corrects the development-notice scope so the warning bar appears across shared site pages while the dismissible website update popup stays homepage-only, alongside the earlier Donate CTA, Donorbox and shared navigation updates.
+This release adds a dedicated corporate and public sector rescue page for councils, housing associations, social services, landlords, businesses and partner organisations, and links it into the rescue, search and service-finder journeys.
 
 ## About APES Shelter and Rescue
 

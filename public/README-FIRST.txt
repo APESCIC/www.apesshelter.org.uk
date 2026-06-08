@@ -1,5 +1,5 @@
 # APES Shelter & Rescue Website
-Version: v0.0.21 Beta
+Version: v0.0.22 Beta
 
 ## Simple upload instructions
 
@@ -19,6 +19,7 @@ No database is needed. No command line is needed. No build step is needed.
 - adoptions.html: adoption page with ShelterManager animal feed and fee calculator
 - surrender.html: owner surrender route
 - rescues.html: rescue and wildlife support route
+- corporations-public-sector.html: dedicated rescue route for organisations and public-sector casework
 - sponsorships.html: sponsorship route
 - education.html: primate welfare education page
 - news.html: news landing page
@@ -41,6 +42,15 @@ No database is needed. No command line is needed. No build step is needed.
 Check every button, external form and phone/email link. Review policies, privacy/cookies, refund address, donation provider and newsletter wording before making the site live.
 
 Menu update: the main navigation now uses Home, Animal Services, Support APES and Information, each with its own mega menu route.
+
+v0.0.22 Beta changes:
+
+- Change type: New route. Added corporations-public-sector.html as a dedicated rescue page for councils, housing associations, social services, landlords, businesses and partner organisations.
+- Change type: Rescue journey. Updated rescues.html and the rescue helper so organisational users are directed to the dedicated page before opening a support ticket.
+- Change type: Search and discovery. Added the new route to the Service Finder, Search page, sitemap and manifest records.
+- Change type: Compliance. Re-checked shared footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub after the new public page was added.
+- Change type: SEO and error pages. Confirmed sitemap, manifest and shared public route handling were updated without further 404 or structural route changes.
+- Change type: Versioning. Bumped current package version labels and release docs to v0.0.22 Beta.
 
 v0.0.21 Beta changes:
 

@@ -1,5 +1,14 @@
 # Public Website Changelog
 
+## v0.0.22 Beta - 8 June 2026
+
+- A new corporate and public sector rescue page has been added for councils, housing associations, social services, landlords, businesses and partner organisations.
+- Rescue-page guidance and the rescue route helper now direct organisational users to the dedicated page before they open a support ticket.
+- The new page has been added to the Service Finder, Search page, sitemap and manifest records for easier discovery and sharing.
+- Footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub were re-checked after the new page was added.
+- Sitemap, manifest records and shared public routing were updated for the new page without requiring further 404 or structural handling changes.
+- Public release labels, version files and release records updated to v0.0.22 Beta.
+
 ## v0.0.21 Beta - 6 June 2026
 
 - The development notice bar now appears on shared public pages instead of only on the homepage.

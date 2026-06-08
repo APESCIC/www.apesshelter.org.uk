@@ -1,6 +1,6 @@
 # Integration Register
 
-Version: v0.0.21 Beta
+Version: v0.0.22 Beta
 
 | Service | URL | Treatment |
 |---|---|---|
@@ -10,6 +10,15 @@ Version: v0.0.21 Beta
 | ShelterManager found pet form | https://service.sheltermanager.com/asmservice?account=apes&method=online_form_html&formid=25 | External hosted form |
 | Contact Centre | https://contact.apesshelter.org.uk/ | External support route |
 | Service User Portal | https://www.apesshelter.org.uk/signin | External authenticated route |
+
+## v0.0.22 Beta notes
+
+- Change type: New route. Added `corporations-public-sector.html` as a dedicated public rescue page for organisational and public-sector casework.
+- Change type: Rescue journey. Updated `rescues.html` and the rescue route helper so organisational users are sent to the dedicated route before opening a support ticket.
+- Change type: Search and discovery. Added the new page to the Service Finder, Search page, sitemap and manifest records.
+- Change type: Compliance. Footer links checked again against Donate, Privacy Policy, Terms of Service and Change Log Hub routes.
+- Change type: SEO and error pages. Confirmed sitemap and manifest coverage were updated for the new route and no further branded 404 handling changes were required.
+- Change type: Versioning. Current public release version bumped to v0.0.22 Beta in live labels, version files, changelog, manifests and release docs.
 
 ## v0.0.21 Beta notes
 
