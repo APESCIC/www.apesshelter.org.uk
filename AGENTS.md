@@ -69,7 +69,7 @@ Before completing repository work, always check whether the following are requir
 2. A root-level `CHANGELOG.md` update.
 3. A `/public/CHANGELOG.md` update where the repository has a `/public/` folder, so public website release records match the root changelog.
 4. A canonical version update where the repository uses versioning.
-5. A GitHub Issue start, progress, or completion update.
+5. A GitHub Issue start, progress, or completion update, including a changed-file list and a plain-language note for each file changed, whenever an issue is being worked on.
 6. A root-level `README.md` update describing the change, release impact, setup impact, and operational notes.
 7. Any repository-specific documentation updates needed to keep setup, workflow, governance, deployment, and maintenance guidance accurate.
 8. For website repositories, an APES website brand and feature standards review.
@@ -78,6 +78,56 @@ Before completing repository work, always check whether the following are requir
 11. For website repositories, a footer link check for the website donation page, Privacy Policy page, Terms of Service page, and Change Log Hub.
 12. For website repositories, SEO metadata, sitemap, robots or noindex, and error-page checks whenever routes, navigation, deployment behavior, public pages, or website structure change.
 13. Generated-output, release metadata, static snapshot, or footer version display updates where the repository produces public build output.
+
+### README.md Template And Maintenance
+
+Use `APESCIC/Website-Repo-Template` `README.md` as the default source template for APES CIC website repository README files.
+
+When a website repository has no root `README.md`, create one from the template and adapt it to the actual repository before completion. Do not leave template placeholders such as `{{PROJECT_NAME}}`, `{{PUBLIC_WEBSITE_URL}}`, `{{VERSION}}`, `{{INSTALL_COMMAND}}`, or `{{STATUS}}` unresolved unless the value is genuinely unknown and the final summary or issue update names the missing information.
+
+Every root `README.md` for an APES CIC website repository must include a centered badge row near the top, directly under the project title or description and before the first horizontal rule, matching the `APESCIC/Website-Repo-Template` pattern. Create or update badges so they are relevant to the actual repository, not copied blindly from another project.
+
+At minimum, include and verify these badges where the repository evidence supports them:
+
+- Website badge: use the public website badge label or hostname and link it to the live public website URL; use `live` only when the site is actually live.
+- Status badge: show the current project or release status, such as beta, stable, active, maintenance, or another status grounded in repository evidence.
+- Theme badge: show the actual APES design theme in use, such as `APES Habitat`, when the repository uses that theme.
+- Accessibility badge: show the actual accessibility target or checked status, such as `WCAG AA target`, only when that target is valid for the repository.
+
+Add any other README badges that are relevant to the repository, such as version, licence, build or CI, deployment host, tests, coverage, framework, package, security, maintenance, documentation, or review status. Do not add badges for services, checks, frameworks, licences, or deployment platforms the repository does not actually use. Do not leave placeholder badge labels such as `{{WEBSITE_BADGE_LABEL}}`, `{{PROJECT_STATUS}}`, or similar unresolved unless the value is genuinely unknown and the final summary or issue update names the missing information.
+
+When a website repository already has a root `README.md`, maintain it against the same template structure instead of replacing useful repository-specific content. Preserve accurate local details, then add or refresh missing template-aligned sections where relevant, including:
+
+- Current release.
+- Project purpose.
+- About APES CIC.
+- Website areas.
+- Connected APES services.
+- APES Habitat design direction.
+- Recommended or actual repository structure.
+- Getting started.
+- Environment variables.
+- Development workflow.
+- Definition of done.
+- Testing expectations.
+- Priority issue types.
+- Component standards.
+- Documentation standards.
+- Security and responsible disclosure.
+- Contributors and access.
+- Roadmap themes.
+- Success measures.
+- Organisation details.
+- Licence and reuse.
+- Disclaimer.
+
+Update or create the root `README.md` whenever a change affects setup commands, development workflow, environment variables, repository structure, website areas, connected services, design direction, components, testing expectations, issue workflow, documentation standards, security, compliance, roadmap, success measures, release impact, current version, Change Log Hub status, changelog status, deployment notes, or operational maintenance guidance.
+
+Before completing README work, verify that badges, links, logo references, public website URLs, commands, environment-variable examples, owner or review-status fields, organisation details, licence text, release date, version, and operational notes are accurate and grounded in the repository or user-provided context.
+
+Keep README current-release notes aligned with `VERSION`, `/public/VERSION`, root `CHANGELOG.md`, `/public/CHANGELOG.md`, the website Change Log Hub, footer version text, release metadata, and generated public output wherever those files or records exist.
+
+A README update must be mentioned in GitHub Issue updates, pull request descriptions, release notes, and final summaries whenever it is created, materially changed, or intentionally deferred.
 
 A changelog entry is required when work changes public website content, intranet website content, page structure, forms, buttons, links, menus, navigation, CTAs, styling, layout, themes, branding, visual assets, accessibility, SEO, analytics, tracking, CRM, automation, embedded tools, third-party integrations, scripts, widgets, site configuration, build configuration, deployment configuration, generated website output, security, privacy, safeguarding, legal, compliance, finance, governance, HR, animal welfare content, or any user-visible bug fix.
 
@@ -130,7 +180,7 @@ Use this order for GitHub repository tasks unless the user gives a different wor
 7. Choose the branch path. Use an existing branch only after confirming it with the user, or create a short task-specific branch when the user approves branch creation.
 8. Start or update the issue before implementation begins. Record the chosen scope, branch, planned validation, and any release-record work expected.
 9. Implement the smallest safe change that satisfies the request while preserving APES CIC requirements and local repository conventions.
-10. Keep the issue current while work commences. Add brief progress notes when work starts, a meaningful milestone is reached, scope changes, the task becomes blocked, validation completes, or follow-up work is discovered.
+10. Keep the issue current while work commences. Add brief progress notes when work starts, a meaningful milestone is reached, a file is changed, scope changes, the task becomes blocked, validation completes, or follow-up work is discovered.
 11. Update documentation, changelog, version, Change Log Hub, README, generated output, SEO, sitemap, footer, Newsroom, and error-page records where the change requires them.
 12. Run relevant checks and inspect the diff. Include build, lint, typecheck, tests, link checks, accessibility checks, SEO checks, sitemap checks, footer checks, Newsroom checks, robots checks, and error-page checks where applicable.
 13. Prepare a completion summary and issue update. State what changed, affected files or routes, validation performed, release-record updates, known limitations, and follow-up work.
@@ -145,10 +195,29 @@ Use this order for GitHub repository tasks unless the user gives a different wor
 
 When a GitHub action affects the work plan, ask concise questions before acting. Do not create issues, create or switch branches, open pull requests, commit, push, merge, or close issues unless the user has asked for that action or clearly agreed to it.
 
+### Issue Update And Changed-File Reporting
+
+When a task is attached to a GitHub Issue, keep that issue updated throughout the work rather than saving all context for the final reply.
+
+Every issue update, pull request update, review response, and final reply for issue-tracked work must include a `Files changed` section. List each changed file path and add a short note explaining what was changed in that file. If no files changed since the previous update, say so explicitly.
+
+Post an issue update when:
+
+- work starts or resumes
+- a file is changed
+- scope, assumptions, or acceptance criteria change
+- validation is completed or cannot be completed
+- a blocker, risk, or follow-up item is discovered
+- the implementation is ready for review
+- work is completed, deferred, or handed back to the user
+
+Do not close an issue until the issue contains a clear completion note with changed files, validation performed, release-record status, remaining limitations, and any follow-up work.
+
 For pull requests, release notes, merge summaries, or GitHub issue comments, include:
 
 - the user-facing or operational change
 - affected files, routes, features, or repository areas
+- a `Files changed` section listing each changed file path and a short explanation of the change made in that file
 - documentation and changelog updates completed or still required
 - release-record, generated-output, version, and README updates completed or still required
 - validation performed, including build, test, link, accessibility, SEO, sitemap, footer, Newsroom, robots, and error-page checks where applicable
@@ -340,7 +409,8 @@ When editing or preparing a GitHub update:
 - Avoid broad refactors unless they are necessary for the task.
 - Do not revert unrelated user, repository, branch, or pull request changes.
 - Prefer clear, auditable wording for policy, compliance, changelog, versioning, and release notes.
-- Keep GitHub Issue progress notes aligned with the agreed tracking approach, including start, progress, blocked, validation, completion, and follow-up updates where applicable.
+- Keep GitHub Issue progress notes aligned with the agreed tracking approach, including start, progress, changed files, blocked, validation, completion, and follow-up updates where applicable.
+- In every issue update, pull request update, review response, and final reply for issue-tracked work, list each changed file path and briefly explain the change made in that file.
 
 Before completing work:
 
@@ -360,6 +430,7 @@ Before completing work:
 When reporting completed repository work, clearly state:
 
 - what was created, updated, reviewed, or left unchanged
+- files changed, with each file path and a short explanation of the change made in that file
 - what validation was performed and any remaining risks or follow-up work
 - whether Change Log Hub, root changelog, public changelog, version records, README current-release notes, and generated release output were updated or why they were not applicable
 - whether GitHub Issues were updated, should be updated, closed, left open, or were not applicable
