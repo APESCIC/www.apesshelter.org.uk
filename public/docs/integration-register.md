@@ -1,6 +1,6 @@
 # Integration Register
 
-Version: v0.1.1 Stable
+Version: v0.1.2 Stable
 
 | Service | URL | Treatment |
 |---|---|---|
@@ -10,6 +10,14 @@ Version: v0.1.1 Stable
 | ShelterManager found pet form | https://service.sheltermanager.com/asmservice?account=apes&method=online_form_html&formid=25 | External hosted form |
 | Contact Centre | https://contact.apesshelter.org.uk/ | External support route |
 | Service User Portal | https://www.apesshelter.org.uk/signin | External authenticated route |
+
+## v0.1.2 Stable notes
+
+- Change type: Content. Updated public address and phone number on contact, footer, surrender and policy pages.
+- Change type: Compliance. Replaced static mailto markup for the info mailbox with JavaScript hydration and rel=nofollow.
+- Change type: Compliance. Footer links checked again against Donate, Privacy Policy, Terms of Service and Change Log Hub routes.
+- Change type: SEO and error pages. Confirmed sitemap, robots/noindex, Newsroom routing and branded 404 behavior needed no structural route changes.
+- Change type: Versioning. Current public release version bumped from `v0.1.1` stable to `v0.1.2` stable in live labels, version files, changelog, manifests and release docs.
 
 ## v0.1.1 Stable notes
 

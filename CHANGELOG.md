@@ -1,5 +1,14 @@
 # APES Shelter and Rescue Website Changelog
 
+## v0.1.2 Stable - 19 August 2026
+
+- Change type: Content. Updated the public postal address to 40 Morris Street, St Helens, Merseyside, WA9 3EN on contact, footer, surrender, privacy and terms pages.
+- Change type: Content. Replaced the APES 0300 contact number with 01744 374 015 across public contact copy, footer, surrender, policies and route-helper call links.
+- Change type: Compliance. Removed crawlable mailto markup for the info mailbox and hydrate the address in JavaScript with rel=nofollow and data-nosnippet wrappers.
+- Change type: Compliance. Re-checked shared footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub after the contact details patch.
+- Change type: SEO and error pages. Verified sitemap, robots/noindex rules, Newsroom routing and the branded 404 page required no structural changes for this contact-details patch.
+- Change type: Release records. Updated root and public VERSION files, footer version labels, changelog records, manifest records, QA notes and release documentation to v0.1.2 Stable.
+
 ## v0.1.1 Stable - 8 June 2026
 
 - Change type: Runtime. Removed the shared Hallobar bootstrap from `public/assets/js/third-party.js` so the Hallobar marketing script no longer loads on public pages.

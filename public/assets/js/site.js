@@ -332,7 +332,7 @@
     lost:{message:'Recommended route: register a lost pet. Provide species, description, photos, last known location and your contact details.',actions:'<a class="button-gold" href="contact.html#lost-found">Lost and found hub</a><a class="button-secondary" href="https://service.sheltermanager.com/asmservice?account=apes&method=online_form_html&formid=26" target="_blank" rel="noopener noreferrer">Register lost pet</a>'},
     found:{message:'Recommended route: report a found pet. Give location, condition, containment details and photos where safe.',actions:'<a class="button-gold" href="contact.html#lost-found">Lost and found hub</a><a class="button-secondary" href="https://service.sheltermanager.com/asmservice?account=apes&method=online_form_html&formid=25" target="_blank" rel="noopener noreferrer">Report found pet</a>'},
     sponsor:{message:'Recommended route: open the primate sponsorship page or donate directly. Your support helps food, care, treatment, enrichment and emergency rescue capacity.',actions:'<a class="button-gold" href="primate-sponsor.html">Open Primate Sponsor</a><a class="button-secondary" href="donate.html">Donate</a>'},
-    urgent:{message:'Recommended route: seek emergency, local authority animal warden or veterinary support first where there is immediate danger, injury or public safety risk. Then contact APES with details and any reference numbers.',actions:'<a class="button-gold" href="tel:03003020227">Call APES</a><a class="button-secondary" href="https://contact.apes.org.uk/help/3459567754" data-popup-link="ticket" data-popup-width="960" data-popup-height="760">Open a ticket</a>'}
+    urgent:{message:'Recommended route: seek emergency, local authority animal warden or veterinary support first where there is immediate danger, injury or public safety risk. Then contact APES with details and any reference numbers.',actions:'<a class="button-gold" href="tel:01744374015">Call APES</a><a class="button-secondary" href="https://contact.apes.org.uk/help/3459567754" data-popup-link="ticket" data-popup-width="960" data-popup-height="760">Open a ticket</a>'}
   };
   helper.querySelectorAll('input[name="home-route"]').forEach(input=>{
     input.addEventListener('change',()=>{
@@ -447,11 +447,11 @@
     },
     emergency: {
       message: 'Recommended route: contact the appropriate emergency service, local authority animal warden or veterinary practice first where there is immediate danger, injury or public safety risk. Then contact APES with reference details so the team can assess whether we can assist.',
-      actions: '<a class="surrender-button-gold" href="tel:03003020227">Call APES</a><a class="surrender-button-secondary" href="https://contact.apes.org.uk/help/3459567754" data-popup-link="ticket" data-popup-width="960" data-popup-height="760">Open a ticket</a>'
+      actions: '<a class="surrender-button-gold" href="tel:01744374015">Call APES</a><a class="surrender-button-secondary" href="https://contact.apes.org.uk/help/3459567754" data-popup-link="ticket" data-popup-width="960" data-popup-height="760">Open a ticket</a>'
     },
     help: {
       message: 'Recommended route: contact APES or use live chat. The team can help you choose the correct route before you submit a form.',
-      actions: '<a class="surrender-button-gold" href="https://contact.apes.org.uk/help/3459567754" data-popup-link="ticket" data-popup-width="960" data-popup-height="760">Open a ticket</a><a class="surrender-button-secondary" href="tel:03003020227">Call APES</a>'
+      actions: '<a class="surrender-button-gold" href="https://contact.apes.org.uk/help/3459567754" data-popup-link="ticket" data-popup-width="960" data-popup-height="760">Open a ticket</a><a class="surrender-button-secondary" href="tel:01744374015">Call APES</a>'
     }
   };
   routeChoices.forEach(function(choice){
@@ -539,6 +539,28 @@
       button.setAttribute('aria-expanded', String(!isOpen));
     });
   });
+})();
+
+
+(function(){
+  function mailbox(){
+    return ['info', 'apesshelter.org.uk'].join('@');
+  }
+
+  function hydrateEmailLinks(){
+    const address = mailbox();
+    document.querySelectorAll('[data-apes-email]').forEach(function(link){
+      link.setAttribute('href', 'mailto:' + address);
+      link.setAttribute('rel', 'nofollow');
+      link.textContent = address;
+    });
+    document.querySelectorAll('[data-apes-email-copy]').forEach(function(button){
+      button.setAttribute('data-copy-text', address);
+    });
+  }
+
+  hydrateEmailLinks();
+  document.addEventListener('layout:components-loaded', hydrateEmailLinks);
 })();
 
 
@@ -691,7 +713,7 @@
     rescue:{message:'Recommended route: use rescue services for animals that are not yours (stray, escaped, abandoned, unwanted).',actions:'<a class="button-gold" href="rescues.html">Open rescue services</a><a class="button-secondary" href="https://contact.apes.org.uk/help/3459567754" data-popup-link="ticket" data-popup-width="960" data-popup-height="760">Open a ticket</a>'},
     lost:{message:'Recommended route: register a lost pet so APES can record the case and route help.',actions:'<a class="button-gold" href="contact.html#lost-found">Lost and found hub</a><a class="button-secondary" href="https://service.sheltermanager.com/asmservice?account=apes&method=online_form_html&formid=26" target="_blank" rel="noopener noreferrer">Register lost pet</a>'},
     found:{message:'Recommended route: report a found pet so APES can record the details and advise.',actions:'<a class="button-gold" href="contact.html#lost-found">Lost and found hub</a><a class="button-secondary" href="https://service.sheltermanager.com/asmservice?account=apes&method=online_form_html&formid=25" target="_blank" rel="noopener noreferrer">Report found pet</a>'},
-    general:{message:'Recommended route: open a support ticket for routed enquiries, updates, complaints, welfare questions and web support.',actions:'<a class="button-gold" href="https://contact.apes.org.uk/help/3459567754" data-popup-link="ticket" data-popup-width="960" data-popup-height="760">Open a ticket</a><a class="button-secondary" href="tel:03003020227">Call 0300 302 0227</a>'}
+    general:{message:'Recommended route: open a support ticket for routed enquiries, updates, complaints, welfare questions and web support.',actions:'<a class="button-gold" href="https://contact.apes.org.uk/help/3459567754" data-popup-link="ticket" data-popup-width="960" data-popup-height="760">Open a ticket</a><a class="button-secondary" href="tel:01744374015">Call 01744 374 015</a>'}
   };
 
   helper.querySelectorAll('input[name="contact-route"]').forEach(function(input){
@@ -714,7 +736,7 @@
   const actions = helper.querySelector('#rescue-route-actions');
   const routes = {
     notmine:{message:'Recommended route: use rescue services for exotic or wildlife cases that are not yours. If the animal is a dog or cat, use the Dog and Cat Rehoming page for official shelters and rescues.',actions:'<a class="button-gold" href="dog-cat-rehoming.html">Dog & Cat Rehoming</a><a class="button-secondary" href="https://contact.apes.org.uk/help/3459567754" data-popup-link="ticket" data-popup-width="960" data-popup-height="760">Request rescue support</a>'},
-    wildlife:{message:'Recommended route: if injured or at risk, seek appropriate emergency or wildlife support first. Then contact APES with details so we can advise or signpost.',actions:'<a class="button-gold" href="tel:03003020227">Call APES</a><a class="button-secondary" href="https://contact.apes.org.uk/help/3459567754" data-popup-link="ticket" data-popup-width="960" data-popup-height="760">Open a ticket</a>'},
+    wildlife:{message:'Recommended route: if injured or at risk, seek appropriate emergency or wildlife support first. Then contact APES with details so we can advise or signpost.',actions:'<a class="button-gold" href="tel:01744374015">Call APES</a><a class="button-secondary" href="https://contact.apes.org.uk/help/3459567754" data-popup-link="ticket" data-popup-width="960" data-popup-height="760">Open a ticket</a>'},
     public:{message:'Recommended route: open the dedicated corporate and public sector rescue page first, then submit one ticket with reference numbers, risk information and contact details.',actions:'<a class="button-gold" href="corporations-public-sector.html">Open corporate route</a><a class="button-secondary" href="https://contact.apes.org.uk/help/3459567754" data-popup-link="ticket" data-popup-width="960" data-popup-height="760">Open a ticket</a>'},
     mine:{message:'Recommended route: if this is your pet and you cannot safely care for them, use the surrender route instead of rescue services.',actions:'<a class="button-gold" href="surrender.html">Owner surrender</a><a class="button-secondary" href="https://service.sheltermanager.com/asmservice?account=apes&method=online_form_html&formid=112" target="_blank" rel="noopener noreferrer">Start surrender form</a>'}
   };

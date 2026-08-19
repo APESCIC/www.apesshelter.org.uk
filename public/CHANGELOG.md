@@ -1,5 +1,14 @@
 # Public Website Changelog
 
+## v0.1.2 Stable - 19 August 2026
+
+- Public postal address now includes Merseyside: 40 Morris Street, St Helens, Merseyside, WA9 3EN.
+- APES phone number is now 01744 374 015 on contact, footer, surrender, policies and route helpers.
+- The info mailbox is no longer printed as a crawlable mailto in static HTML; it is hydrated in JavaScript with rel=nofollow.
+- Footer routes for Donate, Privacy Policy, Terms of Service and Change Log Hub were re-checked after the contact details patch.
+- Sitemap, robots/noindex rules, Newsroom routing and the branded 404 page were reviewed and did not need structural changes.
+- Public release labels, version files, manifest records and release documentation updated to v0.1.2 Stable.
+
 ## v0.1.1 Stable - 8 June 2026
 
 - Hallobar has been removed from the shared third-party loader, so the Hallobar marketing script no longer loads on public pages.

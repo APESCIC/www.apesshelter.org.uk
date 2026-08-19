@@ -12,6 +12,15 @@
 - Review policies and privacy/cookie wording before public launch.
 - Run WCAG 2.2 AA accessibility testing before public launch.
 
+## v0.1.2 Stable notes
+
+- Change type: Content. Confirm contact, footer, surrender, privacy and terms pages show 40 Morris Street, St Helens, Merseyside, WA9 3EN.
+- Change type: Content. Confirm APES call links and displayed numbers use 01744 374 015 and that no leftover 0300 302 0227 remains on APES contact routes.
+- Change type: Compliance. Confirm view-source has no mailto:info@apesshelter.org.uk, that hydrated email links use rel=nofollow, and that contact copy buttons still copy address, phone and email after JavaScript runs.
+- Change type: Compliance. Re-check footer links for Donate, Privacy Policy, Terms of Service and Change Log Hub after the contact details patch.
+- Change type: SEO and error pages. Confirm sitemap, robots/noindex rules, Newsroom routing and the branded 404 page still need no route-related changes.
+- Change type: Versioning. Confirm footer version badge, changelog current version, manifest records, release docs and `VERSION` files all show v0.1.2 Stable or `v0.1.2` as appropriate.
+
 ## v0.1.1 Stable notes
 
 - Change type: Runtime. Confirm Hallobar no longer loads or injects a marketing banner on representative public pages such as `index.html`.
