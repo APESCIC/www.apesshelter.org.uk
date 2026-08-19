@@ -17,7 +17,7 @@
       <div>
         <p class="eyebrow">Changelog</p>
         <h1>Website version history.</h1>
-        <p>Current package version: v0.1.1 Stable. This page tracks live release history with clear change types for each update.</p>
+        <p>Current package version: v0.1.2 Stable. This page tracks live release history with clear change types for each update.</p>
         <div class="actions">
           <a class="button-gold" href="#changelog-entries">View entries</a>
           <a class="button-outline" href="#known-issues">Known issues</a>
@@ -27,9 +27,9 @@
       <aside class="logo-card" aria-label="Changelog highlights">
         <img src="assets/img/apes-shelter-rescue-logo.png" alt="APES Shelter and Rescue logo">
         <div class="hero-badges" aria-label="Changelog change types">
-          <span>🧹 Hallobar removed</span>
-          <span>🔔 OneSignal retained</span>
-          <span>🛡️ Footer links checked</span>
+          <span>📍 Address updated</span>
+          <span>☎️ New phone number</span>
+          <span>📧 Email not crawlable</span>
           <span>✅ Stable patch</span>
         </div>
       </aside>
@@ -38,30 +38,46 @@
 
   <section class="snapshot-grid section" aria-label="Recent change highlights">
     <article class="card snapshot-card">
-      <span class="snapshot-icon" aria-hidden="true">🧹</span>
-      <h2>Hallobar removed</h2>
-      <p>The shared third-party loader no longer boots the Hallobar marketing script on public pages.</p>
+      <span class="snapshot-icon" aria-hidden="true">📍</span>
+      <h2>Address updated</h2>
+      <p>Public contact copy now uses 40 Morris Street, St Helens, Merseyside, WA9 3EN.</p>
     </article>
     <article class="card snapshot-card">
-      <span class="snapshot-icon" aria-hidden="true">🔔</span>
-      <h2>OneSignal preserved</h2>
-      <p>Push setup remains limited to the supported production hosts through the existing host-aware loader.</p>
+      <span class="snapshot-icon" aria-hidden="true">☎️</span>
+      <h2>Phone number replaced</h2>
+      <p>APES call links and displayed numbers now use 01744 374 015 instead of the previous 0300 number.</p>
     </article>
     <article class="card snapshot-card">
-      <span class="snapshot-icon" aria-hidden="true">📱</span>
-      <h2>Mobile suppression trimmed</h2>
-      <p>The mobile menu still suppresses donor, chat and OneSignal layers while open without carrying Hallobar-only selectors.</p>
+      <span class="snapshot-icon" aria-hidden="true">📧</span>
+      <h2>Email not crawlable</h2>
+      <p>The info mailbox is assembled in JavaScript with rel=nofollow instead of a static mailto in page source.</p>
     </article>
     <article class="card snapshot-card">
       <span class="snapshot-icon" aria-hidden="true">🔄</span>
       <h2>Stable patch synced</h2>
-      <p>Version references, footer labels, `VERSION` files, manifest records and release docs now show v0.1.1 Stable.</p>
+      <p>Version references, footer labels, `VERSION` files, manifest records and release docs now show v0.1.2 Stable.</p>
     </article>
   </section>
 
   <section class="accordion section" id="changelog-entries" aria-label="Changelog entries">
     <article class="accordion-item open">
-      <button class="accordion-button" type="button" aria-expanded="true"><span>v0.1.1 Stable - Hallobar integration removal patch</span><span aria-hidden="true">+</span></button>
+      <button class="accordion-button" type="button" aria-expanded="true"><span>v0.1.2 Stable - Public contact details patch</span><span aria-hidden="true">+</span></button>
+      <div class="accordion-content">
+        <p><strong>Release date:</strong> 19 August 2026.</p>
+        <p><strong>Release type:</strong> Public contact details update, crawler-safe email presentation, compliance check and stable patch versioning update.</p>
+        <ul>
+          <li><strong>Content:</strong> Updated the public postal address to 40 Morris Street, St Helens, Merseyside, WA9 3EN.</li>
+          <li><strong>Content:</strong> Replaced the APES 0300 contact number with 01744 374 015 on contact, footer, surrender, policies and route helpers.</li>
+          <li><strong>Compliance:</strong> Removed crawlable mailto markup for the info mailbox and hydrate it in JavaScript with rel=nofollow.</li>
+          <li><strong>Footer compliance:</strong> Re-checked Donate, Privacy Policy, Terms of Service and Change Log Hub footer routes after the contact details patch.</li>
+          <li><strong>SEO/Error pages:</strong> Verified sitemap, robots/noindex rules, Newsroom routing and the branded 404 page needed no structural changes for this patch.</li>
+          <li><strong>Update:</strong> Updated current site version labels, public changelog records, manifest records, QA notes and release docs from <code>v0.1.1 Stable</code> to <code>v0.1.2 Stable</code>.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="accordion-item">
+      <button class="accordion-button" type="button" aria-expanded="false"><span>v0.1.1 Stable - Hallobar integration removal patch</span><span aria-hidden="true">+</span></button>
       <div class="accordion-content">
         <p><strong>Release date:</strong> 8 June 2026.</p>
         <p><strong>Release type:</strong> Shared runtime cleanup, mobile widget-suppression trim, compliance check and stable patch versioning update.</p>

@@ -6,9 +6,9 @@ This repository is used to support the development, maintenance, improvement and
 
 ## Current Release Note
 
-Current public release: **v0.1.1 Stable**.
+Current public release: **v0.1.2 Stable**.
 
-This release removes the Hallobar marketing integration, keeps OneSignal limited to the supported production hosts, and syncs the related release records and footer version text.
+This release updates public contact details to 40 Morris Street, St Helens, Merseyside, WA9 3EN and 01744 374 015, and hydrates the info mailbox in JavaScript with `rel="nofollow"` so it is not present as a crawlable mailto in static HTML.
 
 ## About APES Shelter and Rescue
 
